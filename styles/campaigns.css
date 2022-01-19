@@ -1,7 +1,7 @@
 #camp {
   background-color: hsl(203, 23%, 95%);
   margin: 0%;
-  height: 1500px;
+  height: 1480px;
   padding: 9%;
   /* border:solid blue; */
 }
@@ -20,6 +20,18 @@ body {
 #our_camp > h1{
     padding: 85px 100px 40px 125px;
 }
+#our_camp > img{
+    width:200px;
+    height: 260px;
+    margin-top: -100px;
+}
+.peppr{
+    margin-left: 93%;
+   
+    margin-top: -170px;
+    margin-bottom: -200px;
+
+}
 .campsm {
   /* border: solid grey; */
   display: flex;
@@ -30,6 +42,7 @@ body {
 }
 #camp > .campsm:nth-child(2) {
   margin-top: 60px;
+  ;
 }
 #camp > .campsm:nth-child(3) {
   margin-top: 60px;
@@ -105,9 +118,14 @@ video {
   color: #fff;
   fill: #fff;
   text-align: center;
-padding: 10px 24px;
+padding: 11px 24px;
   transition: all 0.3s;
 
+}
+.elementor-button:hover{
+    padding: 13px 27px;
+    cursor: pointer;
+    font-size: 22px;
 }
 .camp-link-holder > a {
   margin: 0px 20px 0px 0px;
