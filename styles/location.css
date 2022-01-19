@@ -5,6 +5,7 @@ body{
 .main{
     background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
     margin-bottom: 0px;
+    overflow: hidden;
 
 }
 #nav{
@@ -108,7 +109,8 @@ display: flex;
 
     background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-chef-image.jpg);
     width: 100%;
-    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: ; */
     /* border: 1px solid red; */
     height: 600px;
     margin-top: 0px;
@@ -150,7 +152,7 @@ display: flex;
     width: 60%;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .place>div{
     text-align: center;
@@ -174,4 +176,107 @@ display: flex;
 }
 .mm{
     height: 70px;
+}
+
+.stat{
+    width: 100%;
+    /* height: 300px; */
+    border: 1px solid transparent;
+    background: white;
+    margin: auto;
+    margin-top: 0px;
+    /* position: absolute; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.stat> h3{
+    /* padding-top: 5%; */
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 70px;
+    height: 50px;
+    /* border: 1px solid red; */
+    /* font-family: Museo-Sans; */
+    font-size: 50px;
+    /* font-weight: 900; */
+    line-height: 52px;
+    color: rgb(0, 0, 0);
+}
+.stat > div{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: -65px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.stat > div > div > h1{
+    /* font-family: Roboto, Museo-Sans; */
+    font-size: 55px;
+    /* font-weight: 900; */
+    line-height: 56px;
+    color: rgb(0, 0, 0);
+}
+.stat > div > div > p{
+    /* font-family: Museo-Sans; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+}
+.limg{
+    margin-left: 0px;
+    /* border: 1px solid red; */
+    margin-top: -200px;
+}
+.rimg{
+    /* border: 1px solid red; */
+    margin-left: 85%;
+    margin-bottom: -160px;
+
+
+}
+
+.practice{
+    /* height:200px; */
+    border: 1px solid red;
+    background: #edecea;
+}
+.practice>h1{
+    width: fit-content;
+    margin:auto;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.practice>p{
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.pracsets{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.pracsets>div{
+    width: 30%;
+    /* border: 1px solid red; */
+    margin: auto;
+    
+}
+.pracsets>div>p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
