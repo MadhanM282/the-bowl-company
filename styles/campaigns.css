@@ -1,0 +1,27 @@
+#camp{
+    background-color: hsl(203,23%,95%);
+    margin:0%;
+    height:1500px;
+    padding: 9%;
+}
+.campsm{
+    border:solid grey;
+   display: flex;
+    margin: auto;
+    height: 456px;
+}
+#camp > .campsm:nth-child(2){
+    margin-top: 60px;
+}
+#camp > .campsm:nth-child(3){
+    margin-top: 60px;
+}
+.campRight {
+    width:685px;
+    border:solid red;
+}
+.campImg{
+    border:solid pink;
+    width:456px;
+    height:100%;
+}
