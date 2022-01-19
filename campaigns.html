@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campaigns</title>
     <link rel="stylesheet" href="styles/campaigns.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div id="nav"></div>
+    <div id="our_camp">
+      <h1>Our Campaigns</h1>
+      <img
+        src="https://www.thebowlcompany.in/wp-content/uploads/2021/11/tomato-new.png"
+        class="attachment-large size-large"
+        alt=""
+      />
+    </div>
     <div id="camp">
       <div class="campsm">
         <div class="campImg">
           <video
-           
             controls=""
             poster="https://www.thebowlcompany.in/wp-content/uploads/2021/12/video3-thumbnail.jpg "
           >
@@ -58,6 +67,7 @@
           </div>
         </div>
       </div>
+      
       <div class="campsm">
         <div class="campImg">
           <video width="100%" controls="" poster=" ">
@@ -120,6 +130,17 @@
           </div>
         </div>
       </div>
+      <img
+        src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Pepper.png"
+        class="peppr"
+        alt="Pepper"
+      />
     </div>
   </body>
 </html>
+<script type="module">
+  import navbar from "./components/navbar.js";
+
+  let cont = document.getElementById("nav");
+  cont.innerHTML = navbar();
+</script>

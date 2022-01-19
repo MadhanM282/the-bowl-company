@@ -34,10 +34,17 @@ body{
 #nav>div{
     /* margin-left: 100px; */
     margin: auto;
+    /* border:solid red; */
 }
+#nav>div:nth-child(1){
+    margin-top: 18px;
+    margin-left: 105px;
+}
+
 #nav>div>ul>a>li{
-    font-weight:lighter;
+    /* font-weight:lighter; */
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 #nav>div>ul>a>li:hover{
     font-weight: bolder;
@@ -49,6 +56,7 @@ body{
 display: flex;
  justify-content: space-between;
  text-decoration: none;
+ margin-left: 20px;
 }
 #nav > div:nth-child(2)> ul>a{
     text-decoration: none;
