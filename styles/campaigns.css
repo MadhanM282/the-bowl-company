@@ -9,28 +9,26 @@ body {
   margin: 0%;
   font-family: "Bree Serif", serif;
   letter-spacing: 1px;
-      
 }
-#our_camp{
-    height:236px;
-    width:100%;
-    font-size: 20px;
-    letter-spacing: 2px;
+#our_camp {
+  height: 236px;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
-#our_camp > h1{
-    padding: 85px 100px 40px 125px;
+#our_camp > h1 {
+  padding: 85px 100px 40px 125px;
 }
-#our_camp > img{
-    width:200px;
-    height: 260px;
-    margin-top: -100px;
+#our_camp > img {
+  width: 200px;
+  height: 260px;
+  margin-top: -100px;
 }
-.peppr{
-    margin-left: 93%;
-   
-    margin-top: -170px;
-    margin-bottom: -200px;
+.peppr {
+  margin-left: 93%;
 
+  margin-top: -170px;
+  margin-bottom: -200px;
 }
 .campsm {
   /* border: solid grey; */
@@ -38,11 +36,11 @@ body {
   margin: auto;
   height: 456px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 #camp > .campsm:nth-child(2) {
   margin-top: 60px;
-  ;
 }
 #camp > .campsm:nth-child(3) {
   margin-top: 60px;
@@ -51,7 +49,6 @@ body {
 .campImg {
   /* border: solid pink; */
   width: 556px;
-  
 }
 /* div {
   border: 0.5px dashed green;
@@ -70,7 +67,7 @@ video {
   padding: 45px;
   font-size: 20px;
   font-weight: 400;
-   width: 684px;
+  width: 684px;
 }
 .content-holder {
   min-height: 100px;
@@ -111,36 +108,34 @@ video {
   display: inline-block;
 }
 .elementor-button {
-  /* font-size: 17px; */
-  /* font-weight: 300; */
+  
   letter-spacing: 2.8px;
   line-height: 1;
   color: #fff;
   fill: #fff;
   text-align: center;
-padding: 11px 24px;
+  padding: 11px 24px;
   transition: all 0.3s;
-
 }
-.elementor-button:hover{
-    padding: 13px 27px;
-    cursor: pointer;
-    font-size: 22px;
+.elementor-button:hover {
+  padding: 13px 27px;
+  cursor: pointer;
+  font-size: 22px;
 }
 .camp-link-holder > a {
   margin: 0px 20px 0px 0px;
   text-transform: uppercase;
 }
-.campbtndiv{
-    height: 70px;
-    margin-top: 50px;
+.campbtndiv {
+  height: 70px;
+  margin-top: 50px;
 }
 .elementor-animation-grow {
   transition-duration: 0.3s;
   transition-property: transform;
 }
 .read_more_blog {
-    text-decoration: none;
-    border-radius: 40px;
-    background-color: #000;
+  text-decoration: none;
+  border-radius: 40px;
+  background-color: #000;
 }
