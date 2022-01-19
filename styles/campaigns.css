@@ -3,10 +3,11 @@
     margin:0%;
     height:1500px;
     padding: 9%;
+    border:solid blue;
 }
 .campsm{
     border:solid grey;
-   display: flex;
+   /* display: flex; */
     margin: auto;
     height: 456px;
 }
@@ -17,7 +18,7 @@
     margin-top: 60px;
 }
 .campRight {
-    width:685px;
+    width:300px;
     border:solid red;
 }
 .campImg{

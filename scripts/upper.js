@@ -1,19 +1,22 @@
 function upper(){
     var data = [
         {
-        image:" https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner5-Peri-peri-chicken.png",
+        image:"https://www.thebowlcompany.in/wp-content/uploads/2021/11/Banner1-Fireworks-mushroom-corn-spaghetti.png",
     
     }, 
     {
-        image:" https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner3-Paneer-Makhanwala-Parotta-Bowl.png",
+        image:"https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner5-Peri-peri-chicken.png",
     
     },  
     {
-        image:"https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner2-Paneer-Makhani-Biriyani.png"
+        image:"https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner1-Butter-chicken-mac.png"
     } ,
     {
-        image:"https://www.thebowlcompany.in/wp-content/uploads/2021/11/Banner1-Fireworks-mushroom-corn-spaghetti.png"
-    }   
+        image:"https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner3-Paneer-Makhanwala-Parotta-Bowl.png"
+    },
+    {
+        image:"https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner2-Paneer-Makhani-Biriyani.png"
+    } 
      
      
     
