@@ -12,6 +12,9 @@
     <!-- nav -->
 
     <div class="main">
+        <div id="nav">
+        
+        </div>
         <div class="box1">
             <div class="text-1">
                 <h1>EVERYTHING YOU NEED TO KNOW ABOUT</h1>
@@ -21,8 +24,57 @@
                 <img src="" alt="">
             </div> -->
         </div>
+        <div class="box-2">
+            <div class="infoleft"></div>
+            <div class="info">
+                <p>
+                    At The Bowl Company, we believe that every meal should be a culinary experience.
+
+                </p>
+                
+                
+                <p>
+                    Our story began in early 2017 when we realized there was a dearth for well‑packaged, convenient food choices for
+                    consumers ordering on Swiggy.
+                </p>
+                
+               
+                <p>
+                    That’s why we set out to create innovative, chef‑curated, single‑serve meals with multi-cuisine recipes from around the
+                    world.
+                </p>
+            </div>
+        </div>
+        <div class="location">
+            <h1>WHAT ARE OUR DELIVERY LOCATIONS?</h1>
+            <div class="place">
+                <div onclick="Bang()" class="places">
+                    <img src="https://thebowlcompany.in/wp-content/uploads/2021/10/Banglure.png" alt="">
+                    <h3>Banglure</h3>
+                </div>
+                <div onclick="chenn()"  class="places">
+                    <img src="	https://thebowlcompany.in/wp-content/uploads/2021/10/Chennai.png" alt="">
+                    <h3>Chennai</h3>
+                </div>
+                <div onclick="hyd()"  class="places">
+                    <img src="https://thebowlcompany.in/wp-content/uploads/2021/10/Hydrebad.png" alt="">
+                    <h3>Hydrebad</h3>
+                </div>
+            </div>
+            <div class="details">
+                <div  class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
+            </div>
+        </div>
     </div>
 
     <!-- fotter -->
 </body>
 </html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let cont = document.getElementById("nav")
+        cont.innerHTML = navbar()
+</script>
+<script src="scripts/location.js"></script>

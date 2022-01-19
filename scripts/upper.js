@@ -36,11 +36,12 @@ function upper(){
     
     function startslide(){
     var img = JSON.parse(localStorage.getItem("slide"))
+    img.src = img[0]
     
     
     id =  setInterval(function(){
         if(i === img.length){
-            i = 0;
+            i = 1;
         }
         div.innerHTML = null;
         var imgtag = document.createElement("img");
