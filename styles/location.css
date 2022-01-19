@@ -2,9 +2,67 @@ body{
     margin: 0px;
     font-family: 'Bree Serif', serif;
 }
+.main{
+    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
+}
+#nav{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+     
+}
+#nav>div>ul>a>li{
+    font-weight:lighter;
+}
+#nav>div>ul>a>li:hover{
+    font-weight: bolder;
+}
+#nav > div:nth-child(2)  >ul{
+display: flex;
+ justify-content: space-between;
+ text-decoration: none;
+}
+#nav > div:nth-child(2)> ul>a{
+    text-decoration: none;
+    
+}
+ 
+
+#nav > div:nth-child(2)> ul>a>li{
+    padding-top: 10px;
+    list-style: none;
+    margin: 10px;
+   /* font-family: Museo-Sans; */
+    font-size: 16px;
+    /* font-weight: ; */
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    
+   
+}
+#nav > div:nth-child(2)> ul>a>li::after{
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: 0.3s;
+}
+
+#nav > div:nth-child(2)> ul>a>li:hover:after{
+    width: 100%;
+    /* font-weight: bolder; */
+}
 .box1{
     display: flex;
-    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
+    
     width: 100%;
     height: 550px;
 
@@ -12,8 +70,8 @@ body{
 .text-1{
     border: 1px solid red;
     height: fit-content;
-    margin-left: 200px;
-    margin-top: 300px;
+    margin-left: 130px;
+    margin-top: 130px;
 
     /* text-align: center; */
 }

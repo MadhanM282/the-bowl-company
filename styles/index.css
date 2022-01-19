@@ -41,6 +41,12 @@ display: flex;
     text-decoration: none;
     
 }
+#nav>div>ul>a>li{
+    font-weight:lighter;
+}
+#nav>div>ul>a>li:hover{
+    font-weight: bolder;
+}
  
 
 #nav > div:nth-child(2)> ul>a>li{
@@ -49,7 +55,7 @@ display: flex;
     margin: 10px;
    /* font-family: Museo-Sans; */
     font-size: 16px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 50px;
     color: rgb(0, 0, 0);
     position: relative;
@@ -96,7 +102,7 @@ display: flex;
 .Div_second > .Text > p > span{
     /* font-family: Museo-Sans; */
     font-size: 35px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 56px;
     color: rgb(0, 0, 0);
 }
@@ -136,7 +142,7 @@ display: flex;
     text-align: center;
     /* font-family: Museo-Sans; */
     font-size: 40px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 52px;
     color: rgb(0, 0, 0);
 }
@@ -149,7 +155,7 @@ display: flex;
 .Third_Section > div > div > h1{
     /* font-family: Roboto, Museo-Sans; */
     font-size: 55px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 56px;
     color: rgb(0, 0, 0);
 }

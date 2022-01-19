@@ -12,6 +12,9 @@
     <!-- nav -->
 
     <div class="main">
+        <div id="nav">
+        
+        </div>
         <div class="box1">
             <div class="text-1">
                 <h1>EVERYTHING YOU NEED TO KNOW ABOUT</h1>
@@ -26,3 +29,8 @@
     <!-- fotter -->
 </body>
 </html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let cont = document.getElementById("nav")
+        cont.innerHTML = navbar()
+</script>
