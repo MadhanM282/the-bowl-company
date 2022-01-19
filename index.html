@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    
+    <div id="container">
+        <div class="navDiv">
+           <div id="nav"></div>
+       
+
+          <!-- -----------------nav bar End ------------------------------ -->
+
+          <div class="Div_second">
+             <div class="Text">
+                 <p><span>ICONIC, CHEF-CREATED </span> DISHES <br> FROM AROUND THE WORLD. <br> ALL IN <span>ONE BOWL</span>
+                 </p>
+                 <button>ORDER NOW</button>
+             </div>
+             <div id="imgtag_second"></div>
+           </div>
+       </div>
+
+
+   <!-- ----------------Second_divEnd--------------------------------- -->
+
+      <div class="Third_Section">
+           <h3>MOST LOVED BOWL BRAND</h3>
+
+           <div>
+
+                <div>
+                  <h1>4.5+</h1>
+                  <p>rating on taste</p>
+                </div>
+
+               <div>
+                  <h1>20L+</h1>
+                    <p>customers</p>
+                </div>
+
+                <div>
+                  <h1>1.1C+</h1>
+                 <p>orders</p>
+                 </div>
+       </div>
+   </div>
+
+   <!-- --------------Fourt_section--------------------- -->
+
+   <!-- <div class="Fourth_Section">
+       <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/11/cinnamon.png" alt="">
+   </div> -->
+
+   </div>
 </body>
 </html>
+
+
+<script type="module">
+    import navbar from "./components/navbar.js"
+    import upper from './scripts/upper.js'
+
+let cont = document.getElementById("nav")
+cont.innerHTML = navbar()
+
+
+let x = document.getElementById("imgtag_second")
+x.innerHTML = upper()
+
+
+</script>
