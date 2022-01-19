@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campaigns</title>
     <link rel="stylesheet" href="styles/campaigns.css" />
+    <link rel="stylesheet" href="./styles/index.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div id="nav"></div>
+    <div id="our_camp">
+      <h1>Our Campaigns</h1>
+    </div>
     <div id="camp">
       <div class="campsm">
         <div class="campImg">
@@ -123,3 +128,9 @@
     </div>
   </body>
 </html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+
+let cont = document.getElementById("nav")
+cont.innerHTML = navbar()
+</script>

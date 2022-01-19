@@ -8,7 +8,17 @@
 body {
   margin: 0%;
   font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
       
+}
+#our_camp{
+    height:236px;
+    width:100%;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#our_camp > h1{
+    padding: 85px 100px 40px 125px;
 }
 .campsm {
   /* border: solid grey; */
