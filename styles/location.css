@@ -313,7 +313,37 @@ display: flex;
 .mn{
     border: 1px solid red;
     background: white;
+    /* display: flex; */
+    /* background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
+    background-size: cover; */
 }
-/* .mn>img{
-    margin-top: -200;
-} */
+.mn>div{
+    width: 100%;
+}
+.packimg{
+    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
+    background-size: cover;
+    display: flex;
+}
+.pack>h1,h3{
+    margin-left: 8%;
+}
+.pack>h1{
+    font-size: 40px;
+    margin-top: 0px;
+    /* border: 1px solid red; */
+}
+.packimg>div{
+    width: 50%;
+}
+.packimg>.list>div{
+    height: 100px;
+    width: 80%;
+    margin-left:16% ;
+    margin-bottom: 20px;
+    border: 1px solid red;
+}
+.list{
+    margin-top: 50px;
+}
+
