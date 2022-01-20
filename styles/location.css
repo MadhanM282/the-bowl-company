@@ -2,18 +2,90 @@ body{
     margin: 0px;
     font-family: 'Bree Serif', serif;
 }
+.main{
+    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
+    margin-bottom: 0px;
+    overflow: hidden;
+
+}
+#nav{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    
+     
+}
+#nav>div{
+    /* margin-left: 100px; */
+    margin: auto;
+}
+#nav>div>ul>a>li{
+    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav>div>ul>a>li:hover{
+    font-weight: bolder;
+    /* font-family: 'Bree Serif', serif; */
+    font-size: 60px;
+}
+#nav > div:nth-child(2)  >ul{
+display: flex;
+ justify-content: space-between;
+ text-decoration: none;
+}
+#nav > div:nth-child(2)> ul>a{
+    text-decoration: none;
+    
+}
+ 
+
+#nav > div:nth-child(2)> ul>a>li{
+    padding-top: 10px;
+    list-style: none;
+    margin: 10px;
+   /* font-family: Museo-Sans; */
+    font-size: 16px;
+    /* font-weight: ; */
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    
+   
+}
+#nav > div:nth-child(2)> ul>a>li::after{
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: 0.3s;
+}
+
+#nav > div:nth-child(2)> ul>a>li:hover:after{
+    width: 100%;
+    /* font-weight: bolder; */
+}
 .box1{
     display: flex;
-    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
+    
     width: 100%;
-    height: 550px;
+    height: 450px;
+    /* border: 1px solid red; */
+
 
 }
 .text-1{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+
     height: fit-content;
-    margin-left: 200px;
-    margin-top: 300px;
+    margin-left: 130px;
+    margin-top: 130px;
 
     /* text-align: center; */
 }
@@ -32,4 +104,189 @@ body{
     /* line-height: ; */
     margin-top: 3px;
     
+}
+.box-2{
+
+    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-chef-image.jpg);
+    width: 100%;
+    /* background-size: contain; */
+    /* background-size: ; */
+    /* border: 1px solid red; */
+    height: 600px;
+    margin-top: 0px;
+    display: flex;
+    
+}
+.infoleft{
+    width: 50%;
+    /* border: 1px solid blue; */
+}
+.info{
+    /* border: 1px solid red; */
+    color: white;
+    font-size: 20px;
+    /* font-weight:; */
+    height: fit-content;
+    margin: auto;
+    margin-left: 0px;
+    width: 42%;
+    line-height: 40px;
+    /* word-spacing: 10px; */
+    /* margin: left; */
+
+    
+}
+.location{
+    background: #edecea;
+}
+.location>h1{
+    margin: auto;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 100px;
+    height: fit-content;
+}
+.place{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    /* margin-bottom: 30px; */
+}
+.place>div{
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+.details{
+    width: 70%;
+    margin: auto;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-around ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.details>div{    
+    width: fit-content;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mm{
+    height: 70px;
+}
+
+.stat{
+    width: 100%;
+    /* height: 300px; */
+    border: 1px solid transparent;
+    background: white;
+    margin: auto;
+    margin-top: 0px;
+    /* position: absolute; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.stat> h3{
+    /* padding-top: 5%; */
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 70px;
+    height: 50px;
+    /* border: 1px solid red; */
+    /* font-family: Museo-Sans; */
+    font-size: 50px;
+    /* font-weight: 900; */
+    line-height: 52px;
+    color: rgb(0, 0, 0);
+}
+.stat > div{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: -65px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.stat > div > div > h1{
+    /* font-family: Roboto, Museo-Sans; */
+    font-size: 55px;
+    /* font-weight: 900; */
+    line-height: 56px;
+    color: rgb(0, 0, 0);
+}
+.stat > div > div > p{
+    /* font-family: Museo-Sans; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+}
+.limg{
+    margin-left: 0px;
+    /* border: 1px solid red; */
+    margin-top: -200px;
+}
+.rimg{
+    /* border: 1px solid red; */
+    margin-left: 85%;
+    margin-bottom: -160px;
+
+
+}
+
+.practice{
+    /* height:200px; */
+    border: 1px solid red;
+    background: #edecea;
+}
+.practice>h1{
+    width: fit-content;
+    margin:auto;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.practice>p{
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.pracsets{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.pracsets>div{
+    width: 30%;
+    /* border: 1px solid red; */
+    margin: auto;
+    
+}
+.pracsets>div>p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.bang::after{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.elementor-1860 .elementor-element.location .elementor-tab-title.elementor-active {
+    border-bottom: 1px solid #a5a5a5;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.125)!important;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
 }

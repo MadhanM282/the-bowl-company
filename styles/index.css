@@ -31,15 +31,42 @@ body{
     
      
 }
+#nav>div{
+    /* margin-left: 100px; */
+    margin: auto;
+    /* border:solid red; */
+}
+#nav>div:nth-child(1){
+    margin-top: 18px;
+    margin-left: 105px;
+}
+
+#nav>div>ul>a>li{
+    /* font-weight:lighter; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#nav>div>ul>a>li:hover{
+    font-weight: bolder;
+    /* font-family: 'Bree Serif', serif; */
+    font-size: 60px;
+}
 
 #nav > div:nth-child(2)  >ul{
 display: flex;
  justify-content: space-between;
  text-decoration: none;
+ margin-left: 20px;
 }
 #nav > div:nth-child(2)> ul>a{
     text-decoration: none;
     
+}
+#nav>div>ul>a>li{
+    font-weight:lighter;
+}
+#nav>div>ul>a>li:hover{
+    font-weight: bolder;
 }
  
 
@@ -49,7 +76,7 @@ display: flex;
     margin: 10px;
    /* font-family: Museo-Sans; */
     font-size: 16px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 50px;
     color: rgb(0, 0, 0);
     position: relative;
@@ -96,18 +123,56 @@ display: flex;
 .Div_second > .Text > p > span{
     /* font-family: Museo-Sans; */
     font-size: 35px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 56px;
     color: rgb(0, 0, 0);
 }
 .Div_second > .Text > button{
-    width: 140px;
-    height: 40px;
-    background-color: black;
-    letter-spacing: 2px;
+     letter-spacing: 2.8px;
+  line-height: 1;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  padding: 11px 24px;
+  transition: all 0.3s;
+  text-decoration: none;
+  border-radius: 40px;
+  background-color: #000;
+  border: 0px;
+}
+.Text>button:hover {
+  padding: 13px 27px;
+  cursor: pointer;
+  font-size: 22px;
+}
+/* .elementor-button-text {
+  -webkit-box-flex: 1;
+
+  flex-grow: 1;
+  -webkit-box-ordinal-group: 11;
+
+  order: 10;
+  display: inline-block;
+}
+.elementor-button {
+  
+  letter-spacing: 2.8px;
+  line-height: 1;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  padding: 11px 24px;
+  transition: all 0.3s;
+}
+.elementor-button:hover {
+  padding: 13px 27px;
+  cursor: pointer;
+  font-size: 22px;
+} */
+
+.Div_second > .Text > button>a{
+    text-decoration: none;
     color: white;
-    border-radius: 10px;
-    border: none;
 }
 
 .Div_second > #imgtag_second{
@@ -136,7 +201,7 @@ display: flex;
     text-align: center;
     /* font-family: Museo-Sans; */
     font-size: 40px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 52px;
     color: rgb(0, 0, 0);
 }
@@ -149,7 +214,7 @@ display: flex;
 .Third_Section > div > div > h1{
     /* font-family: Roboto, Museo-Sans; */
     font-size: 55px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 56px;
     color: rgb(0, 0, 0);
 }

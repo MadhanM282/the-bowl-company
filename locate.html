@@ -12,6 +12,9 @@
     <!-- nav -->
 
     <div class="main">
+        <div id="nav">
+        
+        </div>
         <div class="box1">
             <div class="text-1">
                 <h1>EVERYTHING YOU NEED TO KNOW ABOUT</h1>
@@ -21,8 +24,124 @@
                 <img src="" alt="">
             </div> -->
         </div>
+        <div class="box-2">
+            <div class="infoleft"></div>
+            <div class="info">
+                <p>
+                    At The Bowl Company, we believe that every meal should be a culinary experience.
+
+                </p>
+                
+                
+                <p>
+                    Our story began in early 2017 when we realized there was a dearth for well‑packaged, convenient food choices for
+                    consumers ordering on Swiggy.
+                </p>
+                
+               
+                <p>
+                    That’s why we set out to create innovative, chef‑curated, single‑serve meals with multi-cuisine recipes from around the
+                    world.
+                </p>
+            </div>
+        </div>
+        <div class="location">
+            <h1>WHAT ARE OUR DELIVERY LOCATIONS?</h1>
+            <div class="place">
+                <div onclick="Bang()" class="places bang">
+                    <img src="https://thebowlcompany.in/wp-content/uploads/2021/10/Banglure.png" alt="">
+                    <h3>Banglure</h3>
+                </div>
+                <div onclick="chenn()"  class="places chenn">
+                    <img src="	https://thebowlcompany.in/wp-content/uploads/2021/10/Chennai.png" alt="">
+                    <h3>Chennai</h3>
+                </div>
+                <div onclick="hyd()"  class="places hyd">
+                    <img src="https://thebowlcompany.in/wp-content/uploads/2021/10/Hydrebad.png" alt="">
+                    <h3>Hydrebad</h3>
+                </div>
+            </div>
+            <div class="details">
+                <div  class="left"></div>
+                <div class="middle"></div>
+                <div class="right"></div>
+            </div>
+            <div class="mm"></div>
+        </div>
+        <div class="stat">
+            <h3>MOST LOVED BOWL BRAND</h3>
+            
+            <img  class="limg" src="https://www.thebowlcompany.in/wp-content/uploads/2021/11/steak1.png" alt="">
+            
+            <div>
+                
+                <div>
+                    <h1>4.5+</h1>
+                    <p>rating on taste</p>
+                </div>
+                <div>
+                    <h1>40+</h1>
+                    <p>Kitchens</p>
+                </div>
+                <div>
+                    <h1>20L+</h1>
+                    <p>customers</p>
+                </div>
+                
+                <div>
+                    <h1>1.1C+</h1>
+                    <p>orders</p>
+                </div>
+                
+            </div>
+            <img class="rimg" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Pepper.png" alt="">
+        </div>
+        <div class="practice">
+            <h1>OUR KITCHEN PRACTICES</h1>
+            <p>Our kitchens are where all the magic happens. That’s why we do our best to keep
+            them neat, clean, and safe for cooking.</p>
+
+
+            <div class="pracsets">
+                <div>
+                    <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Raw-materials.png" alt="">
+                    <p>Raw materials are
+                        <br>
+                    thoroughly washed and
+                    <br>
+                    sanitized before use</p>
+                </div>
+                <div>
+                    <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/sanitize.png" alt="">
+                    <p>Surfaces in contact with
+                        <br>
+                    food are sanitized as per a
+                    <br>
+                    'Clean As You Go' approach</p>
+                </div>
+                <div>
+                    <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Masks.png" alt="">
+                    <p>Supplier Quality Assurance
+                        <br>
+                    program is in place and follows the
+                    <br>
+                    'inspect → comply → procure' approach</p>
+                </div>
+            </div>
+            <div class="pracsets1"></div>
+        </div>
     </div>
 
     <!-- fotter -->
+    <div id="elementor-tab-title-1281" class="elementor-tab-title elementor-tab-desktop-title elementor-active"
+        aria-selected="true" data-tab="1" role="tab" tabindex="0" aria-controls="elementor-tab-content-1281"
+        aria-expanded="true"><img src="https://thebowlcompany.in/wp-content/uploads/2021/10/Banglure.png" alt="Bengaluru"
+            title="Bengaluru"><br><br> Bengaluru</div>
 </body>
 </html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let cont = document.getElementById("nav")
+        cont.innerHTML = navbar()
+</script>
+<script src="scripts/location.js"></script>
