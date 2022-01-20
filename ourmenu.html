@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        #ex{
+            font-weight:bold;
+        }
+        #ex1{
+            font-weight: lighter;
+        }
+        #firstdiv{
+            width:100%;
+            height:500px;
+            display:flex;
+            background-color:#eee9e6;
+        }
+        #written{
+            width: 50%;
+            text-align: center;
+            padding-top:120px; 
+            height:500px;
+           
+        }
+        #image{
+            width: 50%;
+            height:500px;
+        }
+        #img{
+            width: 100%;
+            height:500px;
+        }
+        #button1{
+            background-color: black;
+            color:white;
+            font-weight:bold;
+            padding-left:50px;
+            padding-right:50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: transparent;
+            border-radius:25px;    
+        }
+        #button2{
+            background-color:white;
+            color:rgb(3, 3, 3);
+            font-weight:bold;
+            padding-left:50px;
+            padding-right:50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: transparent;
+            border-radius:25px;
+            margin-top:15px;    
+
+        }
+        #ab{
+            color: white;
+           list-style: none;
+           font-size:16px;
+
+        }
+        #ac{
+            color: rgb(8, 8, 8);
+           list-style: none;
+           font-size:16px;
+           margin-top:40px;
+
+        }
+        #ex2{
+            text-align: center;
+            font-weight:bold;
+            padding-top:60px;
+            padding-left:150px;
+        }
+        #logo{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-left:100px;
+            text-align:center;
+        }
+        #img2{
+
+            margin-left:90px;
+        }
+        #seconddiv{
+            width:90%;
+        }
+        #text{
+            padding-left:120px;
+            font-weight:bold;
+
+        }
+        #head{
+            margin-left:100px;
+        }
+    /* img{
+        vertical-align: middle;
+        width: 60%;
+    } */
+    .slideshow-container{
+        max-width:1000px;
+        position: relative;
+        margin: 0 auto;
+       
+    }
+    .numbertext{
+        position: absolute;
+        top: 0;
+        padding: 8px 12px;
+        color: #F2F2F2;
+        font-size: 16px;
+    }
+    .text{
+        color: #F2F2F2;
+        font-size: 15px;
+        padding: 8pc 12px;
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .dot{
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .dots-container{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .dots{
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        background-color: black;
+        border-radius: 50%;
+        transition: background-color 0.6s ease;
+    }
+    .fade{
+        -webkit-animation-name: fade;
+        -webkit-animation-duration:1.5s ;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @keyframes fade{
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+    #se{
+        display: flex;
+      
+    }
+    #our{
+        color: white;
+        font-size:50px;
+       
+    }
+    #thirddiv{
+        background-image:url(https://thebowlcompany.in/wp-content/uploads/2021/09/bg_blog.jpg);
+        text-align: center;
+        padding-top:50px;
+        height:750px;
+    }
+        #our1{
+
+            color: white;
+            text-align: center;
+            font-size:30px; 
+
+        }
+        h2{
+            color: white;
+        }
+        #same{
+
+            height:300px;
+            width:400px;
+        }
+        #gr{
+
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,1fr);
+            height: 200px;
+            width:80%;
+            border: 1px solid teal;
+            margin: auto;
+        }
+        #hh13{
+            margin-left: 150px;
+            margin-top:50px;
+        }
+        #hh12{
+            margin-left:150px;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="firstdiv">
+            <div id="written">
+                <h1 id="ex1">AROUND THE WORLD</h1>
+                <h1 id="ex1">IN ONE,</h1>
+                <h1 id="ex">EXTRAORDINARY MENU</h1>
+                <button id="button1"> <a id="ab" href="https://www.swiggy.com">ORDER NOW</a></button>
+            </div>
+            <div id="image">
+                <img id="img" src="https://pbs.twimg.com/media/FJZACuxacAIdG9w?format=jpg&name=small" alt="">
+            </div>
+        </div>
+
+        <div id="seconddiv">
+            <h1 id="ex2">WHAT SETS US APART</h1>
+            <div id="logo">
+            <div id="logo1">
+                <img id="img2" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Handcrafted-recipes.png" alt="">
+                <h2 id="head">Handcrafted recipes</h2>
+                <p id="text">Experience top‑notch quality with our innovative inventions and Chef’s Specials.</p>
+
+            </div>
+            <div id="logo2">
+                <img id="img2" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Comforting-cuisines.png" alt="">
+                <h2 id="head">Comforting cuisines</h2>
+                <p id="text">Enjoy a burst of satisfaction in every bite with our relatable, traditional, multi-cuisine recipes.</p>
+            </div>
+            <div id="logo3">
+                <img id="img2" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Extraordinary-desserts.png" alt="">
+                <h2 id="head">Extraaa‑ordinary desserts</h2>
+                <p id="text">Enhance your senses with our range of tasty sweet treats prepared with love, just for you.</p>
+            </div>
+        </div>
+        </div>
+        <div id="thirddiv">
+        <div class="slideshow-container">
+            <h1 id="our">OUR BESTSELLERS</h1>
+            <h3 id="our1">Try our iconic, multi-cuisine bestsellers</h3>
+            <div class="myslides fade">
+                <div class="numbertext">
+                </div>
+                <div id="se">
+                    <div id="same">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paratha.png" alt="background">
+
+                <h2><i class="las la-arrow-left"></i>Paneer Makhanwala Parotta Bowl</h2>
+
+            </div>
+            <div id="same">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Classic-Manchurian.png" alt="background">
+                <h2> <i class="las la-arrow-left"></i>Classic Manchurian with Chilli Garlic Hakka Noodles</h2>
+               
+            </div>
+            <div id="same">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Pasta.png" alt="background">  
+                <h2><i class="las la-arrow-left"></i>Classic Mac & Cheese</h2>
+            </div>
+
+            </div>
+           
+  
+          <!-- <div class="text">First image</div> -->
+            </div>  
+        </div>
+        <div class="slideshow-container">
+            <div class="myslides fade">
+                <div class="numbertext">
+                
+                </div>
+
+        
+                <div id="se">
+                    <div id="same">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Chicken-65.png.png" alt="background">
+                <h2>Chicken ’65 with Chilli Garlic Fried Rice</h2>
+            </div>
+            <div id="same">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-corn.png" alt="background">
+                <h2>Peri Peri Chicken with Egg Corn Rice</h2>
+            </div>
+            <div id="same">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-makhani-biriyani.png" alt="background">
+                <h2>Paneer Makhani Biryani</h2>
+            </div>
+                <!-- <div class="text">second image</div> -->
+          
+        
+        </div>
+            </div>  
+        </div>
+        <div class="slideshow-container">
+            <div class="myslides fade">
+                <div class="numbertext">
+                
+                </div>
+                <div id="se">
+                    <div id="same">
+                    <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Chicken-65.png.png" alt="background">
+                    <h2>Chicken ’65 with Chilli Garlic Fried Rice</h2>
+                </div>
+                <div id="same">
+                    <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paratha.png" alt="background">
+                    <h2>Paneer Makhanwala Parotta Bowl</h2>
+                </div>
+                <div id="same">
+                    <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-makhani-biriyani.png" alt="background">
+                    <h2>Paneer Makhani Biryani</h2>
+                </div>
+    
+                    <!-- <div class="text">second image</div> -->
+    
+                </div>
+             
+                <!-- <div class="text">third image</div> -->
+            </div>
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        
+        </div>
+        <button id="button2"><a id="ac" href="https://www.swiggy.com">ORDER NOW</a></button>    
+    </div>
+
+    <div id="forthdiv">
+        <h1 id="hh13">OUR MENU</h1>
+        <h3 id="hh12">You know what they say‑life’s too short for boring food! Explore our wide </h3>
+        <h3 id="hh12">range of incredi‑bowl national and international dishes.</h3>
+
+        <div id="gr"></div>
+    </div>
+
+
+        
+    </div>
+</body>
+</html>
+<script>
+   let slideIndex = 0;
+    const showSlides = () => {
+        console.log("function is calling");
+        const slides = document.getElementsByClassName("myslides");
+        const dots = document.getElementsByClassName("dot")
+        console.log(slides);
+        for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length){
+            slideIndex = 1;
+        }
+        for(let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active","");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000);
+    };
+    showSlides();  
+</script>
