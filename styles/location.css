@@ -8,142 +8,77 @@ body{
     overflow: hidden;
 
 }
-#nav{
-    margin-left: auto;
-    margin-right: auto;
-    width: 99%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid; */
-    
-     
-}
-#nav>div{
-    /* margin-left: 100px; */
-    margin: auto;
-    /* border:solid red; */
-}
-#nav>div:nth-child(1){
-    margin-top: 18px;
-    margin-left: 105px;
-}
 
-#nav>div>ul>a>li{
-    /* font-weight:lighter; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-}
-#nav>div>ul>a>li:hover{
-    font-weight: bolder;
-    /* font-family: 'Bree Serif', serif; */
-    font-size: 60px;
-}
 
-#nav > div:nth-child(2)  >ul{
-display: flex;
- justify-content: space-between;
- text-decoration: none;
-}
-#nav > div:nth-child(2)> ul>a{
-    text-decoration: none;
-    
-}
- 
 
-#nav > div:nth-child(2)> ul>a>li{
-    padding-top: 10px;
-    list-style: none;
-    margin: 10px;
-   /* font-family: Museo-Sans; */
-    font-size: 16px;
-    /* font-weight: ; */
-    line-height: 50px;
-    color: rgb(0, 0, 0);
-    position: relative;
-    
-   
-}
-#nav > div:nth-child(2)> ul>a>li::after{
-    content: "";
-    position: absolute;
-    background-color: #000000;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 10px;
-    transition: 0.3s;
-}
 
-#nav > div:nth-child(2)> ul>a>li:hover:after{
-    width: 100%;
-    /* font-weight: bolder; */
-}
+/* this is for first box ----------------------------------------------------------*/
+
+
+
+
+
 .box1{
     display: flex;
     
     width: 100%;
     height: 450px;
-    /* border: 1px solid red; */
-
-
 }
 .text-1{
-    /* border: 1px solid red; */
-
-    height: fit-content;
+     height: fit-content;
     margin-left: 130px;
     margin-top: 130px;
-
-    /* text-align: center; */
 }
 .text-1>h1{
-    /* border: 1px solid red; */
     width: 500px;
     font-weight: 100;
     margin-top: 0px;
     font-size: 45px;
-    /* line-height: 20px; */
     margin-bottom: 0px;
-    
 }
 .text-1>h1:nth-child(2){
     font-weight: bold;
-    /* line-height: ; */
     margin-top: 3px;
-    
 }
-.box-2{
 
+
+
+
+/* this is for second box------------------------------------------------------------------------------------- */
+
+
+
+
+
+.box-2{
     background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-chef-image.jpg);
     width: 100%;
-    /* background-size: contain; */
-    /* background-size: ; */
-    /* border: 1px solid red; */
     height: 600px;
     margin-top: 0px;
     display: flex;
-    
 }
 .infoleft{
     width: 50%;
-    /* border: 1px solid blue; */
 }
 .info{
-    /* border: 1px solid red; */
     color: white;
     font-size: 20px;
-    /* font-weight:; */
     height: fit-content;
     margin: auto;
     margin-left: 0px;
     width: 42%;
-    line-height: 40px;
-    /* word-spacing: 10px; */
-    /* margin: left; */
-
-    
+    line-height: 40px;  
 }
+
+
+
+/* this is for location 3rd div------------------------------------- */
+
+
+
+
+
+
 .location{
     background: #edecea;
 }
@@ -160,7 +95,6 @@ display: flex;
     width: 60%;
     margin: auto;
     margin-top: 50px;
-    /* margin-bottom: 30px; */
 }
 .place>div{
     text-align: center;
@@ -186,28 +120,31 @@ display: flex;
     height: 70px;
 }
 
+
+
+
+/* statistics------------------------------------------------- */
+
+
+
+
+
+
 .stat{
     width: 100%;
-    /* height: 300px; */
     border: 1px solid transparent;
     background: white;
     margin: auto;
     margin-top: 0px;
-    /* position: absolute; */
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 
 .stat> h3{
-    /* padding-top: 5%; */
     text-align: center;
     width: fit-content;
     margin: auto;
     margin-top: 70px;
     height: 50px;
-    /* border: 1px solid red; */
-    /* font-family: Museo-Sans; */
     font-size: 50px;
-    /* font-weight: 900; */
     line-height: 52px;
     color: rgb(0, 0, 0);
 }
@@ -215,20 +152,15 @@ display: flex;
     display: flex;
     justify-content: space-around;
     width: 70%;
-    /* border: 1px solid red; */
     margin: auto;
     margin-top: -65px;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 .stat > div > div > h1{
-    /* font-family: Roboto, Museo-Sans; */
     font-size: 55px;
-    /* font-weight: 900; */
     line-height: 56px;
     color: rgb(0, 0, 0);
 }
 .stat > div > div > p{
-    /* font-family: Museo-Sans; */
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
@@ -236,20 +168,32 @@ display: flex;
 }
 .limg{
     margin-left: 0px;
-    /* border: 1px solid red; */
     margin-top: -200px;
 }
 .rimg{
-    /* border: 1px solid red; */
     margin-left: 85%;
     margin-bottom: -160px;
 
 
 }
 
+
+
+
+
+/* OUR KITCHEN PRACTICES------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
 .practice{
-    /* height:200px; */
-    /* border: 1px solid red; */
+    border: 1px solid transparent;
     background: #edecea;
 }
 .practice>h1{
@@ -259,7 +203,6 @@ display: flex;
     margin-top: 100px;
 }
 .practice>p{
-    /* border: 1px solid red; */
     text-align: center;
     width: 55%;
     margin: auto;
@@ -270,14 +213,11 @@ display: flex;
     width: 70%;
     text-align: center;
     display: flex;
-    /* border: 1px solid red; */
     margin: auto;
-    margin-top: 30px;
-
+    margin-top: 50px;
 }
 .pracsets>div{
     width: 30%;
-    /* border: 1px solid red; */
     margin: auto;
     
 }
@@ -292,14 +232,11 @@ display: flex;
     width: 50%;
     text-align: center;
     display: flex;
-    /* border: 1px solid red; */
     margin: auto;
-    margin-top: 30px;
-
+    margin-top: 50px;
 }
 .pracsets1>div{
     width: 30%;
-    /* border: 1px solid red; */
     margin: auto;
     
 }
@@ -313,17 +250,15 @@ display: flex;
 .bang::after{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+/* GOOD THINGS COME IN GOOD------------------------------------ */
 .tomato{
     margin-left: 0px;
     margin-top: -160px;
-    /* border: 1px solid red; */
 }
 .mn{
     border: 1px solid red;
     background: white;
-    /* display: flex; */
-    /* background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
-    background-size: cover; */
 }
 .mn>div{
     width: 100%;
@@ -339,7 +274,6 @@ display: flex;
 .pack>h1{
     font-size: 40px;
     margin-top: 0px;
-    /* border: 1px solid red; */
 }
 .packimg>div{
     width: 50%;
@@ -354,4 +288,14 @@ display: flex;
 .list{
     margin-top: 50px;
 }
+.intxt{
+    display: flex;
+}
+.arr1{
+    background: black;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+}
+
 
