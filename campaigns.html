@@ -7,7 +7,7 @@
     <title>Campaigns</title>
     <link rel="stylesheet" href="styles/campaigns.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="styles/foot.css">
+    <link rel="stylesheet" href="styles/foot.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
@@ -147,9 +147,8 @@
 
   let cont = document.getElementById("nav");
   cont.innerHTML = navbar();
- 
- let foot = document.querySelector("#getfooter");
- import footer from "./components/footer.js"
- foot.innerHTML=footer()
 
+  let foot = document.querySelector("#getfooter");
+  import footer from "./components/footer.js";
+  foot.innerHTML = footer();
 </script>

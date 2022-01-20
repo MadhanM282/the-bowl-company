@@ -1,301 +1,255 @@
-body{
-    margin: 0px;
-    font-family: 'Bree Serif', serif;
+body {
+  margin: 0px;
+  font-family: "Bree Serif", serif;
 }
-.main{
-    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
-    margin-bottom: 0px;
-    overflow: hidden;
-
+.main {
+  background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
+  margin-bottom: 0px;
+  overflow: hidden;
 }
-
-
-
 
 /* this is for first box ----------------------------------------------------------*/
 
+.box1 {
+  display: flex;
 
-
-
-
-.box1{
-    display: flex;
-    
-    width: 100%;
-    height: 450px;
+  width: 100%;
+  height: 450px;
 }
-.text-1{
-     height: fit-content;
-    margin-left: 130px;
-    margin-top: 130px;
+.text-1 {
+  height: fit-content;
+  margin-left: 130px;
+  margin-top: 130px;
 }
-.text-1>h1{
-    width: 500px;
-    font-weight: 100;
-    margin-top: 0px;
-    font-size: 45px;
-    margin-bottom: 0px;
+.text-1 > h1 {
+  width: 500px;
+  font-weight: 100;
+  margin-top: 0px;
+  font-size: 45px;
+  margin-bottom: 0px;
 }
-.text-1>h1:nth-child(2){
-    font-weight: bold;
-    margin-top: 3px;
+.text-1 > h1:nth-child(2) {
+  font-weight: bold;
+  margin-top: 3px;
 }
-
-
-
 
 /* this is for second box------------------------------------------------------------------------------------- */
 
-
-
-
-
-.box-2{
-    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-chef-image.jpg);
-    width: 100%;
-    height: 600px;
-    margin-top: 0px;
-    display: flex;
+.box-2 {
+  background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-chef-image.jpg);
+  width: 100%;
+  height: 600px;
+  margin-top: 0px;
+  display: flex;
 }
-.infoleft{
-    width: 50%;
+.infoleft {
+  width: 50%;
 }
-.info{
-    color: white;
-    font-size: 20px;
-    height: fit-content;
-    margin: auto;
-    margin-left: 0px;
-    width: 42%;
-    line-height: 40px;  
+.info {
+  color: white;
+  font-size: 20px;
+  height: fit-content;
+  margin: auto;
+  margin-left: 0px;
+  width: 42%;
+  line-height: 40px;
 }
-
-
 
 /* this is for location 3rd div------------------------------------- */
 
-
-
-
-
-
-.location{
-    background: #edecea;
+.location {
+  background: #edecea;
 }
-.location>h1{
-    margin: auto;
-    text-align: center;
-    font-size: 45px;
-    padding-top: 100px;
-    height: fit-content;
+.location > h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 100px;
+  height: fit-content;
 }
-.place{
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin: auto;
-    margin-top: 50px;
+.place {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
 }
-.place>div{
-    text-align: center;
-    margin: auto;
-    border-bottom: 1px solid gray;
+.place > div {
+  text-align: center;
+  margin: auto;
+  border-bottom: 1px solid gray;
 }
-.details{
-    width: 70%;
-    margin: auto;
-    background: black;
-    color: white;
-    display: flex;
-    justify-content: space-around ;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.details {
+  width: 70%;
+  margin: auto;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.details>div{    
-    width: fit-content;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
+.details > div {
+  width: fit-content;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.mm{
-    height: 70px;
+.mm {
+  height: 70px;
 }
-
-
-
 
 /* statistics------------------------------------------------- */
 
-
-
-
-
-
-.stat{
-    width: 100%;
-    border: 1px solid transparent;
-    background: white;
-    margin: auto;
-    margin-top: 0px;
+.stat {
+  width: 100%;
+  border: 1px solid transparent;
+  background: white;
+  margin: auto;
+  margin-top: 0px;
 }
 
-.stat> h3{
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-    margin-top: 70px;
-    height: 50px;
-    font-size: 50px;
-    line-height: 52px;
-    color: rgb(0, 0, 0);
+.stat > h3 {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 70px;
+  height: 50px;
+  font-size: 50px;
+  line-height: 52px;
+  color: rgb(0, 0, 0);
 }
-.stat > div{
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    margin: auto;
-    margin-top: -65px;
+.stat > div {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  margin-top: -65px;
 }
-.stat > div > div > h1{
-    font-size: 55px;
-    line-height: 56px;
-    color: rgb(0, 0, 0);
+.stat > div > div > h1 {
+  font-size: 55px;
+  line-height: 56px;
+  color: rgb(0, 0, 0);
 }
-.stat > div > div > p{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    color: rgb(0, 0, 0);
+.stat > div > div > p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
 }
-.limg{
-    margin-left: 0px;
-    margin-top: -200px;
+.limg {
+  margin-left: 0px;
+  margin-top: -200px;
 }
-.rimg{
-    margin-left: 85%;
-    margin-bottom: -160px;
-
-
+.rimg {
+  margin-left: 85%;
+  margin-bottom: -160px;
 }
-
-
-
-
 
 /* OUR KITCHEN PRACTICES------------------------------------------------------------ */
 
-
-
-
-
-
-
-
-
-
-.practice{
-    border: 1px solid transparent;
-    background: #edecea;
+.practice {
+  border: 1px solid transparent;
+  background: #edecea;
 }
-.practice>h1{
-    width: fit-content;
-    margin:auto;
-    font-size: 50px;
-    margin-top: 100px;
+.practice > h1 {
+  width: fit-content;
+  margin: auto;
+  font-size: 50px;
+  margin-top: 100px;
 }
-.practice>p{
-    text-align: center;
-    width: 55%;
-    margin: auto;
-    margin-top: 30px;
-    font-size: 20px;
+.practice > p {
+  text-align: center;
+  width: 55%;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 20px;
 }
-.pracsets{
-    width: 70%;
-    text-align: center;
-    display: flex;
-    margin: auto;
-    margin-top: 50px;
+.pracsets {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
 }
-.pracsets>div{
-    width: 30%;
-    margin: auto;
-    
+.pracsets > div {
+  width: 30%;
+  margin: auto;
 }
-.pracsets>div>p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.pracsets > div > p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
-.pracsets1{
-    width: 50%;
-    text-align: center;
-    display: flex;
-    margin: auto;
-    margin-top: 50px;
+.pracsets1 {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
 }
-.pracsets1>div{
-    width: 30%;
-    margin: auto;
-    
+.pracsets1 > div {
+  width: 30%;
+  margin: auto;
 }
-.pracsets1>div>p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.pracsets1 > div > p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
-.bang::after{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.bang::after {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* GOOD THINGS COME IN GOOD------------------------------------ */
-.tomato{
-    margin-left: 0px;
-    margin-top: -160px;
+.tomato {
+  margin-left: 0px;
+  margin-top: -160px;
 }
-.mn{
-    border: 1px solid red;
-    background: white;
+.mn {
+  border: 1px solid red;
+  background: white;
 }
-.mn>div{
-    width: 100%;
+.mn > div {
+  width: 100%;
 }
-.packimg{
-    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
-    background-size: cover;
-    display: flex;
+.packimg {
+  background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
+  background-size: cover;
+  display: flex;
 }
-.pack>h1,h3{
-    margin-left: 8%;
+.pack > h1,
+h3 {
+  margin-left: 8%;
 }
-.pack>h1{
-    font-size: 40px;
-    margin-top: 0px;
+.pack > h1 {
+  font-size: 40px;
+  margin-top: 0px;
 }
-.packimg>div{
-    width: 50%;
+.packimg > div {
+  width: 50%;
 }
-.packimg>.list>div{
-    height: 100px;
-    width: 80%;
-    margin-left:16% ;
-    margin-bottom: 20px;
-    border: 1px solid red;
+.packimg > .list > div {
+  height: 100px;
+  width: 80%;
+  margin-left: 16%;
+  margin-bottom: 20px;
+  border: 1px solid red;
 }
-.list{
-    margin-top: 50px;
+.list {
+  margin-top: 50px;
 }
-.intxt{
-    display: flex;
+.intxt {
+  display: flex;
 }
-.arr1{
-    background: black;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 50%;
+.arr1 {
+  background: black;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
 }
 /* footer-------------------------------------------------------- */
 ::selection {
@@ -429,4 +383,3 @@ footer {
   margin: 0%;
 }
 /* footer end------------------------------------ */
-
