@@ -19,7 +19,7 @@ return `<div id="footer">
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16 current_page_item menu-item-3107"
             >
               <a
-                href="https://www.thebowlcompany.in/"
+                href="index.html"
                 aria-current="page"
                 class="menu-link"
                 >Home</a
@@ -31,7 +31,7 @@ return `<div id="footer">
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3111"
             >
               <a
-                href="https://www.thebowlcompany.in/about-us/"
+                href="locate.html"
                 class="menu-link"
                 >About Us</a
               >
@@ -41,7 +41,7 @@ return `<div id="footer">
               id="menu-item-3112"
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3112"
             >
-              <a href="https://www.thebowlcompany.in/menu/" class="menu-link"
+              <a href="ourmenu.html" class="menu-link"
                 >Our Menu</a
               >
             </li>
@@ -51,7 +51,7 @@ return `<div id="footer">
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3989"
             >
               <a
-                href="https://www.thebowlcompany.in/campaign/"
+                href="campaigns.html"
                 class="menu-link"
                 >Campaigns</a
               >
@@ -62,7 +62,7 @@ return `<div id="footer">
               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4275"
             >
               <a
-                href="https://www.thebowlcompany.in/about-us/#Location_section"
+                href="locate.html"
                 class="menu-link"
                 >Locate Us</a
               >
