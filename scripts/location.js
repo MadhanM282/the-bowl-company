@@ -82,6 +82,9 @@
 
 
 function Bang(){
+    // let shadow = document.querySelector(".bang");
+    // shadow.style.shadow = "rgba(100, 100, 111, 0.2) 0 7 29 0"
+    // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     let div = document.createElement("div");
 
     let left1 = document.createElement("h3");

@@ -128,13 +128,51 @@ display: flex;
     color: rgb(0, 0, 0);
 }
 .Div_second > .Text > button{
-    width: 140px;
-    height: 40px;
-    background-color: black;
-    letter-spacing: 2px;
+     letter-spacing: 2.8px;
+  line-height: 1;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  padding: 11px 24px;
+  transition: all 0.3s;
+  text-decoration: none;
+  border-radius: 40px;
+  background-color: #000;
+  border: 0px;
+}
+.Text>button:hover {
+  padding: 13px 27px;
+  cursor: pointer;
+  font-size: 22px;
+}
+/* .elementor-button-text {
+  -webkit-box-flex: 1;
+
+  flex-grow: 1;
+  -webkit-box-ordinal-group: 11;
+
+  order: 10;
+  display: inline-block;
+}
+.elementor-button {
+  
+  letter-spacing: 2.8px;
+  line-height: 1;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  padding: 11px 24px;
+  transition: all 0.3s;
+}
+.elementor-button:hover {
+  padding: 13px 27px;
+  cursor: pointer;
+  font-size: 22px;
+} */
+
+.Div_second > .Text > button>a{
+    text-decoration: none;
     color: white;
-    border-radius: 10px;
-    border: none;
 }
 
 .Div_second > #imgtag_second{

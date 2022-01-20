@@ -280,3 +280,13 @@ display: flex;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+.bang::after{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.elementor-1860 .elementor-element.location .elementor-tab-title.elementor-active {
+    border-bottom: 1px solid #a5a5a5;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.125)!important;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+}
