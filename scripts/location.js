@@ -1,5 +1,6 @@
 
     // document.querySelector
+    document.querySelector(".bang").style["boxShadow"] = "0 0 5px #999999";
     (".details").innerHTML=""
     let div = document.createElement("div");
 
@@ -85,6 +86,7 @@ function Bang(){
     // let shadow = document.querySelector(".bang");
     // shadow.style.shadow = "rgba(100, 100, 111, 0.2) 0 7 29 0"
     // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    document.querySelector(".bang").style["boxShadow"] = "0 0 5px #999999";
     let div = document.createElement("div");
 
     let left1 = document.createElement("h3");
@@ -169,6 +171,7 @@ function Bang(){
 
 function chenn(){
     // document.querySelector(".details").innerHTML=null
+    document.querySelector(".chenn").style["boxShadow"] = "0 0 5px #999999";
     let div = document.createElement("div");
 
     let left1 = document.createElement("h3");
@@ -230,6 +233,9 @@ function chenn(){
 }
 
 function hyd(){
+    document.querySelector(".bang").style["boxShadow"] = "0";
+    document.querySelector(".chenn").style["boxShadow"] = "0";
+    document.querySelector(".hyd").style["boxShadow"] = "0 0 5px #999999";
     let div = document.createElement("div");
 
     let left1 = document.createElement("h3");
