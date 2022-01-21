@@ -14,7 +14,7 @@ body {
 .navDiv {
   margin: auto;
   width: 100%;
-  height: 600px;
+  height: 670px;
   /* border: 1px solid blue; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +98,7 @@ body {
 .Div_second {
   width: 99%;
   margin: auto;
-  height: 490px;
+  height: 570px;
   /* border: 1px solid green; */
   display: flex;
 }
@@ -300,3 +300,114 @@ body {
   background-size: cover;
 }
 
+
+
+/* =---------------slide part=---------------------- */
+
+
+.slid_body{
+        width: 100%;
+        box-sizing: border-box;
+        font-family: 'Bree Serif', serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/09/bg_blog.jpg);
+        background-size: 100%;
+        margin: 0px;
+    }
+    
+    .nav_arr{
+        text-align: center;
+        margin: auto;
+        margin-top:-80px;
+        align-items: center;  
+        display: flex;
+        justify-content: center;
+
+    }
+    .nav_arr>div{
+        width: 55px;
+        height: 40px;
+        margin-left: 20px;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        font-weight: bolder;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .btn{
+        height:50px;
+        width:10px;
+        justify-content: center;
+    }
+    .text{
+        color: white;
+    }
+    
+    #order{
+        background-color: white;
+            color:black;
+            font-weight:bold;
+            padding-left:50px;
+            padding-right:50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: transparent;
+            border-radius:25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .all{
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+    .all>div{
+        width: 100%;
+        /* overflow: hidden; */
+    }
+    .all>div:nth-child(1)>img{
+        padding-top: 400px;
+        padding-right: 20px;
+        margin-left: -50px;
+        width: 210px;
+    }
+    .all>div:nth-child(7)>img{
+        padding-top: 400px;
+        padding-left: 20px;
+        /* margin-right: -200px; */
+        width: 210px;
+
+    }
+    .all>div:nth-child(2)>img{
+        padding-top: 250px;
+        width: 210px;
+        padding-right: 20px;
+    }
+    .all>div:nth-child(6)>img{
+        padding-top: 250px;
+        padding-left: 20px;
+        width: 210px;
+
+    }
+    .all>div:nth-child(3)>img{
+        padding-top: 160px;
+        padding-right: 20px;
+        width: 210px;
+
+    }
+    .all>div:nth-child(5)>img{
+        padding-top: 160px;
+        padding-left: 20px;
+        width: 210px;
+
+    }
+    .all>div:nth-child(4)>img{
+        padding-top: 100px;
+        width: 210px;
+
+    }
