@@ -288,3 +288,77 @@ function hyd(){
     right.innerHTML = null
     right.append(div3)
 }
+
+
+function onediv(){
+
+    document.querySelector(".ondiv").style.backgroundColor = 'black';
+    document.querySelector(".ondiv").style.color = 'white';
+
+    document.querySelector(".twdiv").style.backgroundColor = 'white';
+    document.querySelector(".twdiv").style.color = 'black';
+
+
+    document.querySelector(".thrdiv").style.backgroundColor = 'white';
+    document.querySelector(".thrdiv").style.color = 'black';
+
+
+
+    document.querySelector(".a1").innerHTML="→"
+    document.querySelector(".a2").innerHTML="←"
+    document.querySelector(".a3").innerHTML="←"
+    // console.log('change', chang);
+   
+    
+    // change.border = "yellow"
+    
+    let start =document.querySelector(".changeimg")
+    start.src = "https://thebowlcompany.in/wp-content/uploads/2021/10/quality-packaging.png"
+}
+function twodiv(){
+    document.querySelector(".ondiv").style.backgroundColor = 'white';
+    document.querySelector(".ondiv").style.color = 'black';
+
+
+    document.querySelector(".twdiv").style.backgroundColor = 'black';
+    document.querySelector(".twdiv").style.color = 'white';
+
+
+    document.querySelector(".thrdiv").style.backgroundColor = 'white';
+    document.querySelector(".thrdiv").style.color = 'black';
+
+    document.querySelector(".a1").innerHTML="←"
+    document.querySelector(".a2").innerHTML="→"
+    document.querySelector(".a3").innerHTML="←"
+
+
+    let start =document.querySelector(".changeimg")
+    start.src = "https://thebowlcompany.in/wp-content/uploads/2021/10/Bowl-company-boxes.png"
+}
+function threediv(){
+
+    document.querySelector(".ondiv").style.backgroundColor = 'white';
+    document.querySelector(".ondiv").style.color = 'black';
+
+
+    document.querySelector(".twdiv").style.backgroundColor = 'white';
+    document.querySelector(".twdiv").style.color = 'black';
+
+
+    document.querySelector(".thrdiv").style.backgroundColor = 'black';
+    document.querySelector(".thrdiv").style.color = 'white';
+
+    document.querySelector(".a1").innerHTML="←"
+    document.querySelector(".a2").innerHTML="←"
+    document.querySelector(".a3").innerHTML="→"
+
+
+
+
+
+    let start =document.querySelector(".changeimg")
+    start.src = "https://thebowlcompany.in/wp-content/uploads/2021/10/Bowl-company-packages.png"
+}
+// function changebackground(){
+	// document.getElementById('id')
+// }
