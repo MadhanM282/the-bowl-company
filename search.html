@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <!--No need to add sidebar here, directly display search results-->
+
+      <!-- show headline, description and image -->
+
+      
+
+     <!-- <a href="/Users/jonny/Desktop/misc/jugnu-tester/template-U3C4/Template-U3C4/news.html"></a>
+
+
+       <a href="/news.html"></a> -->
+
+
+
+
+    </div>
+  </body>
+
+</html>
+<script type="module">
+
+
+    import { apiCall, appendArticles } from "./scripts/main.js";
+    
+        let main = document.querySelector("#main");
+
+      let value = JSON.parse(localStorage.getItem("search_term"))
+      let url = `https://gnews.io/api/v4/search?q=${value}&token=cd6ce567671ad94e484640bde422e9a2`
+      // storeSearchterm(value)
+      let data = apiCall(url)
+      console.log('data in search', data);
+      data
+        .then((res) => {
+          console.log('resdata', res.articles);
+          appendArticles(res.articles, main)
+
+        })
+        .catch((err) => {
+          console.log('err', err);
+
+        })
+
+   
+      
+    // search.addEventListener("keypress", bouncer);
+</script>
