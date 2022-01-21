@@ -200,58 +200,87 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.bang::after {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+
 
 /* GOOD THINGS COME IN GOOD------------------------------------ */
-.tomato {
-  margin-left: 0px;
-  margin-top: -160px;
+
+.tomato{
+    margin-left: 0px;
+    margin-top: -160px;
 }
-.mn {
-  border: 1px solid red;
-  background: white;
+.mn{
+    /* border: 1px solid red; */
+    background: white;
 }
-.mn > div {
-  width: 100%;
+.mn>div{
+    width: 100%;
 }
-.packimg {
-  background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
-  background-size: cover;
-  display: flex;
+.packimg{
+    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
+    background-size:700px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    
+    display: flex;
+    /* border: 1px solid black; */
+    /* padding-bottom: 50px; */
 }
-.pack > h1,
-h3 {
-  margin-left: 8%;
+.pack>h1,h3{
+    margin-left: 8%;
 }
-.pack > h1 {
-  font-size: 40px;
-  margin-top: 0px;
+.pack>h1{
+    font-size: 40px;
+    margin-top: 0px;
 }
-.packimg > div {
-  width: 50%;
+.packimg>div{
+    width: 50%;
 }
-.packimg > .list > div {
-  height: 100px;
-  width: 80%;
-  margin-left: 16%;
-  margin-bottom: 20px;
-  border: 1px solid red;
+.packimg>.list>div{
+    height: 100px;
+    width: 80%;
+    margin-left:16% ;
+    margin-bottom: 20px;
+   
 }
-.list {
-  margin-top: 50px;
+.list{
+    margin-top: 50px;
 }
-.intxt {
-  display: flex;
+.intxt{
+    display: flex;
+    
 }
-.arr1 {
-  background: black;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 50%;
+
+.intxt>div{
+    margin: auto;
 }
-/* footer-------------------------------------------------------- */
+.arr1{
+    background: black;
+    /* width: fit-content; */
+    /* height: fit-content; */
+    border-radius: 50%;
+    width: 9%;
+    height: 50%;
+    color: white;
+    text-align: center;
+    /* margin: auto; */
+}
+.packimages{
+    
+    /* border: 1px solid red; */
+    /* justify-content: center; */
+    margin-top: 3.5%;
+    height: 500px;
+    margin-left: -70px;
+}
+.changeimg{
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-left: 10%;
+
+}
+/* footer */
+
 ::selection {
   background-color: #000000;
   color: #ffffff;
@@ -302,18 +331,31 @@ h3 {
   margin-left: 7px;
   margin-top: 10px;
 }
+#fdiv2>h3{
+    /* border: 1px solid red; */
+    margin-left: -4px;
+}
+#fdiv3>h3{
+    /* border: 1px solid red; */
+    margin-left: -4px;
+}
+#fdiv4>h3{
+    /* border: 1px solid red; */
+    margin-left: -4px;
+}
 #fdiv2 > ul > li > a {
   text-decoration: none;
   color: black;
 }
+
 #fdiv3 > p > a {
   text-decoration: none;
   color: black;
 }
 ul > li {
   display: inline;
-  border: solid blue;
-  margin-left: 28px;
+  /* border: solid blue; */
+  /* margin-left:20px; */
 }
 #fdiv1 {
   /* border: solid blue; */
@@ -363,11 +405,17 @@ input {
   font-size: 22px;
 }
 #foot2 > div {
-  /* border:solid green; */
+  
+  width: fit-content;
   margin-top: -45px;
   margin-left: 29%;
   font-weight: bolder;
   width: fit-content;
+}
+#foot2 > div >h3{
+    /* border:solid green; */
+    width: 110px;
+    margin-left: -1px;
 }
 
 footer {
@@ -382,4 +430,11 @@ footer {
   line-height: 1.85714285714286;
   margin: 0%;
 }
-/* footer end------------------------------------ */
+.ondiv{
+    background: black;
+    color: white;
+}
+
+
+
+

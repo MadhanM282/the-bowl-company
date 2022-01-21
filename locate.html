@@ -10,7 +10,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/index.css" />
-
     <title>Document</title>
   </head>
   <body>
@@ -205,40 +204,52 @@
       </div>
       <div class="packimg">
         <div class="list">
-          <div class="intxt">
-            <div style="border: 1px solid red; width: 90%">
+          <div onclick="onediv()" class="intxt ondiv">
+            <div style="width: 90%">
               <h3>
                 Our packaging is optimally designed to <br />
                 minimize component weight
               </h3>
             </div>
             <div class="arr1">
-              <img
-                src="https://img.icons8.com/material-outlined/50/ffffff/circled-right.png"
-              />
+              <h1 class="a1">→</h1>
             </div>
           </div>
-          <div>
-            <h3>
-              Our bowls are made of 100% recyclable <br />
-              polypropylene
-            </h3>
+          <div onclick="twodiv()" class="intxt twdiv">
+            <div style="width: 90%">
+              <h3>
+                Our bowls are made of 100% recyclable <br />
+                polypropylene
+              </h3>
+            </div>
+            <div class="arr1">
+              <h1 class="a2">←</h1>
+            </div>
           </div>
-          <div>
-            <h3>
-              Our cutlery and bags are compostable and 100% <br />
-              recyclable
-            </h3>
+          <div onclick="threediv()" class="intxt thrdiv">
+            <div style="width: 90%">
+              <h3>
+                Our cutlery and bags are compostable and 100% <br />
+                recyclable
+              </h3>
+            </div>
+
+            <div class="arr1">
+              <h1 class="a3">←</h1>
+            </div>
           </div>
         </div>
-        <div>
+        <div class="packimages">
           <img
+            class="changeimg"
             src="https://thebowlcompany.in/wp-content/uploads/2021/10/quality-packaging.png"
             alt=""
           />
         </div>
       </div>
     </div>
+
+    <!-- fotter -->
   </body>
   <footer>
     <div id="getfooter"></div>
@@ -248,6 +259,7 @@
   import navbar from "./components/navbar.js";
   let cont = document.getElementById("nav");
   cont.innerHTML = navbar();
+
   let foot = document.querySelector("#getfooter");
   import footer from "./components/footer.js";
   foot.innerHTML = footer();

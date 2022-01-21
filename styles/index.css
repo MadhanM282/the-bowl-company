@@ -262,12 +262,15 @@ body {
 
 /*------------------------Sixth_Section------------------------*/
 
-.Sixth_Section {
+ .Sixth_Section {
   width: 99%;
   height: 400px;
   border: 1px solid red;
   margin: auto;
-}
+ 
+ 
+ 
+} 
 .Sixth_Section > h2 {
   text-align: center;
   margin-top: 5%;
@@ -276,6 +279,12 @@ body {
   font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
+
+}
+.Sixth_Section > div{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
 }
 
 /*--------------------------Sevent_Section-------------------------------*/
@@ -287,3 +296,4 @@ body {
   background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/09/bg_blog.jpg);
   background-size: cover;
 }
+
