@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            width: 100%;
+            height: 600px;
+            margin: auto;
+            background-color: #f1f1f1;
+            box-shadow: 0 0 1px 1px rgb(0 0 0 / 20%);
+            color: black;
+            display: block;
+            font-family:"Roboto", Museo-Sans;;
+            font-size: 18px;
+            font-weight: 900;
+      
+           
+    
+        }
+        .first > h2{
+            color: var( --e-global-color-9fb0d43 );
+            font-family: "Roboto", Museo-Sans;
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .Div{
+            width: 20%;
+            height: 100px;
+            text-align: center;
+           }
+          
+        #dis{
+            display: flex;
+            justify-content: space-around;
+        }
+         #dis1{
+             margin: auto;
+             width: 40%;
+             height: 250px;
+            
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h2>Good things come in<br>
+            good packaging</h2>
+            
+        <div id="dis"></div>
+
+
+        <div id="dis1"></div>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var data = [
+        {
+            image:"https://thebowlcompany.in/wp-content/uploads/2021/10/Regular-and-mini-bowls.png",
+            desc:"Two bowl sizes for  convenience"
+        },
+
+        {
+            image:"https://thebowlcompany.in/wp-content/uploads/2021/10/Bowl-with-gravy.png",
+            desc:"Incredibly lean,  spill-free packaging"
+        },
+        {
+            image:"https://thebowlcompany.in/wp-content/uploads/2021/10/Bowl-products.png",
+            desc:"Sustainable, 100%  recyclable materials"
+        }
+    ]
+
+
+    var x = []
+
+
+    data.map(function(item){
+        var obj = {
+            image:item.image,
+            desc:item.desc
+        }
+
+        x.push(obj)
+
+        localStorage.setItem("Bowl", JSON.stringify(x))
+    })
+
+    var arr = JSON.parse(localStorage.getItem("Bowl"))
+
+    
+    display(arr)
+
+    function display(arr){
+        arr.map(function(el){
+
+            var imgtag = document.createElement("img")
+            imgtag.src = el.image;
+
+             
+
+            var desc = document.createElement("p")
+            desc.textContent = el.desc
+
+            var hr = document.createElement("hr")
+
+            var div = document.createElement("div")
+            div.setAttribute("class", "Div")
+            div.addEventListener("click", function(){
+                imgData(el)
+            })
+
+            div.append(desc,hr)
+
+            var main = document.getElementById("dis")
+           main.append(div)
+            
+
+        })
+    }
+
+
+    var cart = []
+
+function imgData(el){
+   // console.log(el)
+
+    var obj = {
+        image:el.image
+    }
+    cart.push(obj)
+
+    localStorage.setItem("imgData", JSON.stringify(cart))
+    
+    
+
+
+var data = JSON.parse(localStorage.getItem("imgData"))
+
+
+
+appendData(data)
+
+function appendData(data){
+    data.map(function(item){
+        document.getElementById("dis1").innerHTML = ""
+        var imgDiv = document.createElement("img")
+        imgDiv.src = item.image
+
+       
+
+        var y = document.getElementById("dis1")
+        y.append(imgDiv)
+    })
+}
+}
+
+</script>
