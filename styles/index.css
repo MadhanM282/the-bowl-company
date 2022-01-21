@@ -315,6 +315,7 @@ body {
         background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/09/bg_blog.jpg);
         background-size: 100%;
         margin: 0px;
+        padding-bottom: 80px;
     }
     
     .nav_arr{
@@ -329,7 +330,7 @@ body {
     .nav_arr>div{
         width: 55px;
         height: 40px;
-        margin-left: 20px;
+        
         border-radius: 50%;
         background-color: white;
         text-align: center;
@@ -337,6 +338,13 @@ body {
         align-items: center;
         padding-top: 20px;
     }
+    .nav_arr>div:nth-child(1){
+      margin-right: 10px;
+    }
+    .nav_arr>div:nth-child(2){
+      margin-left: 10px;
+    }
+    
     .btn{
         height:50px;
         width:10px;
@@ -344,6 +352,11 @@ body {
     }
     .text{
         color: white;
+        line-height: 40px;
+        text-align: center;
+    }
+    .text>h2{
+      font-weight: lighter;
     }
     
     #order{
@@ -373,7 +386,7 @@ body {
     .all>div:nth-child(1)>img{
         padding-top: 400px;
         padding-right: 20px;
-        margin-left: -50px;
+        margin-left: -100px;
         width: 210px;
     }
     .all>div:nth-child(7)>img{
