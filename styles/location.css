@@ -6,8 +6,12 @@ body {
   background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
   margin-bottom: 0px;
   overflow: hidden;
-  /* background-size:; */
+  background-size:contain;
   background-repeat: no-repeat;
+
+  background-position-x: left;
+  background-size: auto;
+  background-attachment: scroll;
   
 }
 
@@ -83,6 +87,12 @@ body {
   margin: auto;
   border-bottom: 1px solid gray;
   padding: 20px;
+}
+.places{
+  padding: 20px;
+}
+.chenn{
+  padding: 20px 40px;
 }
 .details {
   width: 70%;
