@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/location.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+
     <title>Document</title> 
     <style>
         body{
@@ -143,8 +150,6 @@
     .dots-container{
         text-align: center;
         margin-top:100px;
-    
-
     }
     .dots{
         height: 15px;
@@ -212,7 +217,6 @@
         #hh12{
             margin-left:150px;
         }
-
         #img4{
             height: 50px;
             width: 50px;
@@ -250,16 +254,15 @@
             font-size:17px;
         }
         #button3{
-
             background-color: black;
             color:white;
             font-weight:bold;
             padding-left:50px;
             padding-right:50px;
+            padding-top:10px;
             padding-top: 15px;
             padding-bottom: 15px;
             border: transparent;
-
             border-radius:25px; 
             font-size:16px;
 
@@ -306,14 +309,12 @@
            font-size:16px;
            margin-top:40px;
         }
-        
-
-
 
     </style>
 </head>
 <body>
     <div id="main">
+        <div id="nav"></div>
         <div id="firstdiv">
             <div id="written">
                 <h1 id="ex1">AROUND THE WORLD</h1>
@@ -444,70 +445,6 @@
         <h3 id="hh12">range of incredi‑bowl national and international dishes.</h3>
 
         <div id="gr">
-
-<!-- <<<<<<< Updated upstream
-            <div id="icon">
-                
-                <img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUMS7E95YuqZzNTLsNnkpZQwyNk-IriFnsw&usqp=CAU" alt="">
-                <h4>Breakfast Bowls</h4>
-            </div>
-
-            <div id="icon">
-                
-                <img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDHH-YT0VOBrKEbzLHniABf-z_179IN3AGhg&usqp=CAU" alt="">
-                <h4>Continental Bowls</h4>
-               
-            </div>
-            <div id="icon">
-                
-                <img id="img5" src="data:image/png;base64,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" alt="">
-                <h4>Desserts</h4>
-            </div>
-            <div id="icon">
-                
-                <img id="img5" src="data:image/png;base64,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" alt="">
-                <h4>Family Combos</h4>
-            </div>
-
-
-            <div id="icon">
-                
-                <img id="img5" src="https://i.pinimg.com/564x/9e/ee/c2/9eeec246e175ff23bbb699fb0b6d2348.jpg" alt="">
-                <h4>Fruit Bowls</h4>
-            </div>
-
-
-            <div id="icon">
-                
-                <img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfheS1VfBZQ0hUK9S2nZG8PkVo33LKtod6XQ&usqp=CAU" alt="">
-                <h4>Indian Bowls</h4>
-            </div>
-
-            <div id="icon">
-                
-                <img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPkExP_YA8_klZ-GOpPhZ7aiVsyQnVvt9cig&usqp=CAU" alt="">
-                <h4>Oriental Bowls</h4>
-            </div>
-
-
-            <div id="icon">
-                
-                <img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7GoFszvpbx_2uhmYnwC8bl1o7E8hM2BgF8A&usqp=CAU" alt="">
-                <h4>Parotta Bowls</h4>
-                
-            </div>
-            <div id="icon">
-                
-                <img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpTGLXrScawU7Ytjx0pQ5eLHQqA53fkkqktg&usqp=CAU" alt="">
-                <h4>Value Meals</h4>
-            </div>
-        </div>
-    </div>
-
-    <div id="fivthdiv">
-
-        <div>
-======= -->
            <div id="gr1">
                <img id="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjofHIBXZvn0qOudoL0z-1flfLdGsqrvccPA&usqp=CAU">
                <h3 id="hh14">Breakfast Bowls</h3>
@@ -585,74 +522,18 @@
             </div id="swiggy">
             <h1 id="last">Exclusively on<img id="img7" src="https://thebowlcompany.in/wp-content/uploads/2021/10/swiggy-logo.png" alt=""> </h1>
 
-            <button id="button4"><a id="ad" href="https://www.swiggy.com">ORDER NOW</a></button>  
-           
-        </div>
-
-<!-- >>>>>>> Stashed changes -->
-
-            <!-- <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Butter-Chicken-Mac-_-Cheese.png">
-            <h1>Butter Chicken Mac & Cheese</h1>      
-        
-        </div>
-        <div>
-
-            <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Fireworks-Mushroom-and-Corn-Spaghetti.png">
-            <h1>Fireworks Mushroom and Corn Spaghetti</h1>
-            
-            </div>
-           
-            <div>
-        
-                <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Angoori-Rasmalai.png">
-                <h1>Angoori Rasmalai</h1>
-                
-            </div>
-            <div>
-        
-                <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Bailey_s-Chocolate-Mousse.png">">
-                <h1>Bailey’s Chocolate Mousse</h1>
-                
-            </div>
-            <div>
-        
-                <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gajar-Ka-Halwa.png">
-                <h1>Gajar Ka Halwa</h1>
-                
-            </div>
-            <div>
-        
-                <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gulab-Jamun-1pc.png">
-                <h1>Gulab Jamun (1pc)</h1>
-                
-            </div>
-        
-        </div>
-        <button id="btn">Load More</button>
-
-        <div id="sixthdiv">
-
-            <div>
-                <img id="img8" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/logo-white-01.png" title="" alt="">
-            </div>
-            <div>
-                <h1 id="last">Exclusively on<img src="https://thebowlcompany.in/wp-content/uploads/2021/10/swiggy-logo.png"></h1>
-            </div>
-            <div id="btndiv">
-                        <button id="button2"><a id="ac" href="https://www.swiggy.com">ORDER NOW</a></button>    
-                        
-            </div>
-
-            
+            <button id="button4"><a id="ad" href="https://www.swiggy.com">ORDER NOW</a></button>      
            
         </div> -->
        
-
- 
     </div>
+
 </body>
+<footer>
+    <div id="getfooter"></div>
+  </footer>
 </html>
-<script>
+<script type="module">
    let slideIndex = 0;
     const showSlides = () => {
         // console.log("function is calling");
@@ -673,5 +554,15 @@
         dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 3000);
     };
-    showSlides();  
+    showSlides(); 
+    
+    
+</script>
+<script type="module">
+      import navbar from "./components/navbar.js";
+  let cont = document.getElementById("nav");
+  cont.innerHTML = navbar();
+  let foot = document.querySelector("#getfooter");
+  import footer from "./components/footer.js";
+  foot.innerHTML = footer();
 </script>
