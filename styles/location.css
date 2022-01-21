@@ -200,9 +200,7 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.bang::after {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+
 
 /* GOOD THINGS COME IN GOOD------------------------------------ */
 
