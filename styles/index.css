@@ -289,6 +289,13 @@ body {
     display: flex;
     justify-content: space-around;
 }
+.Sixth_Section>div>div{
+  /* border: 1px solid black; */
+  text-align: center;
+}
+svg{
+  /* border:1px solid red */
+}
 
 /*--------------------------Sevent_Section-------------------------------*/
 
