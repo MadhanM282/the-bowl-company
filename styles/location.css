@@ -90,7 +90,9 @@ body {
 }
 .places{
   padding: 20px;
+  cursor: pointer;
 }
+
 .chenn{
   padding: 20px 40px;
 }
@@ -270,6 +272,7 @@ body {
 }
 .intxt{
     display: flex;
+    cursor: pointer;
     
 }
 
