@@ -33,6 +33,8 @@
             width: 20%;
             height: 100px;
             text-align: center;
+
+            border: 1px solid red;
            }
           
         #dis{
@@ -67,7 +69,7 @@
     var data = [
         {
             image:"https://thebowlcompany.in/wp-content/uploads/2021/10/Regular-and-mini-bowls.png",
-            desc:"Two bowl sizes for  convenience"
+            desc:"Two bowl sizes for <br>  convenience"
         },
 
         {
@@ -109,9 +111,9 @@
              
 
             var desc = document.createElement("p")
-            desc.textContent = el.desc
+            desc.innerHTML = el.desc
 
-            var hr = document.createElement("hr")
+            // var hr = document.createElement("hr")
 
             var div = document.createElement("div")
             div.setAttribute("class", "Div")
@@ -119,7 +121,7 @@
                 imgData(el)
             })
 
-            div.append(desc,hr)
+            div.append(desc)
 
             var main = document.getElementById("dis")
            main.append(div)

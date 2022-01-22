@@ -236,53 +236,53 @@
 
 
    </div>
-<div class="slid_body">
-    <div class="all">
-        <div class="slides">
-            <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paratha.png" alt="background">
+    <div class="slid_body">
+        <div class="all">
+            <div class="slides">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paratha.png" alt="background">
 
-        </div>
-        <div class="slides">
-            <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-corn.png" alt="background">
+            </div>
+            <div class="slides">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-corn.png" alt="background">
 
-        </div>
-        <div class="slides">
-            <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Classic-Manchurian.png" alt="background">
+            </div>
+            <div class="slides">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Classic-Manchurian.png" alt="background">
 
-        </div>
-        <div class="slides">
-            <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Pasta.png" alt="background">
-            <div class="text">
-                <h2>CLASSIC MAC & CHEESE</h2>
+            </div>
+            <div class="slides">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Pasta.png" alt="background">
+                <div class="text">
+                    <h2>CLASSIC MAC & CHEESE</h2>
+                </div>
+            </div>
+            <div class="slides">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Chicken-65.png.png" alt="background">
+
+            </div>
+            <div class="slides">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-makhani-biriyani.png"
+                    alt="background">
+
+            </div>
+            <div class="slides">
+                <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Nawabi-paneer.png" alt="background">
+
             </div>
         </div>
-        <div class="slides">
-            <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Chicken-65.png.png" alt="background">
 
+        <div class="nav_arr">
+            <div>←</div>
+            <div>→</div>
         </div>
-        <div class="slides">
-            <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-makhani-biriyani.png"
-                alt="background">
 
+        <div class="text">
+            <h1>WHAT'S HOT</h1>
+            <h2>A sneak peek at our multi‑cuisine bowls, new entrants, <br>
+            and all-time bestsellers</h2>
         </div>
-        <div class="slides">
-            <img src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Nawabi-paneer.png" alt="background">
-
-        </div>
+        <button id="order"> <a id="ab" href="https://www.swiggy.com">ORDER NOW</a></button>
     </div>
-
-    <div class="nav_arr">
-        <div>←</div>
-        <div>→</div>
-    </div>
-
-    <div class="text">
-        <h1>WHAT'S HOT</h1>
-        <h2>A sneak peek at our multi‑cuisine bowls, new entrants, <br>
-        and all-time bestsellers</h2>
-    </div>
-    <button id="order"> <a id="ab" href="https://www.swiggy.com">ORDER NOW</a></button>
-</div>
     <div class="first">
         <h2>Good things come in<br>
             good packaging</h2>
@@ -290,11 +290,19 @@
         <div id="dis"></div>
     
     
-        <div id="dis1"></div>
+        <div id="dis1">
+            <img src="https://thebowlcompany.in/wp-content/uploads/2021/10/Regular-and-mini-bowls.png" alt="">
+        </div>
     
     </div>
+    <img class="rimg" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Pepper.png" alt="" />
  
    </div>
+
+
+
+   <!-- slider hear -->
+
 </body>
 </html>
 
@@ -315,16 +323,16 @@ cont.innerHTML = navbar()
     var data = [
         {
             image: "https://thebowlcompany.in/wp-content/uploads/2021/10/Regular-and-mini-bowls.png",
-            desc: "Two bowl sizes for  convenience"
+            desc: "Two bowl sizes for  <br> convenience"
         },
 
         {
             image: "https://thebowlcompany.in/wp-content/uploads/2021/10/Bowl-with-gravy.png",
-            desc: "Incredibly lean,  spill-free packaging"
+            desc: "Incredibly lean, <br>  spill-free packaging"
         },
         {
             image: "https://thebowlcompany.in/wp-content/uploads/2021/10/Bowl-products.png",
-            desc: "Sustainable, 100%  recyclable materials"
+            desc: "Sustainable, 100% <br> recyclable materials"
         }
     ]
 
@@ -357,17 +365,19 @@ cont.innerHTML = navbar()
 
 
             var desc = document.createElement("p")
-            desc.textContent = el.desc
+            desc.innerHTML = el.desc
 
-            var hr = document.createElement("hr")
+            // var hr = document.createElement("hr")
 
-            var div = document.createElement("div")
+            var div = document.createElement("div")//.style["boxShadow"] = "0 0 5px #999999";
             div.setAttribute("class", "Div")
+            // document.querySelector(".Div").style["boxShadow"] = "0 0 5px #999999";
             div.addEventListener("click", function () {
+                
                 imgData(el)
             })
 
-            div.append(desc, hr)
+            div.append(desc)
 
             var main = document.getElementById("dis")
             main.append(div)
@@ -394,12 +404,13 @@ cont.innerHTML = navbar()
 
         var data = JSON.parse(localStorage.getItem("imgData"))
 
-
+        
 
         appendData(data)
 
         function appendData(data) {
             data.map(function (item) {
+                // document.querySelector(".Div").style["boxShadow"] = "0 0 5px #999999";
                 document.getElementById("dis1").innerHTML = ""
                 var imgDiv = document.createElement("img")
                 imgDiv.src = item.image
