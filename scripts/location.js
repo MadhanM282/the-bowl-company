@@ -1,4 +1,7 @@
-
+    document.querySelector(".aa1").style.backgroundColor = "white"
+    document.querySelector(".aa1").style.color = "black"
+    document.querySelector(".aa2").style.backgroundColor = "black"
+    document.querySelector(".aa3").style.backgroundColor = "black"
     // document.querySelector
     document.querySelector(".bang").style["boxShadow"] = "0 0 5px #999999";
     (".details").innerHTML=""
@@ -87,6 +90,16 @@ function Bang(){
     // shadow.style.shadow = "rgba(100, 100, 111, 0.2) 0 7 29 0"
     // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     document.querySelector(".bang").style["boxShadow"] = "0 0 5px #999999";
+    document.querySelector(".chenn").style["boxShadow"] = "0 0 0px #999999";
+    document.querySelector(".hyd").style["boxShadow"] = "0 0 0px #999999";
+
+
+    // document.querySelector(".aa1").style.backgroundColor = "white"
+    // document.querySelector(".aa1").style.color = "black"
+    // document.querySelector(".aa2").style.backgroundColor = "black"
+    // document.querySelector(".aa3").style.backgroundColor = "black"
+
+    // .style.boxShadow = "10px 20px 30px blue"
     let div = document.createElement("div");
 
     let left1 = document.createElement("h3");
@@ -172,6 +185,15 @@ function Bang(){
 function chenn(){
     // document.querySelector(".details").innerHTML=null
     document.querySelector(".chenn").style["boxShadow"] = "0 0 5px #999999";
+    document.querySelector(".bang").style["boxShadow"] = "0 0 0px #999999";
+    document.querySelector(".hyd").style["boxShadow"] = "0 0 0px #999999";
+    
+
+
+
+    // document.querySelector(".aa2").style.backgroundColor = "white"
+    // document.querySelector(".aa1").style.backgroundColor = "black"
+    // document.querySelector(".aa3").style.backgroundColor = "black"
     let div = document.createElement("div");
 
     let left1 = document.createElement("h3");
@@ -233,9 +255,17 @@ function chenn(){
 }
 
 function hyd(){
-    document.querySelector(".bang").style["boxShadow"] = "0";
-    document.querySelector(".chenn").style["boxShadow"] = "0";
     document.querySelector(".hyd").style["boxShadow"] = "0 0 5px #999999";
+    document.querySelector(".bang").style["boxShadow"] = "0 0 0px #999999";
+    document.querySelector(".chenn").style["boxShadow"] = "0 0 0px #999999";
+
+
+
+    // document.querySelector(".aa3").style.backgroundColor = "white"
+    // document.querySelector(".aa2").style.backgroundColor = "black"
+    // document.querySelector(".aa1").style.backgroundColor = "black"
+
+
     let div = document.createElement("div");
 
     let left1 = document.createElement("h3");
@@ -314,6 +344,13 @@ function onediv(){
     document.querySelector(".a2").innerHTML="←"
     document.querySelector(".a3").innerHTML="←"
     // console.log('change', chang);
+
+    document.querySelector(".aa1").style.backgroundColor = "white"
+    document.querySelector(".aa1").style.color = "black"
+    document.querySelector(".aa2").style.backgroundColor = "black"
+    document.querySelector(".aa2").style.color = "white"
+    document.querySelector(".aa3").style.backgroundColor = "black"
+    document.querySelector(".aa3").style.color = "white"
    
     
     // change.border = "yellow"
@@ -338,6 +375,14 @@ function twodiv(){
     document.querySelector(".a3").innerHTML="←"
 
 
+    document.querySelector(".aa2").style.backgroundColor = "white"
+    document.querySelector(".aa2").style.color = "black"
+    document.querySelector(".aa3").style.backgroundColor = "black"
+    document.querySelector(".aa3").style.color = "white"
+    document.querySelector(".aa1").style.backgroundColor = "black"
+    document.querySelector(".aa1").style.color = "white"
+
+
     let start =document.querySelector(".changeimg")
     start.src = "https://thebowlcompany.in/wp-content/uploads/2021/10/Bowl-company-boxes.png"
 }
@@ -359,7 +404,12 @@ function threediv(){
     document.querySelector(".a3").innerHTML="→"
 
 
-
+    document.querySelector(".aa3").style.backgroundColor = "white"
+    document.querySelector(".aa3").style.color = "black"
+    document.querySelector(".aa2").style.backgroundColor = "black"
+    document.querySelector(".aa2").style.color = "white"
+    document.querySelector(".aa1").style.backgroundColor = "black"
+    document.querySelector(".aa1").style.color = "white"
 
 
     let start =document.querySelector(".changeimg")

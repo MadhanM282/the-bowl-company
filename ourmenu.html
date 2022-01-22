@@ -102,7 +102,7 @@
             margin-left:90px;
         }
         #seconddiv{
-            width:90%;
+            width:89%;
         }
         #text{
             padding-left:120px;
@@ -237,6 +237,7 @@
             gap: 20px;
             width: 80%;
             margin: auto;
+            margin-top: 50px;
            
         }
         #fithdiv1{
@@ -276,7 +277,7 @@
         background-size:cover;
         height:400px;
         margin-top:20px;
-     background-image: url("https://previews.123rf.com/images/baibakova/baibakova1908/baibakova190800102/129009980-assorted-indian-food-on-black-background-indian-cuisine-top-view-with-copy-space.jpg")
+     background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/03/08174730/Swiggy.jpg")
         }
         #bowl{
             margin-left:45%;
@@ -309,6 +310,72 @@
            font-size:16px;
            margin-top:40px;
         }
+        #nav{
+            background-color:#eee9e6 ;
+            width:100%;
+        }
+        .image {
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    text-align: justify;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: black;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 0.8;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+/* .image__title {
+    font-size: 2em;
+    font-weight: bold;
+} */
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    padding-left:10px;
+    padding-right:10px;
+    /* text-align: justif; */
+}
+        
 
     </style>
 </head>
@@ -486,31 +553,94 @@
     </div>
 
     <div id="fithdiv">
-<div id="fithdiv1">
-    <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Butter-Chicken-Mac-_-Cheese.png"alt="">
-    <h4 id="he1">BUTTER CHICKEN MAC & CHEESE</h4>
-</div>
-<div id="fithdiv1">
-    <img id="img6"src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Fireworks-Mushroom-and-Corn-Spaghetti.png"alt="">
-    <h4 id="he1">Fireworks Mushroom and Corn Spaghetti</h4>
-</div>
-<div id="fithdiv1">
-    <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Angoori-Rasmalai.png"alt="">
-    <h4 id="he1">Angoori Rasmalai</h4>
-</div>
-<div id="fithdiv1">
-    <img id="img6"src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Bailey_s-Chocolate-Mousse.png"alt="">
-    <h4 id="he1">Bailey’s Chocolate Mousse</h4>
-</div>
-<div id="fithdiv1">
-    <img id="img6"src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gajar-Ka-Halwa.png"alt="">
-    <h4 id="he1">Gajar Ka Halwa</h4>
-</div>
-<div id="fithdiv1">
-    <img id="img6" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gulab-Jamun-1pc.png"alt="">
-    <h4 id="he1">Gulab Jamun (1pc)</h4>
-</div>
-
+        <div class="image">
+            <img class="image__img"
+                src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Butter-Chicken-Mac-_-Cheese.png" alt="Bricks">
+            <div class="image__overlay image__overlay--primary">
+                <!-- <div class="image__title">Bricks</div> -->
+                <p class="image__description">
+                    A dish that marries the two classics - al dente macaroni and tender chicken chunks tossed in a creamy makhani sauce and finished off with parmesean 
+                    shavings to seal the deal. Ultimate comfort food! Contains Milk, Nuts, Wheat.
+                </p>
+            </div>
+            <div id="downname">
+                <h3>BUTTER CHICKEN MAC & CHEESE</h3>
+            </div>
+        </div>
+        <div class="image">
+            <img class="image__img"
+                src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Fireworks-Mushroom-and-Corn-Spaghetti.png" alt="Bricks">
+            <div class="image__overlay image__overlay--primary">
+                <!-- <div class="image__title">Bricks</div> -->
+                <p class="image__description">
+                    Burst firecrackers of flavours in your mouth! Al dente spaghetti tossed with corn and mushrooms in Chef's special peri peri sauce,
+                    finished off with aged parmesean shavings and parsley. Contains Wheat, Milk.
+               
+                </p>
+            </div>
+            <div id="downname">
+                <h3>Fireworks Mushroom and Corn Spaghetti</h3>
+            </div>
+        </div>
+        <div class="image">
+            <img class="image__img"
+                src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Angoori-Rasmalai.png" alt="Bricks">
+            <div class="image__overlay image__overlay--primary">
+                <!-- <div class="image__title">Bricks</div> -->
+                <p class="image__description">
+                   
+Angoori Rasmalai is a traditional Bengali sweet soaked in a mouth watering milk based gravy. It's a jar of love.Contains Milk, Nuts.
+                </p>
+            </div>
+            <div id="downname">
+                <h3>Angoori Rasmalai</h3>
+            </div>
+        </div>
+        <div class="image">
+            <img class="image__img"
+                src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Bailey_s-Chocolate-Mousse.png" alt="Bricks">
+            <div class="image__overlay image__overlay--primary">
+                <!-- <div class="image__title">Bricks</div> -->
+                <p class="image__description">
+                    A delicious concoction of Chef's special sinful chocolate mousse spiked with Bailey's and finished off with whipped cream.
+                     All the happiness you need is right here. Contains Milk, Nuts.
+                </p>
+            </div>
+            <div id="downname">
+                <h3>Bailey’s Chocolate Mousse</h3>
+            </div>
+        </div>
+        <div class="image">
+            <img class="image__img"
+                src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gajar-Ka-Halwa.png" alt="Bricks">
+            <div class="image__overlay image__overlay--primary">
+                <!-- <div class="image__title">Bricks</div> -->
+                <p class="image__description">
+                  
+Mum's oh-so-yum Gajar Ka Halwa simply made with shredded red carrots in warm ghee, sugar and a blend of winter spices.
+ Grab a spoonful with the chopped dry fruits and the wafting scent of cardamom and cuddle back in bed. Contains Milk, Nuts.
+                </p>
+            </div>
+            <div id="downname">
+                <h3>Gajar Ka Halwa</h3>
+            </div>
+        </div>
+        <div class="image">
+            <img class="image__img"
+                src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gulab-Jamun-1pc.png" alt="Bricks">
+            <div class="image__overlay image__overlay--primary">
+                <!-- <div class="image__title">Bricks</div> -->
+                <p class="image__description">
+                   
+These soft little pleasures soaked in rose and saffron flavoured sugar syrup and garnished with dry 
+fruit shavings is what deliciousness is all about. Good for 1.
+                </p>
+            </div>
+            <div id="downname">
+                <h3>Gulab Jamun (1pc)</h3>
+            </div>
+        </div>
+       
     </div>
     <div id="thirdbtn">
         <button id="button3">Load More</button> 
@@ -524,7 +654,7 @@
 
             <button id="button4"><a id="ad" href="https://www.swiggy.com">ORDER NOW</a></button>      
            
-        </div>
+        </div> -->
        
     </div>
 
@@ -534,6 +664,7 @@
   </footer>
 </html>
 <script type="module">
+    
    let slideIndex = 0;
     const showSlides = () => {
         // console.log("function is calling");
