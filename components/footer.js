@@ -88,7 +88,7 @@ return `<div id="footer">
             <a href="mailto:support@swiggy.in">support@swiggy.in</a>
             <br />
 
-            <a href="/terms-and-conditions">Terms and Conditions</a>
+            <a href="https://www.thebowlcompany.in/terms-and-conditions/">Terms and Conditions</a>
           </p>
         </div>
         <div id="fdiv4">

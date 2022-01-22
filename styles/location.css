@@ -1,18 +1,32 @@
 body {
   margin: 0px;
   font-family: "Bree Serif", serif;
+  margin-left: 0px;
+  width: 100%;
 }
 .main {
+  background: #edecea;
   background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/11/about-us-banner.jpg);
   margin-bottom: 0px;
   overflow: hidden;
+  background-size:contain;
+  background-repeat: no-repeat;
+
+  background-position:right;
+  background-size: auto;
+  /* border: 1px solid 
+red; */
+  margin-left: 0px;
+  
+
+
+  
 }
 
 /* this is for first box ----------------------------------------------------------*/
 
 .box1 {
   display: flex;
-
   width: 100%;
   height: 450px;
 }
@@ -36,11 +50,21 @@ body {
 /* this is for second box------------------------------------------------------------------------------------- */
 
 .box-2 {
+  background: black;
   background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-chef-image.jpg);
   width: 100%;
   height: 600px;
   margin-top: 0px;
   display: flex;
+  overflow: hidden;
+  background-size:contain;
+  background-repeat: no-repeat;
+
+  background-position:right;
+  background-size: auto;
+  /* border: 1px solid red; */
+  margin-left: 0px;
+
 }
 .infoleft {
   width: 50%;
@@ -73,11 +97,22 @@ body {
   width: 60%;
   margin: auto;
   margin-top: 50px;
+  /* padding: 20px; */
 }
+
 .place > div {
   text-align: center;
   margin: auto;
   border-bottom: 1px solid gray;
+  padding: 20px;
+}
+.places{
+  padding: 20px;
+  cursor: pointer;
+}
+
+.chenn{
+  padding: 20px 40px;
 }
 .details {
   width: 70%;
@@ -93,6 +128,13 @@ body {
   width: fit-content;
   font-weight: lighter;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 20px;
+}
+.details>div>div>h3{
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-bottom: 20px;
 }
 .mm {
   height: 70px;
@@ -141,8 +183,12 @@ body {
   margin-top: -200px;
 }
 .rimg {
-  margin-left: 85%;
+  margin-left: 83.8%;
   margin-bottom: -160px;
+  /* position; */
+  
+
+  /* po */
 }
 
 /* OUR KITCHEN PRACTICES------------------------------------------------------------ */
@@ -248,33 +294,28 @@ body {
 }
 .intxt{
     display: flex;
+    cursor: pointer;
     
 }
 
 .intxt>div{
     margin: auto;
 }
+
 .arr1{
-    background: black;
-    /* width: fit-content; */
-    /* height: fit-content; */
+    
     border-radius: 50%;
     width: 9%;
     height: 50%;
     color: white;
     text-align: center;
-    /* margin: auto; */
 }
 .packimages{
-    
-    /* border: 1px solid red; */
-    /* justify-content: center; */
     margin-top: 3.5%;
     height: 500px;
     margin-left: -70px;
 }
 .changeimg{
-    /* border: 1px solid blue; */
     margin: auto;
     margin-left: 10%;
 
