@@ -163,13 +163,9 @@ body {
 #imgtag_second{
   background-image: url(https://www.thebowlcompany.in/wp-content/uploads/2021/10/Banner1-Butter-chicken-mac.png);
   animation: slide 20s infinite;
-  /* border: 1px solid red; */
-  /* height: 700px; */
   background-position-y: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  /* margin-bottom: -500px; */
-
 }
 @keyframes slide {
   25%{
