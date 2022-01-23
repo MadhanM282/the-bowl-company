@@ -11,50 +11,54 @@ body{
         #ex1{
             font-weight: lighter;
         }
-        #firstdiv{
-            width:100%;
-            height:500px;
-            display:flex;
-            background-color:#eee9e6;
+        #firstdiv {
+        width: 100%;
+        height: 448px;
+        display: flex;
+        background-color: #eee9e6;
         }
-        #written{
-            width: 50%;
-            text-align: center;
-            padding-top:120px; 
-            height:500px;
-           
+        #written {
+        flex: 1.2;
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 100px;
+        /* height:500px; */
+        /* border:solid maroon; */
+        font-size: 20px;
         }
-        #image{
-            width: 50%;
-            height:500px;
+        #image {
+        flex: 2.3;
+        /* height:500px; */
+        /* border:solid red; */
         }
-        #img{
-            width: 100%;
-            height:500px;
+        #img {
+        width: 100%;
+        /* height:500px; */
+        /* border:solid green; */
         }
-        #button1{
-            background-color: black;
-            color:white;
-            font-weight:bold;
-            padding-left:50px;
-            padding-right:50px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: transparent;
-            border-radius:25px;    
+        #button1 {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: transparent;
+        border-radius: 25px;
+        margin-top: 30px;
         }
-        #button2{
-            background-color:white;
-            color:rgb(3, 3, 3);
-            font-weight:bold;
-            padding-left:50px;
-            padding-right:50px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: transparent;
-            border-radius:25px;
-            margin-top:15px;    
-
+        #button2 {
+        background-color: white;
+        color: rgb(3, 3, 3);
+        font-weight: bold;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: transparent;
+        border-radius: 25px;
+        margin-top: 15px;
         }
         #ab{
             color: white;
@@ -86,9 +90,7 @@ body{
             padding-bottom:40px;
             /* grid-gap: 6px; */
         }
-        #logo>div{
-            /* border: 1px solid red; */
-        }
+      
        
         
         #img2{
@@ -189,11 +191,11 @@ body{
     }
     #se{
         display: flex;
-        border: 1px solid red;
+        /* border: 1px solid red; */
       
     }
     #same>h2{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         font-weight:lighter;
     }
     #our{
@@ -203,9 +205,7 @@ body{
         margin-bottom: 20px;
        
     }
-    .las{
-        border: 1px solid red;
-    }
+    
     #thirddiv{
         background-image:url("https://thebowlcompany.in/wp-content/uploads/2021/09/bg_blog.jpg");
         text-align: center;
