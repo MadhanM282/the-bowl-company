@@ -515,7 +515,7 @@ body {
             
          }
          .rimg {
-  margin-left: 83.8%;
+  margin-left: 83.9%;
   margin-top: -200px;
   /* position; */
   
@@ -523,3 +523,101 @@ body {
   /* po */
 }
 
+
+/* ==================cmnt section============== */
+
+.cmnt{
+  border: 1px solid transparent;
+  height: 800px;
+  display: flex;
+  margin-top: -63px;
+  background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/About-us-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+.cmnt>div{
+  border: 1px solid transparent;
+  width: 45%;
+  height: 80%;
+  margin: auto;
+
+}
+.cmntdiv{
+  /* margin-left: 100px; */
+  padding-left: 100px;
+}
+.cmntdiv>h1{
+  font-size: 40px;
+
+}
+.cmnt>.cmntdiv>p::after{
+  content: url(https://thebowlcompany.in/wp-content/uploads/2021/10/quote-2.png);
+    right:47%;
+    /* bottom: 1px; */
+    /* margin-bottom: -10px; */
+    padding-top: 40px;
+    /* z-index: -1; */
+    /* border: 1px solid transparent; */
+
+    position: absolute;
+}
+.cmnt>div>.cmnttxt::before{
+  content: url(https://thebowlcompany.in/wp-content/uploads/2021/10/quote-1.png);
+    z-index: 100000;
+    left: 0px;
+    z-index: -1;
+}
+.star-rating{
+  display: flex;
+  /* border: 1px solid transparent; */
+  width: 20%;
+  color:  #eab404;;
+}
+.cmnttxt{
+  margin-top: 100px;
+}
+.cmnttxt>h3{
+  margin-top: 10px;
+  font-size: 30px;
+}
+.cmntdiv>p{
+  line-height: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  /* border: 1px solid transparent; */
+  width: 100%;
+  font-size: 20px;
+}
+
+.imgdiv{
+  margin-top: 70px;
+  border: 1px solid transparent;
+  width: fit-content;
+}
+.oneimage{
+  transform: rotate(25deg);
+}
+.twoimage{
+  transform: rotate(-25deg);
+}
+.imgdiv>img{
+  margin-top: 50px;
+}
+
+.onimg{
+  padding-left: 60px;
+}
+.div>img{
+  border: 1px solid transparent;
+  margin-left: -200px;
+  /* width: 300px; */
+  /* height: auto; */
+}
+.div{
+  display: flex;
+}
+.bigimgdiv{
+  margin-top: -420px;
+  margin-left: 130px;
+}
