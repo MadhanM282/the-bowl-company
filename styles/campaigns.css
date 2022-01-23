@@ -1,0 +1,140 @@
+#camp {
+  background-color: hsl(203, 23%, 95%);
+  margin: 0%;
+  height: 1480px;
+  padding: 9%;
+  /* border:solid blue; */
+}
+body {
+  margin: 0%;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
+}
+#our_camp {
+  height: 236px;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+#our_camp > h1 {
+  padding: 85px 100px 40px 125px;
+}
+#our_camp > img {
+  width: 200px;
+  height: 260px;
+  margin-top: -100px;
+}
+.peppr {
+  margin-left: 93%;
+
+  margin-top: -170px;
+  margin-bottom: -200px;
+}
+.campsm {
+  /* border: solid grey; */
+  display: flex;
+  margin: auto;
+  height: 456px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#camp > .campsm:nth-child(2) {
+  margin-top: 60px;
+}
+#camp > .campsm:nth-child(3) {
+  margin-top: 60px;
+}
+
+.campImg {
+  /* border: solid pink; */
+  width: 556px;
+}
+/* div {
+  border: 0.5px dashed green;
+} */
+
+video {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  border: none;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+.campRight {
+  padding: 45px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 684px;
+}
+.content-holder {
+  min-height: 100px;
+}
+/* .ribbon-wrapper {
+  width: 118px;
+  height: 124px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  right: -8px;
+  z-index: 9;
+}
+.ribbon-wrapper > .ribbon {
+  color: #333;
+  text-align: center;
+  
+
+  position: relative;
+  padding: 6px 0px;
+  top: 13px;
+  right: 9px;
+  width: 168px;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+} */
+.elementor-button > span {
+  text-decoration: none;
+}
+.elementor-button-text {
+  -webkit-box-flex: 1;
+
+  flex-grow: 1;
+  -webkit-box-ordinal-group: 11;
+
+  order: 10;
+  display: inline-block;
+}
+.elementor-button {
+  letter-spacing: 2.8px;
+  line-height: 1;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  padding: 11px 24px;
+  transition: all 0.3s;
+}
+.elementor-button:hover {
+  padding: 13px 27px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.camp-link-holder > a {
+  margin: 0px 20px 0px 0px;
+  text-transform: uppercase;
+}
+.campbtndiv {
+  height: 70px;
+  margin-top: 50px;
+}
+.elementor-animation-grow {
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.read_more_blog {
+  text-decoration: none;
+  border-radius: 40px;
+  background-color: #000;
+}

@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaigns</title>
+    <link rel="stylesheet" href="styles/campaigns.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="styles/foot.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="our_camp">
+      <h1>Our Campaigns</h1>
+      <img
+        src="https://www.thebowlcompany.in/wp-content/uploads/2021/11/tomato-new.png"
+        class="attachment-large size-large"
+        alt=""
+      />
+    </div>
+    <div id="camp">
+      <div class="campsm">
+        <div class="campImg">
+          <video
+            controls=""
+            poster="https://www.thebowlcompany.in/wp-content/uploads/2021/12/video3-thumbnail.jpg "
+          >
+            <source
+              src="https://www.thebowlcompany.in/wp-content/uploads/2021/12/TBC_MANDARIN_25s_1-1.mp4"
+            />
+          </video>
+          <!-- <div class="ribbon-wrapper">
+            <div class="ribbon">Ongoing</div>
+          </div> -->
+        </div>
+        <div class="campRight">
+          <h2>Duniya Hai..Bowl</h2>
+          <div class="content-holder">
+            Let The Bowl Company transform you!<br />
+            With 25+ Indian &amp; global Iconic dishes,<br />
+            served in a bowl!
+          </div>
+          <div class="campbtndiv">
+            <div class="camp-link-holder">
+              <a
+                href="https://bit.ly/3xXzxJ6"
+                class="elementor-button-link elementor-button elementor-animation-grow read_more_blog"
+                role="button"
+                target="_blank"
+              >
+                <span class="elementor-button-text">ORDER NOW</span>
+              </a>
+
+              <a
+                href="https://www.instagram.com/thebowlcompanyindia/"
+                class="elementor-button-link elementor-button elementor-animation-grow read_more_blog camp_link"
+                role="button"
+                target="_blank"
+              >
+                <span class="elementor-button-text">View On Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="campsm">
+        <div class="campImg">
+          <video width="100%" controls="" poster=" ">
+            <source
+              src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/TBC-Video-Ad-Square_1.mp4"
+            />
+          </video>
+        </div>
+        <div class="campRight">
+          <h2>Bowl Voyage</h2>
+          <div class="content-holder">
+            Explore the most iconic, multi-cuisine recipes from around the
+            world, handpicked and perfected to local tastes by our top chefs —
+            all in the convenience of a bowl.
+          </div>
+          <div class="campbtndiv">
+            <div class="camp-link-holder">
+              <a
+                href="https://www.instagram.com/thebowlcompanyindia/"
+                class="elementor-button-link elementor-button elementor-animation-grow read_more_blog camp_link"
+                role="button"
+                target="_blank"
+              >
+                <span class="elementor-button-text">View On Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="campsm">
+        <div class="campImg">
+          <video
+            width="100%"
+            controls=""
+            poster="https://www.thebowlcompany.in/wp-content/uploads/2021/12/TBC-Diwali-V3_Moment.jpg "
+          >
+            <source
+              src="https://www.thebowlcompany.in/wp-content/uploads/2021/11/TBC_Diwali.mp4"
+            />
+          </video>
+        </div>
+        <div class="campRight">
+          <h2>Diwali BowlFiesta</h2>
+          <div class="content-holder">
+            Experience a burst of flavors in every bite with our delicious and
+            de-light-ful Diwali meal combos — up for grabs through exciting
+            festive contests!
+          </div>
+          <div class="campbtndiv">
+            <div class="camp-link-holder">
+              <a
+                href="https://www.instagram.com/thebowlcompanyindia/"
+                class="elementor-button-link elementor-button elementor-animation-grow read_more_blog camp_link"
+                role="button"
+                target="_blank"
+              >
+                <span class="elementor-button-text" >View On Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Pepper.png"
+        class="peppr"
+        alt="Pepper"
+      />
+    </div>
+  </body>
+  <footer>
+    <div id="getfooter"></div>
+  </footer>
+</html>
+<script type="module">
+  import navbar from "./components/navbar.js";
+
+  let cont = document.getElementById("nav");
+  cont.innerHTML = navbar();
+
+  let foot = document.querySelector("#getfooter");
+  import footer from "./components/footer.js";
+  foot.innerHTML = footer();
+</script>
