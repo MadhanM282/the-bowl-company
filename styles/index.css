@@ -1,7 +1,9 @@
 body {
   margin: 0px;
+  overflow-x: hidden;
   /* margin-top: 0px; */
   font-family: "Bree Serif", serif !important;
+  
 }
 ::selection {
   background-color: #000000;
