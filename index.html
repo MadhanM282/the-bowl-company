@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d7bc18a32d.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>The Bowl Company</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="styles/location.css">
 </head>
 <body >
     <div id="container">
@@ -24,7 +25,7 @@
                  <p><span>ICONIC, CHEF-CREATED </span> DISHES <br> FROM AROUND THE WORLD. <br> ALL IN <span>ONE BOWL</span>
                  </p>
                  
-                 <button ><a href="https://bit.ly/3xXzxJ6">ORDER NOW</a></button>
+                 <button ><a href="https://bit.ly/3xXzxJ6" target="blank">ORDER NOW</a></button>
              </div>
              <div id="imgtag_second">
                  <!-- <img class="images" src="" alt=""> -->
@@ -75,7 +76,7 @@
 
         <h5>Hungry for a culinary cruise <br> around the world?</h5>
 
-        <button>EXPLORE MENU</button>
+        <button> <a href="ourmenu.html">EXPLORE MENU</a> </button>
 
        </div>
        
@@ -282,7 +283,7 @@
             <h2>A sneak peek at our multi‑cuisine bowls, new entrants, <br>
             and all-time bestsellers</h2>
         </div>
-        <button id="order"> <a id="ab" href="https://www.swiggy.com">ORDER NOW</a></button>
+        <button id="order"> <a id="ab" href="https://www.swiggy.com" target="blank">ORDER NOW</a></button>
     </div>
     <div class="first">
         <h2>Good things come in<br>
@@ -382,6 +383,9 @@
 
 
 </body>
+<footer>
+    <div id="getfooter"></div>
+</footer>
 </html>
 
 
@@ -392,6 +396,9 @@
 let cont = document.getElementById("nav")
 cont.innerHTML = navbar()
 
+    let foot = document.querySelector("#getfooter");
+    import footer from "./components/footer.js";
+    foot.innerHTML = footer();
 
 
 // x.innerHTML = upper()

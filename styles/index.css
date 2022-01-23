@@ -292,6 +292,15 @@ a{
 
 
 }
+.Fifth_SectionText>button:hover{
+  /* padding: 40px 87px; */
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  /* font-size: 22px; */
+  transition: 0.5s;
+  border-radius: 25px;
+}
 
 
 /*------------------------Sixth_Section------------------------*/
@@ -366,15 +375,16 @@ a{
 
     }
     .nav_arr>div{
-        width: 55px;
-        height: 40px;
+        width: 39px;
+        height: 35px;
         
         border-radius: 50%;
         background-color: white;
         text-align: center;
         font-weight: bolder;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 7px;
+        /* margin-top: -30px; */
     }
     .nav_arr>div:nth-child(1){
       margin-right: 10px;
@@ -407,6 +417,13 @@ a{
             padding-bottom: 15px;
             border: transparent;
             border-radius:25px;
+    }
+    #order:hover{
+      cursor: pointer;
+      padding: 15px 87px;
+  /* font-size: 22px; */
+  transition: 0.5s;
+  border-radius: 25px;
     }
     a{
         text-decoration: none;
@@ -641,7 +658,7 @@ a{
 }
 .chilli{
   margin-right: 83.9%;
-  margin-top: -150px;
+  margin-top: -90px;
 }
 .s_text{
   padding-top: 40px;
@@ -659,15 +676,25 @@ a{
     font-size: 20px;
     font-weight: 400;
     line-height: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .view_button{
   padding-top: 150px;
 }
 .view_button>button{
-  border-radius: 10px;
-  width: 150px;
-  height: 35px;
-  padding: 5px;
+  border-radius: 20px;
+  border: 0px;
+  /* width: 150px; */
+  /* height: 35px; */
+  padding: 10px 50px;
   margin-top: 30px;
+  font-size: 20px;
+}
+.view_button>button:hover{
+  cursor: pointer;
+      padding: 10px 70px;
+  /* font-size: 22px; */
+  transition: 0.5s;
+  border-radius: 25px;
 }
   
