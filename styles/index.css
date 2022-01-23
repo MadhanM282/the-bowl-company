@@ -55,6 +55,12 @@ body {
   /* font-family: 'Bree Serif', serif; */
   font-size: 60px;
 }
+button:hover{
+  cursor: pointer;
+}
+a{
+  color: black;
+}
 
 #nav > div:nth-child(2) > ul {
   display: flex;
