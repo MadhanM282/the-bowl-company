@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="styles/location.css">
     <style>
         body{
             font-family: "Bree Serif", serif !important;
@@ -27,11 +29,22 @@
             /* margin-top: 0px; */
             text-align: justify;
         }
+        .tnc1{
+            font-size: 50px;
+        }
+        .tnc{
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
+    <!-- <div class="navDiv">
+
+    </div> -->
+
+    <h1 class="tnc1">Terms and Conditions</h1>
     <div class="elementor-widget-container">
-        <p>Terms of Use</p>
+        <p class="tnc">Terms of Use</p>
         <p>1. These Terms of Use (the “Terms of Use”) governs your use of our website <a
                 href="https://www.thebowlcompany.in/">www.thebowlcompany.in</a> (the “Website”) Please read these Terms of
             Use carefully before you use the Website. If you do not agree to these Terms of Use, you may not use the
@@ -233,4 +246,22 @@
             protection of your information when you use our Website. Please read this Policy before using the Website.</p>
     </div>
 </body>
+<!-- <footer>
+    <div id="getfooter"></div>
+</footer> -->
 </html>
+
+<script type="module">
+    import navbar from "./components/navbar.js"
+
+
+    let cont = document.getElementById("nav")
+    cont.innerHTML = navbar()
+
+    let foot = document.querySelector("#getfooter");
+    import footer from "./components/footer.js";
+    foot.innerHTML = footer();
+
+
+// x.innerHTML = upper()
+</script>
