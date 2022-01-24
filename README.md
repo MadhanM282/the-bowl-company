@@ -5,4 +5,4 @@ This is a project which is done during masai construct week and with the contrib
 
 https://cocky-spence-5f536c.netlify.app  
 
-you can click this link to see the project i your machine
+you can click this link to see the project in your machine
