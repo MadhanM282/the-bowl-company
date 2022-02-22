@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/location.css" />
+    <link rel="stylesheet" href="styles/aboutus.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
@@ -49,38 +49,40 @@
           </p>
         </div>
       </div>
-      <div class="location">
-        <h1>WHAT ARE OUR DELIVERY LOCATIONS?</h1>
-        <div class="place">
-          <div onclick="Bang()" class="places bang">
-            <img
-              src="https://thebowlcompany.in/wp-content/uploads/2021/10/Banglure.png"
-              alt=""
-            />
-            <h3>Banglure</h3>
+      <section id="sec-1">
+        <div class="location">
+          <h1>WHAT ARE OUR DELIVERY LOCATIONS?</h1>
+          <div class="place">
+            <div onclick="Bang()" class="places bang">
+              <img
+                src="https://thebowlcompany.in/wp-content/uploads/2021/10/Banglure.png"
+                alt=""
+              />
+              <h3>Banglure</h3>
+            </div>
+            <div onclick="chenn()" class="places chenn">
+              <img
+                src="	https://thebowlcompany.in/wp-content/uploads/2021/10/Chennai.png"
+                alt=""
+              />
+              <h3>Chennai</h3>
+            </div>
+            <div onclick="hyd()" class="places hyd">
+              <img
+                src="https://thebowlcompany.in/wp-content/uploads/2021/10/Hydrebad.png"
+                alt=""
+              />
+              <h3>Hydrebad</h3>
+            </div>
           </div>
-          <div onclick="chenn()" class="places chenn">
-            <img
-              src="	https://thebowlcompany.in/wp-content/uploads/2021/10/Chennai.png"
-              alt=""
-            />
-            <h3>Chennai</h3>
+          <div class="details">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
           </div>
-          <div onclick="hyd()" class="places hyd">
-            <img
-              src="https://thebowlcompany.in/wp-content/uploads/2021/10/Hydrebad.png"
-              alt=""
-            />
-            <h3>Hydrebad</h3>
-          </div>
+          <div class="mm"></div>
         </div>
-        <div class="details">
-          <div class="left"></div>
-          <div class="middle"></div>
-          <div class="right"></div>
-        </div>
-        <div class="mm"></div>
-      </div>
+      </section>
       <div class="stat">
         <h3>MOST LOVED BOWL BRAND</h3>
 
@@ -267,4 +269,4 @@
   import footer from "./components/footer.js";
   foot.innerHTML = footer();
 </script>
-<script src="scripts/location.js"></script>
+<script src="scripts/aboutus.js"></script>
