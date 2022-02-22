@@ -1,0 +1,18 @@
+#search{
+    width: 70%;
+    height: 100px;
+    border:1px solid red;
+    margin:auto;
+    margin-top:5%;
+}
+#searchmain{
+    height: 100vh;
+    width:100%;
+    margin:0px;
+}
+.searchInput{
+    width:96%;
+    height:70%;
+    margin:auto;
+    font-size:20px;
+}

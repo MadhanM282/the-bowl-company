@@ -5,8 +5,8 @@ function navbar(){
 <div>
   
         <ul>
-        <a href="#"><li>SEARCH</li></a>
-           <a href="index.html"><li>HOME</li></a>
+        <a href="index.html"><li>HOME</li></a>
+        <a href="search.html"><li>SEARCH</li></a>
           <a href="aboutus.html"><li>ABOUT US</li></a>
            <a href="ourmenu.html"><li>OUR MENU</li></a>
          <a href="campaigns.html"><li>CAMPAIGNS</li></a>
