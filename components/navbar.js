@@ -5,12 +5,13 @@ function navbar(){
 <div>
   
         <ul>
+        <a href="#"><li>SEARCH</li></a>
            <a href="index.html"><li>HOME</li></a>
           <a href="aboutus.html"><li>ABOUT US</li></a>
            <a href="ourmenu.html"><li>OUR MENU</li></a>
          <a href="campaigns.html"><li>CAMPAIGNS</li></a>
-          <a href="aboutus.html#sec-1"><li>LOCATE US</li></a>
-           <a href="https://bit.ly/3xXzxJ6"target="blank" ><li>ORDER NOW</li></a>
+          <a href="#"><li>LOGIN</li></a>
+           <a href="#"><li>CART</li></a>
         </ul>
     
 </div>`
