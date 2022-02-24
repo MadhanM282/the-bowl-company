@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campaigns</title>
-    <link rel="stylesheet" href="./styles/search.css">
+    <title>SEARCH MENU</title>
+    <link rel="stylesheet" href="./styles/search.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="styles/foot.css" />
     <link
@@ -14,10 +14,14 @@
     />
   </head>
   <body>
-    <div id="searchmain"><div id="nav"></div>
-    <div id="search">
-        <input class="searchInput" type="text" placeholder="Search Dishes">
-    </div></div>
+    <div id="searchmain">
+      <div id="nav"></div>
+      <div id="search">
+        <input id="searchInput" type="text" placeholder="Search Dishes" />
+        <div id="searchResults"></div>
+        <div id="#displaySearch"></div>
+      </div>
+    </div>
   </body>
   <footer>
     <div id="getfooter"></div>
@@ -29,8 +33,73 @@
   let cont = document.getElementById("nav");
   cont.innerHTML = navbar();
 
+  var input = document.getElementById("searchInput");
+  input.addEventListener("input", debouncer);
+  async function SearchList() {
+    try {
+      var menuValue = input.value;
+      if (menuValue.length < 1) {
+        console.log(1);
+        window.location.href = "search.html";
+        return false;
+      }
+      let response = await fetch(
+        `https://www.themealdb.com/api/json/v1/1/search.php?s=${menuValue}`
+      );
+      // let response = await fetch(`localhost:2345/name/${menuValue}`);
+      let data = await response.json();
+      console.log("data", data);
+       console.log("data", data.meals);
+      displaySearchList(data.meals);
+      // displaySearch(data.results);
+    } catch (error) {
+      console.log("error", error);
+    }
+  }
+
+  var search_waiting;
+  function debouncer() {
+    if (search_waiting) {
+      clearTimeout(search_waiting);
+    }
+
+    search_waiting = setTimeout(function () {
+      SearchList();
+      //Schedule a setTimeout after delay seconds
+    }, 1000);
+  }
+  ///////////////////////////////////////////////////
+  var optiondiv = document.querySelector("#searchResults");
+
+  let displaySearchList = (data) => {
+    if (data === undefined) {
+      return false;
+    }
+
+    data.map((ele) => {
+      console.log("data", data);
+
+      var menu_div = document.createElement("div");
+
+      var menuImg = document.createElement("img");
+      menuImg.src = ele.strMealThumb;
+
+      var menuName = document.createElement("h2");
+      menuName.textContent = ele.strMeal;
+      menu_div.append(menuImg, menuName);
+
+      menu_div.addEventListener("click", letsSee);
+      function letsSee() {
+        localStorage.setItem("localDta", JSON.stringify(ele));
+        window.location.href = "search.html";
+      }
+      optiondiv.append(menu_div);
+    });
+  };
+  ////////////////////////////////////////////////////
+
   let foot = document.querySelector("#getfooter");
   import footer from "./components/footer.js";
   foot.innerHTML = footer();
 </script>
-<script src="/scripts/search.js"></script>
+<!-- <script src="/scripts/search.js"></script> -->
