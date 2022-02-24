@@ -44,7 +44,7 @@
         return false;
       }
 
-      let response = await fetch(`http://localhost:2345/name/${menuValue}`);
+      let response = await fetch(`http://localhost:2345/name/searching?search=${menuValue}`);
 
       let data = await response.json();
       console.log("data", data);

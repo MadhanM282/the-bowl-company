@@ -1,7 +1,7 @@
 const express = require("express");
 
 const connect = require("./configs/db");
-
+const cors = require("cors");
 
 
 
@@ -15,7 +15,7 @@ const search = require("../src/controllers/search.controller");
 
 
 const app = express();
-
+app.use(cors());
 
 
 app.use(express.json());

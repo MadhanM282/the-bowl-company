@@ -4,15 +4,13 @@ const Food = require("../models/projects.models");
 
 const app = express();
 
-const cors = require("cors");
-app.use(cors())
 
 const router = express.Router();
 
 // make router for frontend
 
 // posting food
-router.post("", cors(), async (req, res) => {
+router.post("", async (req, res) => {
     try {
       const food = await Food.create(req.body);
       res.send(food);
@@ -23,7 +21,7 @@ router.post("", cors(), async (req, res) => {
 })
 
 // getting food
-router.get("", cors(),async (req, res) => {
+router.get("",async (req, res) => {
   try {
     const count = req.query.count;
     // console.log('count', count);
@@ -36,7 +34,7 @@ router.get("", cors(),async (req, res) => {
   }
 });
 
-router.patch("/:id",cors(), async (req, res)=> {
+router.patch("/:id", async (req, res)=> {
   try {
     const food = await Food.findByIdAndUpdate(req.params.id,req.body)
     res.send(food);
