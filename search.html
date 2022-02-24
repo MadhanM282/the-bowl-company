@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/search.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="styles/foot.css" />
+    <!-- <link rel="stylesheet" href="styles/menu.css" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
@@ -19,7 +20,9 @@
       <div id="search">
         <input id="searchInput" type="text" placeholder="Search Dishes" />
         <div id="searchResults"></div>
-        <div id="#displaySearch"></div>
+        <div id="displaySearch">
+          <div id="fithdiv"></div>
+        </div>
       </div>
     </div>
   </body>
@@ -44,11 +47,13 @@
         return false;
       }
 
-      let response = await fetch(`http://localhost:2345/name/search?search=${menuValue}`);
+      let response = await fetch(
+        `http://localhost:2345/name/search?search=${menuValue}`
+      );
 
       let data = await response.json();
       console.log("data", data);
-       console.log("data", data.meals);
+      console.log("data", data.meals);
       // displaySearchList(data.meals);
       displaySearch(data);
     } catch (error) {
@@ -87,64 +92,63 @@
       menuName.textContent = ele.name;
       menu_div.append(menuImg, menuName);
 
-      menu_div.addEventListener("click", letsSee);
-      function letsSee() {
-        localStorage.setItem("localDta", JSON.stringify(ele));
+      menu_div.addEventListener("click", displays);
+      function displays() {
+        localStorage.setItem("localDataSearch", JSON.stringify(ele));
         window.location.href = "search.html";
       }
       optiondiv.append(menu_div);
     });
   };
-  
-  function display(data){
-    let main = document.querySelector("#fithdiv")
-    main.innerHTML = null
-    data.map((ele)=>{
-        let div = document.createElement('div');
-        let div1 = document.createElement('div');
-        div1.setAttribute('class', 'image')
 
-        let img = document.createElement('img');
-        img.setAttribute('class', 'image__img');
-        img.src = ele.image;
+  var data = JSON.parse(localStorage.getItem("localDataSearch"));
+  display(data);
+  function display(data) {
+    let main = document.querySelector("#fithdiv");
+    main.innerHTML = null;
 
-        let div2 = document.createElement('div');
-        div2.setAttribute('class', 'image__overlay image__overlay--primary')
-        // div2.setAttribute('class', );
+    let div = document.createElement("div");
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", "image");
 
-        let p = document.createElement('p');
-        p.setAttribute('class', 'image__description')
-        p.innerHTML = ele.description
+    let img = document.createElement("img");
+    img.setAttribute("class", "image__img");
+    img.src = data.image;
 
-        div2.append(p);
+    let div2 = document.createElement("div");
+    div2.setAttribute("class", "image__overlay image__overlay--primary");
+    // div2.setAttribute('class', );
 
+    let p = document.createElement("p");
+    p.setAttribute("class", "image__description");
+    p.innerHTML = data.description;
 
-        let name = document.createElement('h3');
-        name.setAttribute("class","downname")
-        name.innerHTML= ele.name;
+    div2.append(p);
 
-        let price = document.createElement('h4')
-        price.innerHTML= ele.price
-        let button = document.createElement('button');
+    let name = document.createElement("h3");
+    name.setAttribute("class", "downname");
+    name.innerHTML = data.name;
 
-        button.innerHTML= "Add+"
+    let price = document.createElement("h4");
+    price.innerHTML = data.price;
+    let button = document.createElement("button");
 
-        const namediv = document.createElement('div');
-        namediv.setAttribute('class', 'namediv')
+    button.innerHTML = "Add+";
 
-        namediv.append(price,button)
-        // div3.append(name);
+    const namediv = document.createElement("div");
+    namediv.setAttribute("class", "namediv");
 
-        div1.append(img,div2);
-        div.append(div1,name,namediv)
+    namediv.append(price, button);
+    // div3.append(name);
 
-        main.append(div);
-        // console.log('ele',ele)
-    });
-}
+    div1.append(img, div2);
+    div.append(div1, name, namediv);
+
+    main.append(div);
+    // console.log('ele',ele)
+  }
 
   let foot = document.querySelector("#getfooter");
   import footer from "./components/footer.js";
   foot.innerHTML = footer();
 </script>
-
