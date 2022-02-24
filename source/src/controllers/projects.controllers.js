@@ -23,9 +23,11 @@ router.post("", cors(), async (req, res) => {
 })
 
 // getting food
-router.get("", cors(),async (req, res) => {
+router.get("/", cors(),async (req, res) => {
   try {
-    const food = await Food.find().lean().exec();
+    const count = req.query.count;
+    const size = count*9
+    const food = await Food.find().limit(size).lean().exec();
     return res.send(food);
     // res.send(food);
   } catch (err) {
