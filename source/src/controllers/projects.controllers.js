@@ -23,9 +23,10 @@ router.post("", cors(), async (req, res) => {
 })
 
 // getting food
-router.get("/", cors(),async (req, res) => {
+router.get("", cors(),async (req, res) => {
   try {
     const count = req.query.count;
+    // console.log('count', count);
     const size = count*9
     const food = await Food.find().limit(size).lean().exec();
     return res.send(food);
@@ -35,5 +36,13 @@ router.get("/", cors(),async (req, res) => {
   }
 });
 
+router.patch("/:id",cors(), async (req, res)=> {
+  try {
+    const food = await Food.findByIdAndUpdate(req.params.id,req.body)
+    res.send(food);
+  } catch (err) {
+    console.log('err', err);
+  }
+})
 
 module.exports = router;

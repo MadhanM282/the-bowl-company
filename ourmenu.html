@@ -201,10 +201,11 @@
 
 
     <div id="fithdiv">
-        <div class="image">
+
+        <!-- <div class="image">
             <img class="image__img" src="https://www.thebowlcompany.in/wp-content/uploads/2021/10/Butter-Chicken-Mac-_-Cheese.png" alt="Bricks">
             <div class="image__overlay image__overlay--primary">
-                <!-- <div class="image__title">Bricks</div> -->
+               
                 <p class="image__description">
                     A dish that marries the two classics - al dente macaroni and tender chicken chunks tossed in a creamy makhani sauce and finished off with parmesean 
                     shavings to seal the deal. Ultimate comfort food! Contains Milk, Nuts, Wheat.
@@ -213,7 +214,8 @@
             <div id="downname">
                 <h3>BUTTER CHICKEN MAC & CHEESE</h3>
             </div>
-        </div>
+        </div> -->
+
     </div>
 
 
@@ -276,20 +278,20 @@
 </script>
 
 <script>
-    async function searching(url){
+    // async function searching(url){
         
-        try{
-            let res = await fetch (url);
+    //     try{
+    //         let res = await fetch (url);
             
-            let data = await res.json();
-            console.log('data', data);   
-            // return data.meals;
-        }
-        catch(e){
-            console.log('e', e);
-        }
-    }
-    let url = "http://localhost:2345/foods/?count=1"
+    //         let data = await res.json();
+    //         console.log('data', data);   
+    //         // return data.meals;
+    //     }
+    //     catch(e){
+    //         console.log('e', e);
+    //     }
+    // }
+    // let url = "http://localhost:2345/foods/?count=1"
 
 
     async function searching1(url){
@@ -322,10 +324,10 @@
         }
     }
     let url2 = "http://localhost:2345/category/Desserts"
-    searching(url)
+    // searching(url)
     searching1(url1)
     searching2(url2)
 </script>
 
-<!-- <script src="./scripts/menu.js"></script> -->
+<script src="./scripts/menu.js"></script>
 

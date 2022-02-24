@@ -1,375 +1,367 @@
 body{
-            font-family: 'Bree Serif', serif !important;
-            margin: 0px;
-        }
-        body{
-            margin: 0px;
-        }
-        a{
-            text-decoration: none !important;
-        }
-        #ex{
-            font-weight:bold;
-        }
-        #ex1{
-            font-weight: lighter;
-        }
-        .topdiv {
-            background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/Banner.png);
-            background-size: cover;
-            background-position-y: -40px;
-            background-repeat: no-repeat;
-        }
-        #firstdiv {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        /* background-color: #eee9e6; */
-        }
-        #written {
-        flex: 1.2;
-        text-align: center;
-        padding-top: 100px;
-        padding-left: 100px;
-        /* height:500px; */
-        /* border:solid maroon; */
-        font-size: 20px;
-        }
-        #image {
-        flex: 2.3;
-        /* height:500px; */
-        /* border:1px solid red; */
-        }
-        #button1 {
-        background-color: black;
-        color: white;
-        font-weight: bold;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: transparent;
-        border-radius: 25px;
-        margin-top: 30px;
-        }
-        #button2 {
-        background-color: white;
-        color: rgb(3, 3, 3);
-        font-weight: bold;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: transparent;
-        border-radius: 25px;
-        margin-top: 15px;
-        }
-        #ab{
-            color: white;
-           list-style: none;
-           font-size:16px;
+    font-family: 'Bree Serif', serif !important;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none !important;
+}
+#ex{
+    font-weight:bold;
+}
+#ex1{
+    font-weight: lighter;
+}
+.topdiv {
+    background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/Banner.png);
+    background-size: cover;
+    background-position-y: -40px;
+    background-repeat: no-repeat;
+}
+#firstdiv {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+#written {
+    flex: 1.2;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+#image {
+    flex: 2.3;
+}
+#button1 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: transparent;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+#button2 {
+    background-color: white;
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: transparent;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+#ab{
+    color: white;
+    list-style: none;
+    font-size:16px;
 
-        }
-        #ac{
-            color: rgb(8, 8, 8);
-           list-style: none;
-           font-size:16px;
-           margin-top:40px;
+}
+#ac{
+    color: rgb(8, 8, 8);
+    list-style: none;
+    font-size:16px;
+    margin-top:40px;
 
-        }
-        #ex2{
-            text-align: center;
-            font-weight:bold;
-            padding-top:60px;
-            /* padding-left:150px; */
-        }
-        #logo{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            /* margin-left:100px; */
-            width: 85%;
-            text-align:center;
-            /* border: 1px solid red; */
-            margin: auto;
-            padding-bottom:40px;
-            /* grid-gap: 6px; */
-        }
-      
+}
+#ex2{
+    text-align: center;
+    font-weight:bold;
+    padding-top:60px;
+    /* padding-left:150px; */
+}
+#logo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* margin-left:100px; */
+    width: 85%;
+    text-align:center;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-bottom:40px;
+    /* grid-gap: 6px; */
+}
+
+
+
+#img2{
+
+    /* margin-left:90px; */
+    margin-top: 30px;
+}
+#seconddiv{
+    width:100%;
+    background: #eeefef;
+    text-align: center;
+    padding-top: 30px;
+
+}
+#seconddiv>h1{
+    font-size: 45px;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    width: fit-content;
+    margin:auto;
+
+
+}
+#text{
+    /* padding-left:120px; */
+    font-weight:lighter;
+    /* margin-top: 10px; */
+    margin-bottom: 40px;
+    font-size: 19px;
+
+}
+#head{
+    /* margin-left:100px; */
+    /* border: 1px solid red; */
+    color: black;
+    margin-top: 30px;
+}
+#logo2>h2{
+    margin-top: 26px;
+}
        
-        
-        #img2{
-
-            /* margin-left:90px; */
-            margin-top: 30px;
-        }
-        #seconddiv{
-            width:100%;
-            background: #eeefef;
-            text-align: center;
-            padding-top: 30px;
-
-        }
-        #seconddiv>h1{
-           font-size: 45px;
-           /* border: 1px solid red; */
-           /* text-align: center; */
-           width: fit-content;
-           margin:auto;
-
-
-        }
-        #text{
-            /* padding-left:120px; */
-            font-weight:lighter;
-            /* margin-top: 10px; */
-            margin-bottom: 40px;
-            font-size: 19px;
-
-        }
-        #head{
-            /* margin-left:100px; */
-            /* border: 1px solid red; */
-            color: black;
-            margin-top: 30px;
-        }
-        #logo2>h2{
-            margin-top: 26px;
-        }
-       
-    /* img{
-        vertical-align: middle;
-        width: 60%;
-    } */
-    .slideshow-container{
-        max-width:1000px;
-        position: relative;
-        margin: 0 auto;
-       
-    }
-    .numbertext{
-        position: absolute;
-        top: 0;
-        padding: 8px 12px;
-        color: #F2F2F2;
-        font-size: 16px;
-    }
-    .text{
-        color: #F2F2F2;
-        font-size: 15px;
-        padding: 8pc 12px;
-        position: absolute;
-        bottom: 25px;
-        width: 100%;
-        text-align: center;
-    }
-    .dot{
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-    .dots-container{
-        text-align: center;
-        margin-top:100px;
-    }
-    .dots{
-        height: 15px;
-        width: 15px;
-        display: inline-block;
-        background-color: black;
-        border-radius: 50%;
-        transition: background-color 0.6s ease;
-    }
-    .fade{
-        -webkit-animation-name: fade;
-        -webkit-animation-duration:1.5s ;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    @keyframes fade{
-        from {opacity: .4;}
-        to {opacity: 1;}
-    }
-    #se{
-        display: flex;
-        /* border: 1px solid red; */
-      
-    }
-    #same>h2{
-        /* border: 1px solid red; */
-        font-weight:lighter;
-    }
-    #our{
-        color: white;
-        font-size:40px;
-        font-weight: bold;
-        margin-bottom: 20px;
-       
-    }
+   
+.slideshow-container{
+    max-width:1000px;
+    position: relative;
+    margin: 0 auto;
     
-    #thirddiv{
-        background-image:url("https://thebowlcompany.in/wp-content/uploads/2021/09/bg_blog.jpg");
-        text-align: center;
-        padding-top:50px;
-        height:750px;
-    }
-        #our1{
+}
+.numbertext{
+    position: absolute;
+    top: 0;
+    padding: 8px 12px;
+    color: #F2F2F2;
+    font-size: 16px;
+}
+.text{
+    color: #F2F2F2;
+    font-size: 15px;
+    padding: 8pc 12px;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dots-container{
+    text-align: center;
+    margin-top:100px;
+}
+.dots{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration:1.5s ;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+#se{
+    display: flex;
+    /* border: 1px solid red; */
+    
+}
+#same>h2{
+    /* border: 1px solid red; */
+    font-weight:lighter;
+}
+#our{
+    color: white;
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
 
-            color: white;
-            text-align: center;
-            font-size:20px; 
-            font-weight: lighter;
-            /* border: 1px solid red; */
-            width: fit-content;
-            margin: auto;
-            margin-bottom: 70px;
-            font-family: Arial, Helvetica, sans-serif;
+#thirddiv{
+    background-image:url("https://thebowlcompany.in/wp-content/uploads/2021/09/bg_blog.jpg");
+    text-align: center;
+    padding-top:50px;
+    height:750px;
+}
+#our1{
 
-        }
-        h2{
-            color: white;
-        }
-        #same{
+    color: white;
+    text-align: center;
+    font-size:20px; 
+    font-weight: lighter;
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 70px;
+    font-family: Arial, Helvetica, sans-serif;
 
-            height:300px;
-            width:400px;
-        }
-        #forthdiv{
-            margin-top: 50px;
-        }
-        #gr{
+}
+h2{
+    color: white;
+}
+#same{
 
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: repeat(2,1fr);
+    height:300px;
+    width:400px;
+}
+#forthdiv{
+    margin-top: 50px;
+}
+#gr{
 
-            height:170px;
-            width:80%;
-            margin: auto;
-            gap:10px;
-            /* border: 1px solid red; */
-            background:#eeefef ;
-        }
-        #hh13{
-            margin-left:150px;
-            margin-top:50px;
-        }
-        #hh12{
-            margin-left:150px;
-            margin-bottom: 10px;
-        }
-        #img4{
-            height: 50px;
-            width: 50px;
-            padding-top:10px;
-            /* padding-left: 10px; */
-            
-        }
-        #gr1{
-            display: flex;
-            /* border: 1px solid; */
-            height: fit-content;
-        }
-        
-        #hh14{
-            margin-top:25px;
-           /* padding-left:10px; */
-            /* border: 1px solid red; */
-            font-weight: 100;
-            width: 150px;
-        }
-        /* .break{
-            width: 150px;
-        } */
-        #fithdiv{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 20px;
-            width: 90%;
-            margin: auto;
-            margin-top: 50px;
-            /* border: 1px solid red; */
-           
-        }
-        #fithdiv1{
-            height:300px;
-            width:280px;
-            margin: auto;
-        }
-        #img6{
-            height: 240px;
-            width: 280px;
-           
-        }
-        #he1{
-            padding-left:30px;
-            font-size:17px;
-        }
-        #button3{
-            background-color: black;
-            color:white;
-            font-weight:bold;
-            padding-left:50px;
-            padding-right:50px;
-            padding-top:10px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: 0px;
-            border-radius:25px; 
-            font-size:16px;
-            
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
 
-        }
-        #thirdbtn{
-            margin-left:650px;
-            justify-content: center;
-        }
-        #sixdiv{
-        width:100%;
-        background-size:cover;
-        height:400px;
-        margin-top:20px;
-     background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/03/08174730/Swiggy.jpg")
-        }
-        #bowl{
-            margin-left:45%;
-           padding-top:50px;
-        }
-        #last{
-            text-align:center;
-            color: white;
-            font-size:50px;
-            font-weight: bold;
+    height:170px;
+    width:80%;
+    margin: auto;
+    gap:10px;
+    /* border: 1px solid red; */
+    background:#eeefef ;
+}
+#hh13{
+    margin-left:150px;
+    margin-top:50px;
+}
+#hh12{
+    margin-left:150px;
+    margin-bottom: 10px;
+}
+#img4{
+    height: 50px;
+    width: 50px;
+    padding-top:10px;
+    /* padding-left: 10px; */
+    
+}
+#gr1{
+    display: flex;
+    /* border: 1px solid; */
+    height: fit-content;
+}
 
-        }
-        #button4{
-            background-color:white;
-            color:rgb(3, 3, 3);
-            font-weight:bold;
-            padding-left:50px;
-            padding-right:50px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: transparent;
-            border-radius:25px;
-            margin-top:15px;
-            margin-left: 600px;
-        
-        }
-        #ad{
-            color: rgb(8, 8, 8);
-           list-style: none;
-           font-size:16px;
-           margin-top:40px;
-        }
-        #nav{
-            /* background-color:#eee9e6 ; */
-            width:100%;
-        }
-        .image {
+#hh14{
+    margin-top:25px;
+    /* padding-left:10px; */
+    /* border: 1px solid red; */
+    font-weight: 100;
+    width: 150px;
+}
+/* .break{
+    width: 150px;
+} */
+#fithdiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    
+}
+#fithdiv1{
+    height:300px;
+    width:280px;
+    margin: auto;
+}
+#img6{
+    height: 240px;
+    width: 280px;
+    
+}
+#he1{
+    padding-left:30px;
+    font-size:17px;
+}
+#button3{
+    background-color: black;
+    color:white;
+    font-weight:bold;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0px;
+    border-radius:25px; 
+    font-size:16px;
+    
+
+}
+#thirdbtn{
+    margin-left:650px;
+    justify-content: center;
+}
+#sixdiv{
+    width:100%;
+    background-size:cover;
+    height:400px;
+    margin-top:20px;
+    background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/03/08174730/Swiggy.jpg")
+}
+#bowl{
+    margin-left:45%;
+    padding-top:50px;
+}
+#last{
+    text-align:center;
+    color: white;
+    font-size:50px;
+    font-weight: bold;
+
+}
+#button4{
+    background-color:white;
+    color:rgb(3, 3, 3);
+    font-weight:bold;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: transparent;
+    border-radius:25px;
+    margin-top:15px;
+    margin-left: 600px;
+
+}
+#ad{
+    color: rgb(8, 8, 8);
+    list-style: none;
+    font-size:16px;
+    margin-top:40px;
+}
+#nav{
+    /* background-color:#eee9e6 ; */
+    width:100%;
+}
+.image {
     position: relative;
     width: 400px;
 }
@@ -429,4 +421,20 @@ body{
     padding-left:10px;
     padding-right:10px;
     /* text-align: justif; */
+}
+
+#fithdiv>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.namediv{
+    margin-top: 20px;
+    display:flex;
+    padding: 0px 30px;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+.downname{
+    /* margin: auto; */
+    margin-left: 0px;
+    text-align: center;
 }
