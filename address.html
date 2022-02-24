@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Address page</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179">
+          <link rel = "stylesheet" href="address.css">
+</head>
+
+
+<body>
+
+    <div id = "container_checkout">
+
+        <!-- First box -->
+        <div class = "checkout_box1">
+
+            <div class = "logo_checkout">
+            <img height="70px" src = "./photos/Dot_Key_Logo.png" alt = "">
+            <!-- <nav class = "nav1"> Cart > Information > Shopping > Payment</nav> -->
+            <div id = "options">
+                <ul id = "list">
+                  <li style="color: #ff6781;">Cart</li>
+                  <li>Information</li>
+                  <li>Shipping</li>
+                  <li>Payment</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class = "contact_address_info">
+                
+                <!-- contact info  -->
+                <div class = "contact_info">
+
+                    <h2>Contact information</h2>
+
+                    <div class = "contact_info2">
+                        <div class = "contact_img">
+                            <img height="60px" width="60px" src = "./photos/contact_photo.png">
+                        </div>
+                        <div class = "contact_info_login">
+                            <div id = "user_details_name">Name and email</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- address info  -->
+                <div class = "address_info">
+
+                    <h2>Shipping address</h2>
+
+                         
+                    <form id = "form">
+
+                        <!-- <input id = "new_address" type = "text" placeholder = "Use a new address"> -->
+
+                        <div class = "saved_address">
+                               <select name = "" id = "use_address">
+                                    <option value = "saved_addres">Previously saved address</option>
+                                    <option value = "new_addresss">Use a new address</option>
+                                </select>
+                        </div>
+
+
+                        <div>
+                        <select  id = "use_address1" >
+
+                            <option>Country</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="British IOT">British Indian Ocean Territory</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos">Cocos(Keeling) Islands</option>
+                            <option value="Hongkong">Hong Kong SAR</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakstan</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrzyzstan">Kyrzyzstan</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Macao">Macao SAR</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mangolia">Mangolia</option>
+                            <option value="Myanmar">Myanmar (Burma)</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palestinian">Palestinian Territories</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="South Korea">South Koria</option>
+                            <option value="Srilanka">Sri Lanka</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Yemen">Yemen</option>
+                        </select>
+
+                    </div>
+
+                    <div id = "ip_name">
+                        <input id = "first_name" type = "text" placeholder = "First name">
+                        <input id = "last_name" type = "text" placeholder = "Last name">
+                    </div>
+                    
+                    <div>
+                        <input id = "address_1" type = "text" placeholder = "Address">
+                    </div>
+                    
+                    <div>
+                        <input id = "address_2" type = "text" placeholder = "Apartment, suite, etc.(optional">
+                    </div>
+                    
+                    <div class = "ip_city">
+                        <input id = "city" type = "text" placeholder = "City">
+
+                        <select name = "State" id = "state_name">
+                            <option disabled>State</option>
+                            <option value="Andaman">Andaman and Nikobar Islands</option>
+                            <option value="Andra_Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal_pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chattisgarh</option>
+                            <option value="Dadra">Dadra and Nagar Haveli</option>
+                            <option value="Daman">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal_pradesh">Himachal Pradesh</option>
+                            <option value="Jammu_kashmir">Jammu Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Lakshdweep">Lakshdweep</option>
+                            <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajastan">Rajastan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil_Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarkhand">Uttharkhand</option>
+                            <option value="Eest_Bengal">West Bengal</option>
+                        </select>
+
+                        <input id = "pin_code" type = "text" placeholder = "PIN code">
+                    </div>    
+
+                    <div> 
+                        <input id ="phone_num" type = "tel" placeholder = "Phone number"> 
+                    </div>    
+
+                    <div class = "ip_checkbox">
+                        <input type = "checkbox" id = "save_info" name = "" value = "">
+                        <label for = "save_info"> Save this information for next time</label>
+                    </div>
+    
+                    <div id = "ip_submit">
+                        <button id = "return_to_cart"><a href="cart.html"> < Return to cart</a></button>
+    
+                        <button id = "return_to_shipping"><a href="shiping2.html">Continue to shipping</a></button>
+                    </div>    
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- footer part -->
+            <footer class="main_footer" role="contentinfo">
+                <ul class="policy-list" role="list">
+                <li class="policy-list__item "><a>Refund policy </a></li>
+                <li class="policy-list__item "> <a>Shipping policy </a></li>
+                <li class="policy-list__item "><a> Privacy policy</a>   </li>
+               <li class="policy-list__item "><a>Terms of service  </a></li>
+               </ul>
+            </footer>
+
+
+
+        </div>
+
+        <!-- Second Box================================================================================================ -->
+        <div class = "checkout_box2">
+
+            <div class = "checkout2">
+                <p><span>Pay now and </span>SAVE 3% <span>on your order. </span>Not Valid On Gpay Discount Code</p>
+                 <hr>
+
+                 <div class = "cart_items" id="cartBox"> 
+ 
+                    <!-- <div class = "cart_iems1">
+                        <img height = "60px" width = "60px" src = "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_81c93210-7768-4e0e-8618-e56c0d681c11_360x.jpg?v=1638973730">
+                        <p>Deep pore foaming cleanser</p>
+                        <p>599.00</p>
+                    </div>
+                    <div class = "cart_iems1">
+                        <img height = "60px" width = "60px" src = "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_81c93210-7768-4e0e-8618-e56c0d681c11_360x.jpg?v=1638973730">
+                        <p>Deep pore foaming cleanser</p>
+                        <p>599.00</p>
+                    </div>
+                    <div class = "cart_iems1">
+                        <img height = "60px" width = "60px"  src = "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_81c93210-7768-4e0e-8618-e56c0d681c11_360x.jpg?v=1638973730">
+                        <p>Deep pore foaming cleanser</p>
+                        <p>599.00</p>
+                    </div>
+
+                    <hr> -->
+                 </div>
+
+                 
+                 <p class = "points1">You have '0' points</p>
+
+                 <p class = "points2">Redeem ' 1000 ' points</p>
+
+
+                 <div>
+                     <input id = "range" type = "range" min = "1000" max = "0">
+                     <button id = "redeem">Redeem</button>
+                 </div>
+                 <div class="reward_name">You need a minimum of 1000  points  to redeem.</div>
+
+                 <hr>
+
+                 <div class = "gift_card">
+                     <input type = "text" id = "coupon_code" placeholder="Gift card or discount code">
+                     <button id = "coupon_btn">Apply</button>
+                 </div>
+
+                 <hr>
+
+                 <p id="subtotal">Subtotal</p>
+                 <p>Shipping  Free</p>
+
+                 <hr>
+
+                 <p id="total">Total</p>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
+
+<script src="address.js"></script>

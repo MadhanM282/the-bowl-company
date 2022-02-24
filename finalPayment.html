@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="payment.css">
+    
+</head>
+
+<body>
+    <div id="payment">
+        <div id="payment_right">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Dot_Key_Logo.png?111348"
+                id="payment_img" />
+            <nav>
+                <div id="payment_menu">
+                    <a href="">Cart <i class="fas fa-chevron-right"></i></a>
+                    <a href="">Information <i class="fas fa-chevron-right"></i> </a>
+                    <a href="">Shipping <i class="fas fa-chevron-right"></i></a>
+                    <a href="">Payment</a>
+                </div>
+            </nav>
+            <div id="payment_shipinfo">
+                <div class="mail_info" style="display: flex;">
+                    <label for="mail_id" style="margin-right: 30px;">Contact:</label>
+                    <div id="con"></div>
+
+
+                </div>
+                <hr>
+                <div class="address_info_ship" style="display: flex;">
+
+                    <label for="ship_to" style="margin-right: 30px;">Ship to:</label>
+                    <div id="addre"></div>
+                    <!--                     
+                   <a href="address.html">
+
+                       <button id = "shipping_info1">Change</button>
+                   </a> -->
+
+                </div>
+            </div>
+            <p id="payment_tag">Payment</p>
+            <p id="payment_line">All transactions are secure and encrypted.</p>
+            <div id="payment_options">
+
+                <!-- paytm payment div -->
+                <div id="cardpayment_options">
+                    <label for="card_options1" class="radio">
+                        <input type="radio" id="card_options1" name="card_options" class="radio__input">
+                        <div class="radio__radio"></div>
+                        <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout/offsite-gateway-logos/paytm@2x-af01977ff64627f57925062e195a194de280c6c879267a51456c0d579acb90c2.png"
+                            id="paytm_img" />
+                        <div id="card_icon">
+                            <img id="icon_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfobg_cM2eQaU42AoNR9FbQYpgPkmO_hEpjqLlPm5fmz3sslvMcKvDtszs3Rq_b8x7_mM&usqp=CAU" />
+                            <img id="icon_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78uFaz9YjBzWgEPKRscXByPJdgQkboxSc3_czTSWq0JCRZJu_hE8jeeBrOH6WUqJWLy4&usqp=CAU" />
+                            <img id="icon_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwsoCcwR9pMX_9y0qLnnjPgj1kMzYBpP5sPg&usqp=CAU" />
+                            <img id="icon_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDOGugZqOxFl4axkn3PG1GgFI3c40oObGzbg&usqp=CAU" />
+                            <small id="and_more">and more...</small>
+                        </div>
+                    </label>
+                </div>
+                <hr />
+                <!-- paytm payment div -->
+
+
+                <!-- <div id="payment_box">
+                    <h1>asdghkjb nnvnvkfnvkjfnvkmn</h1>
+                </div> -->
+
+                <!-- razorpay payment div -->
+                <div id="cardpayment_options">
+                    <label for="card_options2" class="radio">
+                        <input type="radio" id="card_options2" name="card_options" class="radio__input">
+                        <div class="radio__radio"></div>
+                        <img src="https://cdn.shopify.com/s/files/applications/e273f27d4c4fa65fc8e2af05e552f04e.png?height=24&1637057371"
+                            id="rozraypay_img" />
+                        <div id="card_iconroz">
+                            <img id="icon_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfobg_cM2eQaU42AoNR9FbQYpgPkmO_hEpjqLlPm5fmz3sslvMcKvDtszs3Rq_b8x7_mM&usqp=CAU" />
+                            <img id="icon_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78uFaz9YjBzWgEPKRscXByPJdgQkboxSc3_czTSWq0JCRZJu_hE8jeeBrOH6WUqJWLy4&usqp=CAU" />
+                            <img id="icon_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDOGugZqOxFl4axkn3PG1GgFI3c40oObGzbg&usqp=CAU" />
+                            <img id="icon_img"
+                                src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/102014/rupay_0.png?itok=7GLpxAyo" />
+                            <small id="and_more">and more...</small>
+                        </div>
+                    </label>
+                </div>
+                <hr />
+                <!-- razorpay payment div -->
+
+                <!-- cash on delivery div -->
+                <div id="cardpayment_options">
+                    <label for="card_options3" class="radio">
+                        <input type="radio" id="card_options3" name="card_options" class="radio__input">
+                        <div class="radio__radio"></div>
+                        <p id="card_options-cash">Cash on Delivery</p>
+                </div>
+                <hr />
+                <!-- cash on delivery div -->
+
+                <!-- address option div -->
+                <p id="payment_billtag">Billing address</p>
+                <p id="payment_billline">Select the address that matches your card or payment method.</p>
+                <div id="address">
+
+                    <!-- Same as shipping address -->
+                    <div id="payment_address">
+                        <label for="card_options4" class="radio">
+                            <input type="radio" id="card_options4" name="card_optionsadd" class="radio__input">
+                            <div class="radio__radio1"></div>
+                            <p id="card_paymentadd">Same as shipping address</p>
+                        </label>
+                    </div>
+                    <hr />
+                    <!-- Same as shipping address -->
+
+
+                    <!-- Use a different billing address -->
+                    <div id="payment_address">
+                        <label for="card_options5" class="radio">
+                            <input type="radio" id="card_options5" name="card_optionsadd" class="radio__input">
+                            <div class="radio__radio1"></div>
+                            <p id="card_paymentadd">Use a different billing address</p>
+
+                        </label>
+                    </div>
+                    <hr />
+                    <!-- Use a different billing address -->
+                </div>
+                <!-- address option div -->
+
+                <!-- payment order div -->
+                <div id=payment_order>
+                    <!-- return to shipping -->
+                    <a id="payment_return" href="cart.html"><i class="fas fa-chevron-left"></i>Return to
+                        shipping</a>
+                    <!-- return to shipping -->
+
+
+                    <!-- Complete order button -->
+                    <div id="payment_btn">
+                        <a id="payment_complete" href="detail.html">Complete order</a>
+                    </div>
+                    <!-- Complete order button -->
+                </div>
+                <!-- payment order div -->
+
+
+                <!-- terms and condition -->
+                <hr id="h" />
+                <nav>
+                    <div id="payment_lasta">
+                        <a href="">Refund policy</a>
+                        <a href="">Shipping policy</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Terms of service</a>
+                    </div>
+                </nav>
+                <!-- terms and condition -->
+            </div>
+        </div>
+        <div id="payment_left">
+            <div class="checkout_box2">
+
+                <div class="checkout2" style="line-height: 3;">
+                    <p><span>Pay now and </span>SAVE 3% <span>on your order. </span>Not Valid On Gpay Discount Code</p>
+                    <hr>
+
+                    <div class="cart_items" id="cartBox">
+
+                        <!-- <div class = "cart_iems1">
+                            <img height = "60px" width = "60px" src = "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_81c93210-7768-4e0e-8618-e56c0d681c11_360x.jpg?v=1638973730">
+                            <p>Deep pore foaming cleanser</p>
+                            <p>599.00</p>
+                        </div>
+                        <div class = "cart_iems1">
+                            <img height = "60px" width = "60px" src = "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_81c93210-7768-4e0e-8618-e56c0d681c11_360x.jpg?v=1638973730">
+                            <p>Deep pore foaming cleanser</p>
+                            <p>599.00</p>
+                        </div>
+                        <div class = "cart_iems1">
+                            <img height = "60px" width = "60px"  src = "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_81c93210-7768-4e0e-8618-e56c0d681c11_360x.jpg?v=1638973730">
+                            <p>Deep pore foaming cleanser</p>
+                            <p>599.00</p>
+                        </div>
+    
+                        <hr> -->
+                    </div>
+
+
+                    <p class="points1">You have '0' points</p>
+
+                    <p class="points2">Redeem ' 1000 ' points</p>
+
+
+                    <div>
+                        <input id="range" type="range" min="1000" max="0">
+                        <button id="redeem">Redeem</button>
+                    </div>
+                    <div class="reward_name">You need a minimum of 1000 points to redeem.</div>
+
+                    <hr>
+
+                    <div class="gift_card">
+                        <input type="text" id="coupon_code" placeholder="Gift card or discount code">
+                        <button id="coupon_btn">Apply</button>
+                    </div>
+
+                    <hr>
+
+                    <p id="subtotal">Subtotal</p>
+                    <p>Shipping Free</p>
+
+                    <hr>
+
+                    <p id="total">Total</p>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="./JS/finalPayment.js"></script>
+<script>
+   
+</script>
+
+<!-- <script>
+document.getElementById("card_options").addEventListener("click",function(){
+    var x = document.getElementById("payment_box");
+    x.style.display = "inline-block";
+})
+</script> -->

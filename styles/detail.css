@@ -1,0 +1,238 @@
+body{
+    background-color:rgb(110, 108, 108)
+}
+#detail{
+    height: 520px;
+    width: 400px;
+    background-color:white;
+    margin:10% auto;
+    margin-top:60px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+#detail input
+{
+    padding-left: 10px;
+}
+#detail_paytmdiv{
+    /* border:1px solid red; */
+    height: 500px;
+    width: 350px;
+    margin: auto;
+    font-family: Arial;
+}
+#detail_arrow{
+    /* border:1px solid red; */
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    margin-top:10px;
+    font-size: 10px;
+}
+.fas{
+    margin-top:10px;
+}
+#detail_paytm{
+       height: 30px;
+       width: 100px;
+       margin:auto;
+}
+#detail_scan{
+    /* border:1px solid teal; */
+    height: 250px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+#detail_scantag{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight:bold;
+}
+#detail_qrcode{
+    margin-top: -10px;
+    /* border:1px solid tomato; */
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+#detail_qrcodeimg{
+    height: 150px;
+    width: 150px;
+}
+#detail_payment{
+    border: 1px solid gray;
+    height: 225px;
+    width: 320px;
+    margin: auto;
+    border-radius: 5px;
+}
+#detail_paymenttag{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+#detail_cards,#detail_UPI,#detail_netbank{
+    /* border: 1px solid tomato; */
+    height: 30px;
+    width: 290px;
+    font-size: 15px;
+    padding:10px;
+    cursor: pointer;
+}
+.far{
+    margin-left: 48%;
+}
+/* #detail_bank{
+   display:inline-flex;
+   
+} */
+#detail_upiimg{
+    height:25px;
+    width:25px;
+    margin-top: -40px;
+    margin-left: 265px;
+   
+}
+#detail_bankimg{
+    height:25px;
+    width:25px;
+    margin-top: -20px;
+    margin-left: 265px;
+}
+
+   /* .debit and credit card page csssss */
+   #detail_debitcardpay{
+    height: 350px;
+    width: 400px;
+    border-radius: 5px;
+    background-color:white;
+    font-family: arial;
+    position: absolute;
+    display: none;
+    margin-top: -300px;
+    }
+    #detail_debitcardpaydiv{
+        height: 300px;
+        width: 350px;
+        /* border:1px solid red; */
+        padding:20px;
+        margin:auto;
+    }
+    #detail_debitcardtag{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #crossicon{
+        margin-left: 8px;  
+    }
+    #debit_cardoptiondiv{
+        /* border:1px solid black; */
+        border-radius:5px;
+        height: 257px;
+        width: 100%;
+    }
+    .detail_ownercardnumber{
+        /* border:1px solid rgb(0, 23, 128); */
+        height:90px;
+        width:100%;
+    }
+    #detail_cardnumbertag{
+        font-size:15px;
+    }
+    .detail_second_row{
+        /* border:1px solid rgb(0, 23, 128); */
+        height:100px;
+        width:350px;
+        display: inline-flex;
+    }
+    .selection{
+        /* border:2px solid rgb(128, 0, 17); */
+        height:100px;
+        width:170px;
+    }
+    .detail_ownercvv{
+        /* border:2px solid rgb(128, 0, 17); */
+        height:100px;
+        width:120px;
+        margin:auto; 
+    }
+    #card_number{
+        height:30px;
+        width:300px;
+        /* border:none; */
+    }
+    #startyear,#endyear{
+        height:30px;
+        width:80px;
+    }
+    #cvv{
+        height:25px;
+        width:100px;
+    }
+    #pay{
+        /* border:2px solid rgb(128, 0, 17); */
+        background-color: rgb(0, 238, 255);
+        border-radius: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        padding:10px;
+        font-size:18px;
+        transition: 0.5s; 
+        margin-top:10px;
+        cursor:pointer;
+    }
+    #pay a{
+        text-decoration:none;
+        color:white;
+    }
+    #pay_icon{
+        margin-right: 8px;
+    }
+     /* .debit and credit card page csssss */
+
+
+
+
+     /* .cancle_payment_cssss */
+    #detail_cancle{
+        background-color: white;
+        height: 150px;
+        width: 400px;
+        border-radius: 5px;
+        margin: auto;
+        font-family:'Arial Narrow', Arial;
+        display:none;
+        position: absolute;
+        margin-top:-100px;
+    }
+    #detail_canclepayment{
+         border:1px solid white;
+        margin: auto;
+        height:140px;
+        width:370px;
+    }
+    #detail_cancletag{
+        margin-top: 25px;
+        font-size: 23px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+    }
+    #detail_canclebtn{
+        margin-top:45px;
+    }
+    #detail_canclebtn button{
+        border:1px solid rgb(153, 235, 235);
+        background-color:rgb(47, 230, 230);
+         height:50px;
+         width: 183px;
+         border-radius: 5px;
+    }
+    button a{
+        text-decoration:none;
+        color:aliceblue;
+        font-size: 18px;
+        font-weight: bold;
+    }

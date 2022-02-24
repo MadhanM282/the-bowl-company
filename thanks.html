@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179">
+    <link rel="stylesheet" href="thanks.css"/>
+
+</head>
+<body>
+    <div id="thanks_div">
+        <!-- <img src="https://www.knowband.com/blog/wp-content/uploads/2020/03/THANKYOU-PAGE-2.png" id ="thanks"/> -->
+        <div id="conttab">
+
+            <h3>Order Details</h3> <span id="orderid"></span>
+            <div id="tab">
+        
+                <table>
+                  <tr>
+                      <th>sr.No.</th>
+                      <th>Product Name</th>
+                      <th>size</th>
+                      <th>quantity</th>
+                      <th>price</th>
+                  </tr>
+                </table>
+                <div id="total"></div>
+            </div>
+        </div>
+        <div id="thanksbtn"><a href="index.html">Go to our website</a></div>
+    </div>
+    <!-- <img src="https://www.knowband.com/blog/wp-content/uploads/2020/03/THANKYOU-PAGE-2.png" id ="thanks"/> -->
+</body>
+</html>
+<script>
+    let userCart=JSON.parse(localStorage.getItem("cartItem"));
+  let prodBag=JSON.parse(localStorage.getItem("DotAndKeyProducts"));
+  console.log(userCart)
+  let tab=document.querySelector("table");
+  let total=0;
+  userCart.map((item, index) => {
+    //console.log(item)
+      // filtering for same product id as original one
+      let prod = prodBag.filter((el) => {
+        if (item.id === el.id) {
+          return true;
+        }
+      });
+
+      let tr=document.createElement("tr");
+
+      let sr=document.createElement("td")
+      sr.textContent=index+1;
+
+
+      let title=document.createElement("td");
+      title.textContent=prod[0].title;
+
+
+      let quantity=document.createElement("td")
+      if(item.quantity){
+
+          quantity.textContent=item.quantity;
+      }else{
+          quantity.textContent=1;
+      }
+
+
+      let size=document.createElement("td")
+      if(item.size){
+          if(item.size=="Default"){
+              console.log(prod[0].size)
+              size.textContent=prod[0].size[0]
+          }else{
+
+              console.log(item.size)
+              size.textContent=item.size;
+          }
+      }
+
+
+      let price=document.createElement("td");
+      price.textContent=prod[0].price;
+      total+=+prod[0].price;
+
+
+      tr.prepend(sr,title,size,quantity,price);
+      tab.append(tr)
+  })
+
+  document.getElementById("total").textContent=`Subtotal Rs.${total.toFixed(2)}`
+  document.getElementById("orderid").textContent=`Order Id. D&k${Math.floor(Math.random()*10000)}`
+  let arr=[];
+  localStorage.setItem("cartItem",JSON.stringify(arr));
+</script>
