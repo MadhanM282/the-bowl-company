@@ -44,7 +44,7 @@
         return false;
       }
 
-      let response = await fetch(`http://localhost:2345/name/searching?search=${menuValue}`);
+      let response = await fetch(`http://localhost:2345/name/search?search=${menuValue}`);
 
       let data = await response.json();
       console.log("data", data);
@@ -96,30 +96,53 @@
     });
   };
   
-//////
-// exports.listSearch = (req, res) => {
-//   // create query object to hold search value and category value
-//   const query = {};
-//   // assign search value to query.name
-//   if (req.query.search) {
-//     query.name = { $regex: req.query.search, $options: 'i' };
-//     // assigne category value to query.category
-//     if (req.query.category && req.query.category != 'All') {
-//       query.category = req.query.category;
-//     }
-//     // find the product based on query object with 2 properties
-//     // search and category
-//     Product.find(query, (err, products) => {
-//       if (err) {
-//         return res.status(400).json({
-//           error: errorHandler(err),
-//         });
-//       }
-//       res.json(products);
-//     }).select('-photo');
-//   }
-// };
-/////
+  function display(data){
+    let main = document.querySelector("#fithdiv")
+    main.innerHTML = null
+    data.map((ele)=>{
+        let div = document.createElement('div');
+        let div1 = document.createElement('div');
+        div1.setAttribute('class', 'image')
+
+        let img = document.createElement('img');
+        img.setAttribute('class', 'image__img');
+        img.src = ele.image;
+
+        let div2 = document.createElement('div');
+        div2.setAttribute('class', 'image__overlay image__overlay--primary')
+        // div2.setAttribute('class', );
+
+        let p = document.createElement('p');
+        p.setAttribute('class', 'image__description')
+        p.innerHTML = ele.description
+
+        div2.append(p);
+
+
+        let name = document.createElement('h3');
+        name.setAttribute("class","downname")
+        name.innerHTML= ele.name;
+
+        let price = document.createElement('h4')
+        price.innerHTML= ele.price
+        let button = document.createElement('button');
+
+        button.innerHTML= "Add+"
+
+        const namediv = document.createElement('div');
+        namediv.setAttribute('class', 'namediv')
+
+        namediv.append(price,button)
+        // div3.append(name);
+
+        div1.append(img,div2);
+        div.append(div1,name,namediv)
+
+        main.append(div);
+        // console.log('ele',ele)
+    });
+}
+
   let foot = document.querySelector("#getfooter");
   import footer from "./components/footer.js";
   foot.innerHTML = footer();

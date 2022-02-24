@@ -7,7 +7,7 @@ const router = express.Router();
 const app = express();
 
 
-router.get("/searching", async (req, res) => {
+router.get("/search", async (req, res) => {
     try {
         const query = req.query.search;
         const food = await Food.find({name:{ $regex: query, $options: 'i' }});
