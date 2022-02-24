@@ -1,0 +1,82 @@
+.register-container {
+  /* max-width: 600px; */
+  margin: auto;
+}
+
+#heading {
+  /* letter-spacing: 0; */
+  font-family: "Lora", serif;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  color: #204e3c;
+  margin-bottom: 20px;
+}
+
+#subHeading {
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#myForm {
+  width: 80%;
+  margin: auto;
+}
+
+#register {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 13px;
+  width: 400px;
+  height: 30px;
+}
+.Btn{
+  margin: auto;
+  border: 1px solid transparent;
+  width: 423px;
+}
+#btn1{
+  border: 1px solid  transparent;
+  padding: 15px;
+  width: 423px;
+  margin: auto;
+  /* margin-top: 20px; */
+  /* margin-left: 386px; */
+  background-color: #0f2d26;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+#btn1:hover {
+  /* margin: 5px; */
+  padding: 15px;
+  width: 423px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#socialIcons > div {
+  margin: auto;
+  /* border: 1px solid red; */
+  width: 22%;
+  /* margin:10px; */
+}
+
+#socialIcons > p {
+  text-align: center;
+  font-size: 20px;
+}
+#socialIcons > div > a {
+  margin-left: 12px;
+}

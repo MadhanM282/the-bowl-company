@@ -11,7 +11,12 @@ app.use(cors())
 
 router.get("/:name",cors(), async (req, res) => {
     try {
-        const food = await Food.find({ name: req.params.name }).lean().exec();
+        const query = {};
+  // assign search value to query.name
+//   if (req.query.search) {
+    query.name = { $regex: req.query.name, $options: 'i' };
+        const food = await Food.find(query.name).lean().exec();
+// {$or:[{ name: req.params.name },{name: {$in:req.params.name }}]}
         console.log({ name: req.params.name });
         return res.status(200).send(food);
     } catch (err) {
