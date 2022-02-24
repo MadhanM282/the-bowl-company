@@ -43,9 +43,6 @@
         window.location.href = "search.html";
         return false;
       }
-      // let response = await fetch(
-      //   `https://www.themealdb.com/api/json/v1/1/search.php?s=${menuValue}`
-      // );
 
       let response = await fetch(`http://localhost:2345/name/${menuValue}`);
 
@@ -53,7 +50,7 @@
       console.log("data", data);
        console.log("data", data.meals);
       // displaySearchList(data.meals);
-      // displaySearch(data.results);
+      displaySearch(data);
     } catch (error) {
       console.log("error", error);
     }
@@ -71,37 +68,37 @@
     }, 1000);
   }
   ///////////////////////////////////////////////////
-  // var optiondiv = document.querySelector("#searchResults");
+  var optiondiv = document.querySelector("#searchResults");
 
-  // let displaySearchList = (data) => {
-  //   if (data === undefined) {
-  //     return false;
-  //   }
+  let displaySearch = (data) => {
+    if (data === undefined) {
+      return false;
+    }
 
-  //   data.map((ele) => {
-  //     console.log("data", data);
+    data.map((ele) => {
+      console.log("data", data);
 
-  //     var menu_div = document.createElement("div");
+      var menu_div = document.createElement("div");
 
-  //     var menuImg = document.createElement("img");
-  //     menuImg.src = ele.strMealThumb;
+      var menuImg = document.createElement("img");
+      menuImg.src = ele.image;
 
-  //     var menuName = document.createElement("h2");
-  //     menuName.textContent = ele.strMeal;
-  //     menu_div.append(menuImg, menuName);
+      var menuName = document.createElement("h2");
+      menuName.textContent = ele.name;
+      menu_div.append(menuImg, menuName);
 
-  //     menu_div.addEventListener("click", letsSee);
-  //     function letsSee() {
-  //       localStorage.setItem("localDta", JSON.stringify(ele));
-  //       window.location.href = "search.html";
-  //     }
-  //     optiondiv.append(menu_div);
-  //   });
-  // };
-  ////////////////////////////////////////////////////
+      menu_div.addEventListener("click", letsSee);
+      function letsSee() {
+        localStorage.setItem("localDta", JSON.stringify(ele));
+        window.location.href = "search.html";
+      }
+      optiondiv.append(menu_div);
+    });
+  };
+  
 
   let foot = document.querySelector("#getfooter");
   import footer from "./components/footer.js";
   foot.innerHTML = footer();
 </script>
-<!-- <script src="/scripts/search.js"></script> -->
+

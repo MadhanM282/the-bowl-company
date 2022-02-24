@@ -1,34 +1,26 @@
-#search{
-    width: 70%;
-    height: 100px;
-    border:1px solid red;
-    margin:auto;
-    margin-top:5%;
+#search {
+  width: 70%;
+  height: 100px;
+  /* border:1px solid red; */
+  margin: auto;
+  margin-top: 5%;
 }
-#searchmain{
-    height: 100vh;
-    width:100%;
-    margin:0px;
+#searchmain {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
 }
-#searchInput{
-    margin-left: 50px;
-    width:90%;
-    height:50%;
-    /* margin:auto; */
-    font-size:20px;
+#searchInput {
+  margin-left: 50px;
+  width: 90%;
+  height: 50%;
+  font-size: 20px;
 }
-/* #searchResults{
-     
-    height:400px;
-    
-} */
 
 #searchResults {
-margin:auto;
-    /* font-size:20px; */
-    border:1px solid rgb(119, 0, 255);
-
-  width:90%;
+  margin: auto;
+  /* border: 1px solid rgb(119, 0, 255); */
+  width: 90%;
   border-radius: 15px;
   overflow-y: scroll;
   background-color: white;
@@ -39,7 +31,6 @@ margin:auto;
   width: 90%;
   height: 70px;
   display: flex;
-
   margin: auto;
   margin-top: 10px;
   border-radius: 15px;
@@ -59,9 +50,9 @@ margin:auto;
   margin-top: 20px;
 }
 
-#displaySearch{
-    width:90%;
-    margin: auto;
-    border: 1px solid green;
-    height:auto;
+#displaySearch {
+  width: 90%;
+  margin: auto;
+  border: 1px solid green;
+  height: auto;
 }
