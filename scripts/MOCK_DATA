@@ -1,0 +1,290 @@
+[
+  {
+    "name": "BUTTER CHICKEN MAC & CHEESE",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Butter-Chicken-Mac-_-Cheese.png",
+    "description": "A dish that marries the two classics - al dente macaroni and tender chicken chunks tossed in a creamy makhani sauce and finished off with parmesean shavings to seal the deal. Ultimate comfort food! Contains Milk, Nuts, Wheat.",
+    "type": "nonveg",
+    "category": "Continental Bowls"
+  },
+  {
+    "name": "FIREWORKS MUSHROOM AND CORN SPAGHETTI",
+    "price": "599",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Fireworks-Mushroom-and-Corn-Spaghetti.png",
+    "description": "Burst firecrackers of flavours in your mouth! Al dente spaghetti tossed with corn and mushrooms in Chef's special peri peri sauce, finished off with aged parmesean shavings and parsley. Contains Wheat, Milk.",
+    "type": "veg",
+    "category": "Continental Bowls"
+  },
+  {
+    "name": "ANGOORI RASMALAI",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Angoori-Rasmalai.png",
+    "description": "Angoori Rasmalai is a traditional Bengali sweet soaked in a mouth watering milk based gravy. It's a jar of love.Contains Milk, Nuts.",
+    "type": "veg",
+    "category": "Desserts"
+  },
+  {
+    "name": "BAILEY’S CHOCOLATE MOUSSE",
+    "price": "499",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Angoori-Rasmalai.png",
+    "description": "A delicious concoction of Chef's special sinful chocolate mousse spiked with Bailey's and finished off with whipped cream. All the happiness you need is right here. Contains Milk, Nuts.",
+    "type": "veg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "GAJAR KA HALWA",
+    "price": "599",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gajar-Ka-Halwa.png",
+    "description": "Mum's oh-so-yum Gajar Ka Halwa simply made with shredded red carrots in warm ghee, sugar and a blend of winter spices. Grab a spoonful with the chopped dry fruits and the wafting scent of cardamom and cuddle back in bed. Contains Milk, Nuts.",
+    "type": "veg",
+    "category": "Desserts"
+  },
+  {
+    "name": "GULAB JAMUN (1PC)",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Gulab-Jamun-1pc.png",
+    "description": "These soft little pleasures soaked in rose and saffron flavoured sugar syrup and garnished with dry fruit shavings is what deliciousness is all about. Good for 1.",
+    "type": "veg",
+    "category": "Desserts"
+  },
+  {
+    "name": "RABDI JAMUN AND A BOONDI DRIZZLE",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Rabdi-Jamun-and-a-Boondi-Drizzle.png",
+    "description": "Angoori gulab jamun topped with creamy homemade radbi, sugary drops of pillowy boondi and finished off with slivers of pistachios. Good for 1. Contains Milk, Nuts.",
+    "type": "veg",
+    "category": "Desserts"
+  },
+  {
+    "name": "TRIPLE RIPPLE DEATH BY CHOCOLATE",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Triple-Ripple-Death-by-Chocolate.png",
+    "description": "Sink your spoon into this pool of Dutch dark chocolate; layers of fluffy chocolate sponge tucked amidst ripples of rich, whipped chocolate truffle, finished with delicate shavings of white and dark chocolate. Contains Milk, Wheat.",
+    "type": "veg",
+    "category": "Desserts"
+  },
+  {
+    "name": "COMBO PARTY FOR 4",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Combo-Party-for-4.png",
+    "description": "A legendary package of your favorite flavors: Classic Mac & Cheese, Classic Manchurian with Chilli Garlic Hakka Noodles, Good ol' Rajma Chawal, and Paneer Makhani Biryani.",
+    "type": "nonveg",
+    "category": "Family Combos"
+  },
+  {
+    "name": "BUTTON IDLI WITH SAMBHAR",
+    "price": "599",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Button-Idli-with-Sambhar.jpg",
+    "description": "Fluffy, mouth melting steamed mini idlis dunked in a delicious and flavor packed bowl of sambhar. The most delicious way to kick off your day. Good for 1. Contains Milk.",
+    "type": "veg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "AMMA’S CLASSIC RAWA UPMA",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Amma_s-Classic-Rawa-Upma.png",
+    "description": "No frills, no fancy ingredients and yet a traditional South Indian style breakfast which tastes divine! Fluffy sooji, loaded with cashews and tempered to perfection; served with coconut chutney on the side. Good for 1. Contains Milk, Nuts, Wheat.",
+    "type": "veg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "GUNPOWDER IDLI BOWL",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/11/Gunpowder-Idli-Bowl.jpg",
+    "description": "Gun powder spiced bite sized steamed idlis served with freshly made coconut chutney. Breakfast woes sorted. Good for 1. Contains Milk.",
+    "type": "veg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "CLASSIC MAC & CHEESE",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Classic-Mac-_-Cheese.png",
+    "description": "Good 'ol American bowl of comfort. Creamy blend of aged cheese and macaroni, topped off with an herby thyme flavored crust. Dig in for deliciousness. Contains Semolina, Wheat, Milk.",
+    "type": "veg",
+    "category": "Continental Bowls"
+  },
+  {
+    "name": "CLASSIC MAC & CHEESE",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Peri-Peri-Chicken-with-Egg-Corn-Rice.png",
+    "description": "An irresistible combination of Portuguese flavours. Tender peri peri grilled chicken on a bed of corn and egg rice, served with a portion of spicy peri peri sauce. Contains Egg, Milk, Wheat.",
+    "type": "nonveg",
+    "category": "Continental Bowls"
+  },
+  {
+    "name": "PARTY FOR TWO",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Party-for-Two.png",
+    "description": "Grab the classic flavors of our most-loved dishes: Classic Manchurian with Chilli Garlic Hakka Noodles and Paneer Makhani Biryani. Team up with our Angoori Rasmalai Jar for a scrumptious ending to your meal ",
+    "type": "nonveg",
+    "category": "Family Combos"
+  },
+  {
+    "name": "TERRIFIC TWO COMBO",
+    "price": "566",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Terrific-Two-Combo.png",
+    "description": "Dining with a friend? Choose flavors you both love - grab any two bowls and let your tastebuds and wallet celebrate.",
+    "type": "nonveg",
+    "category": "Family Combos"
+  },
+  {
+    "name": "CLASSIC FRUIT SALAD",
+    "price": "599",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Classic-Fruit-Salad.png",
+    "description": "*Fruits are subject to availability. In case a fruit is unavailable, it will be substituted. A toss up to keep your health up! Juicy Papaya, Pineapple, Watermelon and Banana mixed with salt, chaat masala, and refreshing mint. Fruits are washed with RO water and sanitized.",
+    "type": "veg",
+    "category": "Fruit Bowls"
+  },
+  {
+    "name": "GOOD OL’ RAJMA CHAWAL",
+    "price": "599",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Good-ol_-Rajma-Chawal.png",
+    "description": "Classic comfort bowl consisting of red kidney beans cooked in a mildly spicy onion tomato masala gravy, served with cumin spiced basmati rice. Contains Milk.",
+    "type": "veg",
+    "category": "Indian Bowls"
+  },
+  {
+    "name": "BUTTER CHICKEN BIRYANI / MURGH MAKHANI BIRYANI",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2…tter-Chicken-Biryani-or-Murgh-Makhani-Biryani.png",
+    "description": "We married the best of Dilli & Hyderabad in this explosion of flavours. Butter chicken meets its match with flavourful biryani rice, served with a tangy yogurt raita and sliced onions. Contains Milk, Nuts.",
+    "type": "nonveg",
+    "category": "Indian Bowls"
+  },
+  {
+    "name": "NAWABI PANEER LABABDAR WITH MATAR PULAO",
+    "price": "899",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Untitled-1.png",
+    "description": "Feel like a Nawab with this one, soft cubes of paneer cooked in a flavourful in-house Chef special gravy, served along with aromatic matar pulao. Contains Milk, Nuts.",
+    "type": "veg",
+    "category": "Indian Bowls"
+  },
+  {
+    "name": "PANEER MAKHANI BIRYANI",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-Makhani-Biryani.png",
+    "description": "We married the best of Dilli & Hyderabad in this explosion of flavours. Butter paneer meets its match with flavourful biryani rice, served with a tangy yogurt raita and sliced onions. Contains Milk, Nuts.",
+    "type": "veg",
+    "category": "Indian Bowls"
+  },
+  {
+    "name": "CHICKEN ’65 WITH CHILLI GARLIC FRIED RICE",
+    "price": "999",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2…/11/Chicken-_65-with-Chilli-Garlic-Fried-Rice.jpg",
+    "description": " A dish that needs no introduction, tender and juicy pieces of fried chicken bursting with flavours of South Indian spices and curry leaves. Served over a bed of chilli garlic fried rice. Contains Soya Sauce, Dairy, Gluten",
+    "type": "nonveg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "CLASSIC MANCHURIAN WITH CHILLI GARLIC HAKKA NOODLES",
+    "price": "999",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/ClassicManchurianwithChilliGarlicHakkaNoodles-a.png",
+    "description": "Bestseller Mixed vegetable balls tossed in a thick manchurian gravy flavoured with Indo-Chinese ingredients. Served on a bed of wok tossed hakka noodles. Contains Wheat, Soy.",
+    "type": "veg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "DOUBLE EGG FRIED RICE",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Double-Egg-Fried-Rice.png",
+    "description": "A medley of scrambled eggs and seasonal veggies wok tossed along with rice and aromatic Chinese spices. Eggztravaganza! Contains Egg, Soy.",
+    "type": "nonveg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "SPICY THAI BASIL CHICKEN WITH GARLIC FRIED RICE",
+    "price": "999",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2…icy-Thai-Basil-Chicken-with-Garlic-Fried-Rice.jpg",
+    "description": "An abudance of fresh basil leaves joins succulent chunks of chicken with classic Thai flavoured fiery sauce for a decidedly spicy curry; served along with aromatic garlic rice. Contains Wheat, Soy, Egg.",
+    "type": "nonveg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "FIERY CHICKEN CHETTINAD PAROTTA BOWL",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Fiery-Chicken-Chettinad-Parotta-Bowl.png",
+    "description": "A cracker combination from the Chettinad region! Soft, flaky, bite-sized Parotta served with our scrumptious Chettinad Chicken. With aromatic notes of coconut, mustard, and South Indian spices, this flavorful bowl is topped with tempered curry leaves. Contains Wheat.",
+    "type": "nonveg",
+    "category": "Parotta Bowls"
+  },
+  {
+    "name": "PANEER MAKHANWALA PAROTTA BOWL",
+    "price": "899",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Paneer-Makhanwala-Parotta-Bowl.png",
+    "description": "Food for every Punjabi soul! Tender paneer cubes cooked in a luscious tomato-onion gravy with homemade makhan (butter) and Indian spices. Served alongside delicious, bite-sized pieces of your choice of Parotta. Contains Milk, Wheat, Nuts.",
+    "type": "veg",
+    "category": "Parotta Bowls"
+  },
+  {
+    "name": "GOOD OL’ RAJMA CHAWAL + CHOICE OF AERATED BEVERAGE",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Good-ol_-Rajma-Chawal-Choice-of-Aerated-Beverage.png",
+    "description": "Classic comfort bowl consisting of red kidney beans cooked in a mildly spicy onion tomato masala gravy, served with cumin spiced basmati rice. Contains Milk.",
+    "type": "veg",
+    "category": "Value Meals"
+  },
+  {
+    "name": "PERI PERI CHICKEN WITH EGG CORN FRIED RICE + CHOICE OF DESSERT",
+    "price": "899",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Peri-Peri-Chicken-with-Egg-Corn-Fried-Rice-Choice-of-Dessert.png",
+    "description": "An irresistible combination of Portuguese flavours. Tender peri peri grilled chicken on a bed of corn and egg rice, served with a portion of spicy peri peri sauce and dessert of your choice. Contains Egg, Milk, Wheat.",
+    "type": "nonveg",
+    "category": "Value Meals"
+  },
+  {
+    "name": "RABDI JAMUN AND A BOONDI DRIZZLE",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Rabdi-Jamun-and-a-Boondi-Drizzle.png",
+    "description": "Angoori gulab jamun topped with creamy homemade radbi, sugary drops of pillowy boondi and finished off with slivers of pistachios. Good for 1. Contains Milk, Nuts.",
+    "type": "veg",
+    "category": "Desserts"
+  },
+  {
+    "name": "DOUBLE EGG FRIED RICE",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Double-Egg-Fried-Rice.png",
+    "description": "A medley of scrambled eggs and seasonal veggies wok tossed along with rice and aromatic Chinese spices. Eggztravaganza! Contains Egg, Soy.",
+    "type": "nonveg",
+    "category": "Continental Bowls"
+  },
+  {
+    "name": "FIERY CHICKEN CHETTINAD PAROTTA BOWL",
+    "price": "699",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Fiery-Chicken-Chettinad-Parotta-Bowl.png",
+    "description": "A cracker combination from the Chettinad region! Soft, flaky, bite-sized Parotta served with our scrumptious Chettinad Chicken. With aromatic notes of coconut, mustard, and South Indian spices, this flavorful bowl is topped with tempered curry leaves. Contains Wheat.",
+    "type": "nonveg",
+    "category": "Continental Bowls"
+  },
+  {
+    "name": "CLASSIC FRUIT SALAD",
+    "price": "599",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Classic-Fruit-Salad.png",
+    "description": "Fruits are subject to availability. In case a fruit is unavailable, it will be substituted. A toss up to keep your health up! Juicy Papaya, Pineapple, Watermelon and Banana mixed with salt, chaat masala, and refreshing mint. Fruits are washed with RO water and sanitized.",
+    "type": "veg",
+    "category": "Fruit Bowls"
+  },
+  {
+    "name": "SPICY THAI BASIL CHICKEN WITH GARLIC FRIED RICE",
+    "price": "999",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2…icy-Thai-Basil-Chicken-with-Garlic-Fried-Rice.jpg",
+    "description": "An abudance of fresh basil leaves joins succulent chunks of chicken with classic Thai flavoured fiery sauce for a decidedly spicy curry; served along with aromatic garlic rice. Contains Wheat, Soy, Egg.",
+    "type": "nonveg",
+    "category": "Oriental Bowls"
+  },
+  {
+    "name": "FIREWORKS MUSHROOM AND CORN SPAGHETTI",
+    "price": "599",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Fireworks-Mushroom-and-Corn-Spaghetti.png",
+    "description": "Burst firecrackers of flavours in your mouth! Al dente spaghetti tossed with corn and mushrooms in Chef's special peri peri sauce, finished off with aged parmesean shavings and parsley. Contains Wheat, Milk.",
+    "type": "veg",
+    "category": "Continental Bowls"
+  },
+  {
+    "name": "BUTTER CHICKEN MAC & CHEESE",
+    "price": "799",
+    "image": "https://www.thebowlcompany.in/wp-content/uploads/2021/10/Butter-Chicken-Mac-_-Cheese.png",
+    "description": "A dish that marries the two classics - al dente macaroni and tender chicken chunks tossed in a creamy makhani sauce and finished off with parmesean shavings to seal the deal. Ultimate comfort food! Contains Milk, Nuts, Wheat.",
+    "type": "Nonveg",
+    "category": "Continental Bowls"
+  }
+]
