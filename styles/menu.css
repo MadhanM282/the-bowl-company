@@ -2,6 +2,9 @@ body{
             font-family: 'Bree Serif', serif !important;
             margin: 0px;
         }
+        body{
+            margin: 0px;
+        }
         a{
             text-decoration: none !important;
         }
@@ -11,11 +14,17 @@ body{
         #ex1{
             font-weight: lighter;
         }
+        .topdiv {
+            background-image: url(https://thebowlcompany.in/wp-content/uploads/2021/10/Banner.png);
+            background-size: cover;
+            background-position-y: -40px;
+            background-repeat: no-repeat;
+        }
         #firstdiv {
         width: 100%;
-        height: 448px;
+        height: 400px;
         display: flex;
-        background-color: #eee9e6;
+        /* background-color: #eee9e6; */
         }
         #written {
         flex: 1.2;
@@ -29,12 +38,7 @@ body{
         #image {
         flex: 2.3;
         /* height:500px; */
-        /* border:solid red; */
-        }
-        #img {
-        width: 100%;
-        /* height:500px; */
-        /* border:solid green; */
+        /* border:1px solid red; */
         }
         #button1 {
         background-color: black;
@@ -362,7 +366,7 @@ body{
            margin-top:40px;
         }
         #nav{
-            background-color:#eee9e6 ;
+            /* background-color:#eee9e6 ; */
             width:100%;
         }
         .image {
