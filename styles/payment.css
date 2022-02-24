@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+}
+#payment{
+    /* border: 1px solid red; */
+    /* height:1000px; */
+    width:100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#payment_img{
+    height:60px;
+    width:250px;
+    margin-left: 250px;
+}
+#payment_right{
+    /* border: 1px solid blue; */
+    height:1010px;
+    /* width: 750px; */
+    margin: 20px;
+    font-family: sans-serif;
+}
+#payment_left{
+    /* border: 1px solid blue; */
+    height:1010px;
+    /* width: 500px; */
+    margin: 20px;
+    font-family: sans-serif;
+}
+#payment_menu{
+    font-size:12px;
+    text-align: center;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(247, 105, 129);
+    margin: 5px;  
+}
+a:hover {
+    color: black;
+}
+#payment_shipinfo{
+    border: 1px solid rgb(190, 187, 187);
+    border-radius:5px;
+    height:200px;
+    width:600px;
+    margin:auto;
+    margin-top: 20px;
+}
+#payment_tag{
+    margin-top: 50px;
+    font-size:18px;
+    margin-left: 75px;
+}
+#payment_line{
+    font-size: 15px;
+    margin-left:75px;
+    margin-top:5px;
+}
+#payment_options{
+    border: 1px solid rgb(190, 187, 187);
+    height:160px;
+    width:600px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+#cardpayment_options{
+    /* border: 1px solid rgb(168, 27, 27); */
+    height:40px;
+    width:590px;
+    padding:5px;
+    margin-top: 2px;
+    
+    /* border-radius:5px; */
+}
+#card_options{
+    margin: auto;
+}
+#paytm_img{
+    /* border: 1px solid teal; */
+    height:20px;
+    padding: 10px;
+    width:90px;
+    /* margin-left: 10px; */
+}
+#rozraypay_img{
+    /* border: 1px solid teal; */
+    height:25px;
+    padding: 10px;
+    width:220px;
+    /* margin-left: 10px */
+}
+#cash{
+    font-size:20px;
+}
+#card_icon{
+    /* border: 1px solid black; */
+    display: inline-flex;
+    height: 25px;
+    width: 235px;
+    padding:10px;
+    margin-left: 210px;
+    vertical-align: top;
+}
+#card_iconroz{
+    /* border: 1px solid black; */
+    display: inline-flex;
+    height: 25px;
+    width: 235px;
+    padding: 10px;
+    margin-left: 80px;
+    vertical-align: top;
+}
+#icon_img{
+    border: 1px solid rgb(219, 211, 197);
+    border-radius: 4px;
+    margin: 2px;
+    height:20px;
+    width:35px;
+}
+#and_more{
+    margin-top: 10px;
+    margin-left: 3px;
+    font-size: 12px;
+}
+#cash_delivery{
+    margin-left: 30px;
+    margin-top: -10px;
+}
+#payment_billtag{
+    margin-top: 50px;
+    font-size:18px;
+}
+#payment_billline{
+    font-size: 15px;
+    margin-top:5px;
+}
+#payment_order {
+    display: inline-flex;
+    /* border: 1px solid red; */
+    height:60px;
+    width:600px;
+    margin-top: 30px;
+}
+/* #payment_shipping {
+    border: 1px solid red;
+    height:20px;
+    width:250px;
+    padding: 20px;
+} */
+#payment_btn {
+    /* border: 1px solid red; */
+    height:20px;
+    width:125px;
+    padding: 20px;
+    background-color:rgb(109, 104, 104);
+    border-radius:5px; 
+    color:beige;
+    align-items: center;
+    margin-left: 275px;
+}
+#payment_return{
+    font-size:15px;
+    color:rgb(247, 105, 129);
+}
+#payment_complete{
+    font-size:15px;
+    font-weight: bold;
+    color:beige;
+}
+#payment_box{
+    display: none;
+}
+.fasfa-chevron-right{
+    color: rgb(107, 102, 102);
+    margin-left: 10px;
+}
+#address{
+    border: 1px solid gray;
+    height: 102px;
+    width: 600px;
+    border-radius:5px;
+    margin-top:30px;
+}
+#payment_address{
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 500px;
+}
+#card_paymentadd{
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size:15px;
+    font-family: Arial;
+    font-weight:bold;  
+}
+.radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.radio__input{
+    display:none;
+}
+.radio__radio{
+    width:1.25em;
+    height:1.25em;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin-right:10px;
+    box-sizing:border-box;
+    padding:2px;
+    margin: 10px 5px;
+}
+.radio__radio::after{
+    content:"";
+    width:100%;
+    height:100%;
+    display: block;
+    background: rgb(247, 105, 129);
+    border-radius: 50%;
+
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+.radio__input:checked + .radio__radio::after{
+    transform: scale(1);
+}
+.fas{
+    margin-right: 10px; 
+}
+#h{
+    margin-top: 50px;
+}
+#payment_lasta{
+    margin-top: 12px;
+    font-family:Arial;
+    font-size:12px;
+}
+#card_options-cash{
+    font-family: Arial;
+    font-size:15px;
+    font-weight:bold;
+    margin-left: 10px;
+}
+.radio__radio1{
+    width:1.25em;
+    height:1.25em;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin-right:10px;
+    box-sizing:border-box;
+    padding:2px;
+    margin:15px 5px;
+}
+.radio__radio1::after{
+    content:"";
+    width:100%;
+    height:100%;
+    display: block;
+    background: rgb(247, 105, 129);
+    border-radius: 50%;
+
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+.radio__input:checked + .radio__radio1::after{
+    transform: scale(1);
+}
+#cartBox>div>h3{
+    width: 400px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: #3C3C3C;
+}
+  .checkout_box2 {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            border-left: 1px solid #d9d9d9;
+            display: inline-block;
+            background-color: #fdfbfb;
+        }
+
+        .checkout2 {
+            margin: 0% 10% 10% 10%;
+            font-weight: 600;
+            line-height: 1.3em;
+        }
+
+        span {
+            color: red;
+        }
+
+        .cart_items {
+            overflow: auto;
+            height: 100px;
+            width: 450px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cart_iems1 {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        img>.cart_iems1 {
+            border-radius: 5px;
+        }
+
+        .points1 {
+            color: black;
+            font-size: 18px;
+            line-height: 1.3em;
+            font-weight: normal;
+        }
+
+        .points2 {
+            color: #333333;
+            font-weight: normal;
+        }
+
+        #range {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        #redeem {
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+            border-color: #d9d9d9;
+            background-color: #c0bfbf;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .reward_name {
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 30px;
+        }
+
+        .gift_card {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #coupon_code {
+            height: 40px;
+            width: 350px;
+            border-radius: 5px;
+            cursor: text;
+            border-color: #d9d9d9;
+        }
+
+        #coupon_btn {
+            height: 45px;
+            width: 100px;
+            border-color: #d9d9d9;
+            border-radius: 5px;
+        }
+
+        hr {
+            color: 1px solid #fdf3f3;
+        }
+
+        #cartBox {
+            width: 95%;
+            padding-right: 25px;
+            height: 200px;
+        }
+
+        #cartBox>div>div>img {
+            width: 80px;
+            margin: 5px;
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+
+        #cartBox>div {
+            display: flex;
+        }
+
+        #cartBox>div>h3 {
+            width: 400px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .quantutyno {
+            /* position: absolute; */
+            margin-left: 75px;
+            margin-bottom: -25px;
+            margin-right: 15px;
+            z-index: 1;
+            position: relative;
+            border: 2px solid white;
+            border-radius: 50%;
+            height: 15px;
+            width: 12px;
+            padding: 3px;
+            background-color: gray;
+            color: white;
+            font-size: 12px;
+            line-height: 1;
+        }
+
+        /* .checkout_box2{
+            width: 100% !important;
+            margin: 0px;
+        }
+        .checkout2{
+            margin: 0px;
+        }
+        #payment_left{
+            background-color: gray;
+        }
+        .gift_card+p{
+            margin-top: 30px !important;
+        }
+        #total{
+            margin: 30px;
+        } */
+        .mail_info{
+            margin-top: 10px ;
+            margin-bottom: 10px ;
+            margin-left: 10px ;
+        }
+        .address_info_ship{
+            margin-top: 10px ;
+            margin-bottom: 10px ;
+            margin-left: 10px ;
+        }

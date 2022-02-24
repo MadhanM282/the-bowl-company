@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card/Payment Page</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="detail.css">
+</head>
+    <body>
+        <div id="detail">
+            <div id="detail_paytmdiv">
+                <div id="detail_arrow">
+                    <i class="fas fa-arrow-left fa-2x" id="detail_backarrow"></i>
+                <div id="detail_paytm">
+                    <img id="detail_paytm"src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout/offsite-gateway-logos/paytm@2x-af01977ff64627f57925062e195a194de280c6c879267a51456c0d579acb90c2.png"/>
+                </div>
+                </div>
+                <h2>Dot And Key Wellness</h2>
+                <div id="detail_scan"><p id="detail_scantag">Scan QR to pay</p>
+                    <div id="detail_qrcode">
+                        <img id ="detail_qrcodeimg"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtf82q8tySq9T8Pss88c66vp8CnE3Kw9PLZk5hXjKpYt6Ch6TpzVkODYBGX7kHDNNmNzM&usqp=CAU"/>
+                    </div>
+                </div>
+                <div id="detail_payment">
+                   <p id="detail_paymenttag">New Payment Option</p>
+                   <!-- <a href="debit.html"><div id="detail_cards">Debit,Credit Cards <i class="far fa-credit-card"></i></div></a> -->
+                   <div id="detail_cards">Debit,Credit Cards <i class="far fa-credit-card"></i></div>
+                   <div id="detail_UPI">UPI
+                    <img id="detail_upiimg"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcNGrZQ2WUDbqU8FKIFhlnhynsJxnzUEn2PPiWTKEXllPIaB_l6VUxfvhG-9anDAEVM8&usqp=CAU"/>
+                   </div>
+                   <div id="detail_netbank">Net Banking
+                       <div id="detail_bank">
+                        <img id="detail_bankimg"src="https://staticpg.paytm.in/pgp/v2/web/assets/nb-icon.png"/>
+                       </div>
+                   </div>
+                </div>
+            </div>
+
+              <!-- debit and credit card page -->
+    <div id ="detail_debitcardpay">
+        <div id="detail_debitcardpaydiv">
+            <p id="detail_debitcardtag">Enter Debit or Credit Card details <i class="fas fa-times-circle" id="crossicon"></i></p>
+            <div id="debit_cardoptiondiv">
+
+                <!-- card number div -->
+                <div class="detail_ownercardnumber">
+                        <p id="detail_cardnumbertag">Card Number</p>
+                    <div class="detail_ownerinput">
+                        <input type="text" id="card_number" maxlength="15" required placeholder="XXXX XXXX XXXX XXXX"/>
+                    </div>
+                </div>
+                <!-- card number div -->
+
+                <!-- validity and expiry div -->
+                <div class="detail_second_row">
+                        <div class="selection">
+                            <h4>Expiry / Validity</h4>
+                            <div class="detail_owneryears">
+                                <select name="months" id="startyear">
+                                    <option value="Month">Month</option>
+                                    <option value="Jan">Jan</option>
+                                    <option value="Feb">Feb</option>
+                                    <option value="Mar">Mar</option>
+                                    <option value="Apr">Apr</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="Aug">Aug</option>
+                                    <option value="Sep">Sep</option>
+                                    <option value="Oct">Oct</option>
+                                    <option value="Nov">Nov</option>
+                                    <option value="Dec">Dec</option>
+                                </select>
+                                <select name="years" id="endyear">
+                                    <option value="Year">Year</option>
+                                    <option value="2020">2021</option>
+                                    <option value="2019">2022</option>
+                                    <option value="2018">2023</option>
+                                    <option value="2017">2024</option>
+                                    <option value="2016">2025</option>
+                                    <option value="2015">2026</option>
+                                    <option value="2014">2027</option>
+                                    <option value="2013">2028</option>
+                                </select>
+                            </div>
+                        </div>
+                         <!-- validity and expiry div -->
+
+
+                         <!-- cvv div -->
+                        <div class="detail_ownercvv">
+                            <h4>CVV</h4>
+                            <div class="detail_ownerinput">
+                                <input type="password" id="cvv" maxlength="3" placeholder="***"/>
+                            </div>
+                       </div>
+                        <!-- cvv div -->
+                    </div>
+                     
+                    <!-- payment_button -->
+                    <div id ="pay" onclick="paymentbutton()">
+                        <a ><i class="fas fa-shopping-bag" id="pay_icon"></i>Pay</a>
+                    </div>
+                     <!-- payment_button -->
+            </div>
+        </div>
+    </div>
+    <!-- debit and credit card page -->
+
+
+
+
+
+
+         <!-- cancle payment -->
+         <div id="detail_cancle">
+            <div id="detail_canclepayment">
+                <p id="detail_cancletag">Cancel Payment</p>
+                <div id="detail_canclebtn">
+                    <button id="No"><a href="detail.html">No</a></button>
+                    <button id="Yes"><a href="payment.html">Yes</a></button>
+                </div>
+            </div>
+        </div>
+         <!-- cancle payment -->
+
+
+        </div>
+
+        
+        
+
+
+
+
+</body>
+</html>
+<script>
+    document.getElementById("detail_cards")
+    
+    //    document.getElementById("detail_cards").addEventListener("click" ,showdebit)
+    //    function showdebit(){
+    //        window.location.href ="debit.html"
+    //    }
+    //    document.getElementById("detail_backarrow").addEventListener("click" ,showcancle)
+    //    function showcancle(){
+    //        window.location.href ="cash.html"
+    //    }
+       document.getElementById("crossicon").addEventListener("click" ,function(){
+        let creditdebitbox=document.getElementById("detail_debitcardpay");
+        detail_debitcardpay.style.display="none"
+       })
+       document.getElementById("detail_cards").addEventListener("click",function(){
+           let creditdebitbox=document.getElementById("detail_debitcardpay");
+        //    if(detail_debitcardpay.style.display=="none"){
+            detail_debitcardpay.style.display="block"
+        //    }
+        //    else{
+        //     detail_debitcardpay.style.display=="none"
+        //    }
+       })
+
+       document.getElementById("detail_backarrow").addEventListener("click" ,function(){
+           let canclediv =document.getElementById("detail_cancle");
+           detail_cancle.style.display="block"
+       })
+       detail.append(detail_debitcardpay,detail_cancle)
+
+       function paymentbutton(){
+         let cardvalue=document.getElementById("card_number").value.toString();
+         let cvvvalue=document.getElementById("cvv").value.toString();
+         if(cardvalue.length==0 && cvvvalue.length==0){
+             alert("All fields are mandatory")
+         }else{
+             window.location.href="thanks.html"
+         }
+       }
+</script>

@@ -1,0 +1,369 @@
+body {
+    font-family: Lato, sans-serif;
+    color: #545454;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#container_checkout {
+    margin-top: 5%;
+    height: 800px;
+    margin-bottom: 60px;
+}
+
+#container_checkout input, #container_checkout select
+{
+    padding: 0px 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.checkout_box1 {
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo_checkout {
+    /* border:1px solid green; */
+    height: 15%;
+    text-align: center;
+}
+
+
+
+#list li {
+display: inline;
+margin-right: 2%;
+ }
+
+ .contact_address_info {
+     height: 80%;
+     /* border: 1px solid blue; */
+     margin-left: 15%;
+ }
+
+ h2 {
+     color: #333333;
+     font-size: 1.2857142857em;
+     line-height: 1.3em;
+     font-weight: normal;
+ }
+ .contact_info {
+     height: 20%;
+     /* border: 1px solid yellow; */
+ }
+
+ .contact_info2 {
+     margin-top: -15px;
+     display: flex;
+ }
+ .contact_info_login {
+     margin-left: 25px;
+     margin-top: 15px;
+ }
+ .contact_img {
+     border-radius: 8px;
+     background-size: cover;
+     display: table-cell;
+     overflow: hidden;
+ }
+ 
+ .address_info {
+     height: 74%;
+     /* border: 1px solid pink; */
+ }
+
+ #use_address {
+     height: 50px;
+     width: 90%;
+     text-align: start;
+     font-size: 14px;
+     color: #333333;
+     border-color: #d9d9d9;
+     border-radius: 5px;
+     box-sizing: border-box;
+     margin-top: 10px;
+     display: flex;
+     padding: 0.9285714286em 0.7857142857em;
+ }
+
+ #use_address1 {
+     height: 50px;
+     width: 90%;
+     text-align: start;
+     font-size: 14px;
+     color: #333333;
+     border-color: #d9d9d9;
+     padding: 0.9285714286em 0.7857142857em;
+     border-radius: 5px;
+     box-sizing: border-box;
+     margin-top: 10px;
+     display: flex;
+ }
+ #address_1 {
+     height: 50px;
+     width: 90%;
+     text-align: start;
+     font-size: 14px;
+     color: #333333;
+     border-color: #d9d9d9;
+     padding: 0.9285714286em 0.7857142857em;
+     border-radius: 5px;
+     box-sizing: border-box;
+     margin-top: 10px;
+     display: flex; 
+ }
+ #address_2 {
+     height: 50px;
+     width: 90%;
+     text-align: start;
+     font-size: 14px;
+     color: #333333;
+     border-color: #d9d9d9;
+     border-radius: 5px;
+     box-sizing: border-box;
+     margin-top: 10px;
+     display: flex;
+     padding: 0.9285714286em 0.7857142857em;
+ }
+  #ip_name{
+     height: 50px;
+     width: 90%;
+     border-color: #d9d9d9;
+     box-sizing: border-box;
+     display: flex;
+     gap: 10px;
+     margin-top: 10px;
+     /* padding: 0.9285714286em 0.7857142857em; */
+ }
+ #ip_name>input{ 
+     width: 50%;
+     height: 50px;
+     border-radius: 5px;
+     text-align: start;
+     font-size: 14px;
+     color: #333333;
+     border-color: #d9d9d9;
+     /* padding: 0.9285714286em 0.7857142857em; */
+ }
+ #phone_num {
+     height: 50px;
+     width: 90%;
+     text-align: start;
+     font-size: 14px;
+     color: #333333;
+     border-color: #d9d9d9;
+     border-radius: 5px;
+     box-sizing: border-box;
+     display: flex;
+     gap: 10px;
+     margin-top: 10px;
+     padding: 0.9285714286em 0.7857142857em;
+ }
+
+ 
+ .ip_city {
+     height: 50px !important;
+     width: 90%;
+     text-align: start;
+     font-size: 14px;
+     border-radius: 5px;
+     box-sizing: border-box;
+     display: flex;
+     gap: 10px;
+     /* margin-top: 0px;
+     padding: 0.9285714286em 0.7857142857em; */
+     padding-top: 5px;
+ }
+ .ip_city>input {
+    width: 30%  ;
+     height: 50px;
+ }
+ #save_info {
+     margin-top: 10px;
+ }
+ #ip_submit {
+     height: 50px;
+     width: 90%;
+     text-align: start;
+     font-size: 14px;
+     color: #333333;
+     box-sizing: border-box;
+     display: flex;
+     gap: 10px;
+     margin-top: 10px;
+ }
+ #return_to_cart {
+     line-height: 3;
+     color:#ff6781;
+     border: none;
+     cursor: pointer;
+     width: 200px;
+     padding: 0.9285714286em 0.7857142857em;
+     background: transparent;
+     font-size: 14px;
+ }
+ #return_to_shipping {
+     background-color: #616160;
+     color: white;
+     margin-left: 200px;
+     width: 250px;
+     cursor: pointer;
+     border-radius: 5px;
+     /* border-color: #d9d9d9; */
+     border: 1px transparent solid;
+     padding: 0.9285714286em 0.7857142857em;
+ }
+
+ .main_footer {
+    border-top: 1px solid #e6e6e6;
+    margin-left: 75px;
+ }
+ footer {
+     display: block;
+ }
+ .policy-list__item {
+      float: left;
+      /* font-size: 0.8571428571em; */
+      font-size: 12px;
+      margin-right: 1.5em;
+      margin-bottom: 0.5em;
+  }
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  ul {
+      list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: #ff6781;
+    transition: color 0.2s ease-in-out;
+    line-height: 5;
+  }
+
+
+ /* second part =============================================================================*/
+.checkout_box2 {
+    width: 44%;
+    height: 100%;
+    /* border: 1px solid red; */
+    border-left: 1px solid #d9d9d9;
+    display: inline-block;
+    background-color: #fdfbfb;
+}
+
+.checkout2 {
+    margin: 0% 10% 10% 10%;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+span {
+    color: red;
+}
+
+.cart_items {
+    overflow: auto;
+    height: 100px;
+    width: 450px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cart_iems1 {
+    display: flex;
+    margin-top: 5px;
+}
+img>.cart_iems1 {
+    border-radius: 5px;
+}
+.points1 {
+     color: black;
+     font-size: 18px;
+     line-height: 1.3em;
+     font-weight: normal;
+}
+.points2 {
+     color: #333333;
+     font-weight: normal;
+}
+#range {
+    width: 300px;
+    margin-left: 20px;
+}
+#redeem {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border-color: #d9d9d9;
+    background-color: #c0bfbf;
+    color: white;
+    margin-left: 10px;
+}
+.reward_name {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+.gift_card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#coupon_code {
+    height: 40px;
+    width: 350px;
+    border-radius: 5px;
+    cursor: text;
+    border-color: #d9d9d9;
+}
+#coupon_btn {
+    height: 45px;
+    width: 100px;
+    border-color: #d9d9d9;
+    border-radius: 5px;
+} 
+hr {
+    color:1px solid #fdf3f3;
+}
+#cartBox{
+    width: 95%;
+    padding-right: 25px;
+    height: 200px;    
+}
+#cartBox>div>div>img{
+    width: 80px;
+    margin: 5px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+#cartBox>div{
+    display: flex;
+}
+#cartBox>div>h3{
+    width: 400px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.quantutyno{
+    /* position: absolute; */
+    margin-left: 75px;
+    margin-bottom: -25px;
+    margin-right: 15px;
+    z-index: 1;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 15px;
+    width: 12px;
+    padding: 3px;
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+}
+
