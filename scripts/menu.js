@@ -29,8 +29,22 @@ async function category(i){
     catch(e){
         console.log('e', e);
     }
-    // const div = document.querySelector()
+    const load = document.querySelector("#button3")
+    load.style.display = 'none';
 }
+
+async function switc(){
+    let url = `http://localhost:2345/type/veg`
+    try {
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log('data', data);
+        // display(data)
+    } catch (error) {
+        
+    }
+}
+// switc()
 
 function display(data){
     let main = document.querySelector("#fithdiv");
