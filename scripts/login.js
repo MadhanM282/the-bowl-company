@@ -45,33 +45,43 @@ async function login(e){
 
   let info = await responce.json();
 
-  window.location.href = "index.html";
-  // console.log('info', info);
+  console.log('info', info);
   
-
-    // let token = info.token;
-
-    // let email = document.querySelector("#uemail").value
-
-    // getid(email,token)   
+  
+  let token = info.token;
+  
+  let email = document.querySelector("#email").value;
+  
+  getid(email);   
+  // window.location.href = "index.html";
 
 }
 
-// async function getid(value,token){
+async function getid(value){
 
-//     let api = `https://masai-api-mocker.herokuapp.com/user/${value}`
+    let api = `http://localhost:2345/users/email?email=${value}`
 
-//     let res = await fetch(api,{
+    let res = await fetch(api,{
 
-//         headers: {
-//             "Content-Type": 'application/json',
-//             Authorization :`Bearer ${token}`
-//         },
+        headers: {
+            "Content-Type": 'application/json',
+            // Authorization :`Bearer ${token}`
+        },
 
-//     });
+    });
 
-//     let data = await res.json()
+    let data = await res.json()
 
-//     console.log('data', data);
-
-// }
+  console.log('data', data);
+  localStorage.setItem("user_name",JSON.stringify(data));
+  let loginID = document.getElementById("log");
+  let loginame = JSON.parse(localStorage.getItem("user_name"));
+  
+  var div = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = "https://img.icons8.com/fluency-systems-filled/48/000000/guest-male.png";
+  var p = document.createElement("p");
+  p.innerHTML = loginame.name;
+  div.append(img, p);
+  loginID.innerHTML = div;
+}
