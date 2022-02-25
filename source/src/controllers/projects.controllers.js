@@ -25,7 +25,7 @@ router.get("",async (req, res) => {
   try {
     const count = req.query.count;
     // console.log('count', count);
-    const size = count*9
+    const size = count * 9;
     const food = await Food.find().limit(size).lean().exec();
     return res.send(food);
     // res.send(food);

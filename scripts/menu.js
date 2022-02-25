@@ -18,13 +18,11 @@ async function searching(){
 
 
 async function category(i){
-
-    // const cat = document.querySelector("#hh14").innerHTML
     let arr = ["Breakfast Bowls","Continental Bowls","Desserts","Family Combos","Fruit Bowls","Indian Bowls","Oriental Bowls","Parotta Bowls","Value Meals"]
     // console.log('cat', cat);
     try{
         let url = `http://localhost:2345/category/${arr[i]}`;
-        console.log(arr[i])
+        console.log(arr[i]);
         let res = await fetch (url);
         
         let data = await res.json();
