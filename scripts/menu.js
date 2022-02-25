@@ -39,7 +39,7 @@ async function switc(){
         let res = await fetch(url);
         let data = await res.json();
         console.log('data', data);
-        // display(data)
+        display(data)
     } catch (error) {
         
     }
