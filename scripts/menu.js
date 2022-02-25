@@ -43,6 +43,7 @@ async function category(i){
 function display(data){
     let main = document.querySelector("#fithdiv")
     main.innerHTML = null
+    let arr = []
     data.map((ele)=>{
         let div = document.createElement('div');
         let div1 = document.createElement('div');
@@ -68,8 +69,15 @@ function display(data){
         name.innerHTML= ele.name;
 
         let price = document.createElement('h4')
-        price.innerHTML= ele.price
+        price.innerHTML= `₹${ele.price}`
         let button = document.createElement('button');
+
+        button.addEventListener('click',cart);
+
+        function cart(){
+            arr.push(ele)
+            localStorage.setItem('cart', JSON.stringify(arr));
+        }
 
         button.innerHTML= "Add+"
 
