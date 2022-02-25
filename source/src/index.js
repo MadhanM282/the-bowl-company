@@ -1,16 +1,20 @@
 const express = require("express");
 
 const connect = require("./configs/db");
+
 const cors = require("cors");
 
+const mongoose = require('mongoose');
 
+const { register, login } = require("./controllers/auth.controller");
+const userController = require("./controllers/user.controller");
 
 const food = require("./controllers/projects.controllers");
-
 
 const type = require('../src/controllers/type.controller');
 
 const category = require('../src/controllers/category.controller');
+
 const search = require("../src/controllers/search.controller");
 
 
@@ -19,6 +23,13 @@ app.use(cors());
 
 
 app.use(express.json());
+
+//register
+app.post("/register", register);
+// .login
+app.post("/login", login);
+
+app.use("/users", userController);
 
 app.use("/foods", food);
 
