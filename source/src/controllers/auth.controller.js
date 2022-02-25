@@ -1,6 +1,7 @@
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
 const User = require("../models/user.model");
+const { validationResult } = require("express-validator");
 
 const newToken = (user) => {
     return jwt.sign({ user }, process.env.JWT_SECRET_KEY);
@@ -8,12 +9,19 @@ const newToken = (user) => {
 // console.log(process.env.JWT_SECRET_KEY);
 const register = async (req, res) => {
     try {
-        let user = await User.findOne({ email: req.body.email }).lean().exec();
-        if (user) {
-            return res.status(400).send({ massage: "Please try another email" });
-            
-        }
-        user = await User.create(req.body);
+         const errors = validationResult(req);
+            // errors = []
+            // console.log(body("id"));
+            if (!errors.isEmpty()) {
+                let newErrors;
+                newErrors = errors.array().map((err) => {
+                    console.log("err", err);
+                    return { key: err.param, message: err.msg };
+                });
+                return res.status(400).send({ errors: newErrors });
+            }
+      
+       const user = await User.create(req.body);
         const token = newToken(user);
 
         res.send({ user, token });
