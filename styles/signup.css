@@ -38,13 +38,16 @@ input {
   width: 400px;
   height: 30px;
 }
-.Btn{
+#register input {
+  width: 418px;
+}
+.Btn {
   margin: auto;
   border: 1px solid transparent;
   width: 423px;
 }
-#btn1{
-  border: 1px solid  transparent;
+#btn1 {
+  border: 1px solid transparent;
   padding: 15px;
   width: 423px;
   margin: auto;
@@ -55,6 +58,7 @@ input {
   cursor: pointer;
   font-size: 18px;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 #btn1:hover {
   /* margin: 5px; */
@@ -76,6 +80,7 @@ input {
 #socialIcons > p {
   text-align: center;
   font-size: 20px;
+  margin-top: 30px;
 }
 #socialIcons > div > a {
   margin-left: 12px;
