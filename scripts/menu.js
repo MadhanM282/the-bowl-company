@@ -1,6 +1,6 @@
 
 
-async function searching(url){
+async function searching(){
     
     try{
         let url = "http://localhost:2345/foods/?count=4";
@@ -15,6 +15,30 @@ async function searching(url){
         console.log('e', e);
     }
 }
+
+
+async function category(i){
+
+    // const cat = document.querySelector("#hh14").innerHTML
+    let arr = ["Breakfast Bowls","Continental Bowls","Desserts","Family Combos","Fruit Bowls","Indian Bowls","Oriental Bowls","Parotta Bowls","Value Meals"]
+    // console.log('cat', cat);
+    try{
+        let url = `http://localhost:2345/category/${arr[i]}`;
+        console.log(arr[i])
+        let res = await fetch (url);
+        
+        let data = await res.json();
+        console.log('data', data);   
+        // return data.meals;
+        display(data)
+    }
+    catch(e){
+        console.log('e', e);
+    }
+}
+
+
+
 
 function display(data){
     let main = document.querySelector("#fithdiv")

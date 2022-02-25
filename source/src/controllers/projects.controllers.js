@@ -36,6 +36,21 @@ router.get("", cors(),async (req, res) => {
   }
 });
 
+router.get("/:name", cors(),async (req, res) => {
+  try {
+    const count = req.query.count;
+    // console.log('count', count);
+    const size = count*9
+    const food = await Food.find({name:req.params.name} ).lean().exec();
+    return res.send(food);
+    // res.send(food);
+  } catch (err) {
+    res.status(520).send(err.message);
+  }
+});
+
+
+
 router.patch("/:id",cors(), async (req, res)=> {
   try {
     const food = await Food.findByIdAndUpdate(req.params.id,req.body)
