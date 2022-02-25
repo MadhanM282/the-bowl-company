@@ -68,6 +68,14 @@ function display(data){
         name.setAttribute("class","downname")
         name.innerHTML= ele.name;
 
+        let svg = document.createElement('img');
+        if(ele.type === "veg"){
+            svg.src = "https://img.icons8.com/ios-glyphs/30/26e07f/non-vegetarian-food-symbol.png"  
+        }
+        else if(ele.type === "nonveg"){
+           svg.src="https://img.icons8.com/ios-glyphs/30/ed1c24/non-vegetarian-food-symbol.png"
+
+        }
         let price = document.createElement('h4')
         price.innerHTML= `₹${ele.price}`
         let button = document.createElement('button');
@@ -88,7 +96,7 @@ function display(data){
         // div3.append(name);
 
         div1.append(img,div2);
-        div.append(div1,name,namediv)
+        div.append(div1,svg,name,namediv)
 
         main.append(div);
         // console.log('ele',ele)
