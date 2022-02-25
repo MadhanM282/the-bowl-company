@@ -29,6 +29,7 @@ async function category(i){
     catch(e){
         console.log('e', e);
     }
+    // const div = document.querySelector()
 }
 
 function display(data){
@@ -54,6 +55,10 @@ function display(data){
 
         div2.append(p);
 
+        let typedive = document.createElement('div');
+        typedive.setAttribute('class', 'typediv')
+        
+        // typedive.class = "typediv"
 
         let name = document.createElement('h3');
         name.setAttribute("class", "downname");
@@ -68,7 +73,7 @@ function display(data){
 
         }
         let price = document.createElement('h4');
-        price.innerHTML = `₹${ele.price}/-`;
+        price.innerHTML = `₹${ele.price} /-`;
         let button = document.createElement('button');
 
         button.addEventListener('click',cart);
@@ -77,6 +82,7 @@ function display(data){
             arr.push(ele);
             localStorage.setItem('cart', JSON.stringify(arr));
         }
+        typedive.append(svg,name)
 
         button.innerHTML = "Add+";
 
@@ -87,7 +93,7 @@ function display(data){
         // div3.append(name);
 
         div1.append(img,div2);
-        div.append(div1, svg, name, namediv);
+        div.append(div1, typedive, namediv);
 
         main.append(div);
         // console.log('ele',ele)
