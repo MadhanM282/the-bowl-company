@@ -10,11 +10,11 @@ function navbar(){
           <a href="aboutus.html"><li>ABOUT US</li></a>
            <a href="ourmenu.html"><li>OUR MENU</li></a>
          <a href="campaigns.html"><li>CAMPAIGNS</li></a>
-          <a href="#"><li>LOGIN</li></a>
-           <a href="#"><li>CART</li></a>
+          <a href="login.html"><li>LOGIN</li></a>
+           <a href="cart.html"><li>CART</li></a>
         </ul>
     
 </div>`
 }
 
-export default navbar
+export default navbar;
