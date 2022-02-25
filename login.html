@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/login.css" />
+      <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="styles/foot.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+     <div id="nav"></div>
     <div id="login-container">
       <div id="login">
         <p id="head">Login</p>
-        <p id="sub-head">
-          Hello, there. Would you mind giving us your<br />
-          mobile number?
-        </p>
       </div>
       <div class="myForm">
         <form id="loginform">
@@ -61,27 +64,18 @@
       </div>
     </div>
   </body>
+   <footer>
+    <div id="getfooter"></div>
+  </footer>
 </html>
-<script>
-  document.getElementById("btn1").addEventListener("click", logIn);
-  var userD = JSON.parse(localStorage.getItem("userData"));
+<script type="module">
+  import navbar from "./components/navbar.js";
 
-  function logIn() {
-    var email = document.getElementById("email").value;
-    var pass = document.getElementById("password").value;
-    var flag = 0;
-    for (var i = 0; i < userD.length; i++) {
-      if (userD[i].userEmail == email && userD[i].userPass == pass) {
-        flag = 1;
-      }
-    }
-    if (flag == 1) {
-      alert("Login Successful");
-      window.location = "";
-    } else {
-      alert("Wrong Credentials");
-    }
+  let cont = document.getElementById("nav");
+  cont.innerHTML = navbar();
 
-    window.href = "signup.html";
-  }
+  let foot = document.querySelector("#getfooter");
+  import footer from "./components/footer.js";
+  foot.innerHTML = footer();
 </script>
+<script src="/scripts/login.js"></script>

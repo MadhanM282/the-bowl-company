@@ -31,7 +31,7 @@ return `<div id="footer">
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3111"
             >
               <a
-                href="locate.html"
+                href="aboutus.html"
                 class="menu-link"
                 >About Us</a
               >
@@ -62,9 +62,9 @@ return `<div id="footer">
               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4275"
             >
               <a
-                href="locate.html"
+                href="login.html"
                 class="menu-link"
-                >Locate Us</a
+                >Login</a
               >
             </li>
             <br />
