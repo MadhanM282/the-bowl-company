@@ -1,6 +1,6 @@
 
 
-async function searching(url){
+async function searching(){
     
     try{
         let url = "http://localhost:2345/foods/?count=4";
@@ -16,9 +16,34 @@ async function searching(url){
     }
 }
 
+
+async function category(i){
+
+    // const cat = document.querySelector("#hh14").innerHTML
+    let arr = ["Breakfast Bowls","Continental Bowls","Desserts","Family Combos","Fruit Bowls","Indian Bowls","Oriental Bowls","Parotta Bowls","Value Meals"]
+    // console.log('cat', cat);
+    try{
+        let url = `http://localhost:2345/category/${arr[i]}`;
+        console.log(arr[i])
+        let res = await fetch (url);
+        
+        let data = await res.json();
+        console.log('data', data);   
+        // return data.meals;
+        display(data)
+    }
+    catch(e){
+        console.log('e', e);
+    }
+}
+
+
+
+
 function display(data){
     let main = document.querySelector("#fithdiv")
     main.innerHTML = null
+    let arr = []
     data.map((ele)=>{
         let div = document.createElement('div');
         let div1 = document.createElement('div');
@@ -44,8 +69,15 @@ function display(data){
         name.innerHTML= ele.name;
 
         let price = document.createElement('h4')
-        price.innerHTML= ele.price
+        price.innerHTML= `₹${ele.price}`
         let button = document.createElement('button');
+
+        button.addEventListener('click',cart);
+
+        function cart(){
+            arr.push(ele)
+            localStorage.setItem('cart', JSON.stringify(arr));
+        }
 
         button.innerHTML= "Add+"
 
