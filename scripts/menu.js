@@ -1,5 +1,3 @@
-
-
 async function searching(){
     
     try{
@@ -15,8 +13,6 @@ async function searching(){
         console.log('e', e);
     }
 }
-
-
 async function category(i){
     let arr = ["Breakfast Bowls","Continental Bowls","Desserts","Family Combos","Fruit Bowls","Indian Bowls","Oriental Bowls","Parotta Bowls","Value Meals"]
     // console.log('cat', cat);
