@@ -103,9 +103,11 @@
 
   var data = JSON.parse(localStorage.getItem("localDataSearch"));
   display(data);
+
   function display(data) {
     let main = document.querySelector("#fithdiv");
     main.innerHTML = null;
+    let arr = [];
 
     let div = document.createElement("div");
     let div1 = document.createElement("div");
@@ -129,9 +131,24 @@
     name.setAttribute("class", "downname");
     name.innerHTML = data.name;
 
+    let svg = document.createElement("img");
+    if (data.type === "veg") {
+      svg.src =
+        "https://img.icons8.com/ios-glyphs/30/26e07f/non-vegetarian-food-symbol.png";
+    } else if (data.type === "nonveg") {
+      svg.src =
+        "https://img.icons8.com/ios-glyphs/30/ed1c24/non-vegetarian-food-symbol.png";
+    }
     let price = document.createElement("h4");
-    price.innerHTML = data.price;
+    price.innerHTML = `₹${data.price}`;
     let button = document.createElement("button");
+
+    button.addEventListener("click", cart);
+
+    function cart() {
+      arr.push(data);
+      localStorage.setItem("cart", JSON.stringify(arr));
+    }
 
     button.innerHTML = "Add+";
 
@@ -142,7 +159,7 @@
     // div3.append(name);
 
     div1.append(img, div2);
-    div.append(div1, name, namediv);
+    div.append(div1, svg, name, namediv);
 
     main.append(div);
     // console.log('ele',ele)

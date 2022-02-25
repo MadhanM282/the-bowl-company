@@ -285,57 +285,5 @@
   foot.innerHTML = footer();
 </script>
 
-<script>
-    // async function searching(url){
-        
-    //     try{
-    //         let res = await fetch (url);
-            
-    //         let data = await res.json();
-    //         console.log('data', data);   
-    //         // return data.meals;
-    //     }
-    //     catch(e){
-    //         console.log('e', e);
-    //     }
-    // }
-    // let url = "http://localhost:2345/foods/?count=1"
-
-
-    async function searching1(url){
-        
-        try{
-            let res = await fetch (url);
-            
-            let type = await res.json();
-            console.log('type', type);   
-            // return data.meals;
-        }
-        catch(e){
-            console.log('e', e);
-        }
-    }
-    let url1 = "http://localhost:2345/type/veg"
-
-
-    async function searching2(url){
-        
-        try{
-            let res = await fetch (url);
-            
-            let cat = await res.json();
-            console.log('cat', cat);   
-            // return data.meals;
-        }
-        catch(e){
-            console.log('e', e);
-        }
-    }
-    let url2 = "http://localhost:2345/category/Desserts"
-    // searching(url)
-    searching1(url1)
-    searching2(url2)
-</script>
-
 <script src="./scripts/menu.js"></script>
 
