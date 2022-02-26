@@ -4,7 +4,7 @@ const connect = require("./configs/db");
 
 const cors = require("cors");
 
-const port= process.env.PORT || 2345;
+const port= process.env.PORT || 2366;
 
 const User = require("./models/user.model");
 
@@ -104,7 +104,7 @@ app.get(
 app.listen(port, async () => {
   try {
     await connect();
-    console.log(`running on port 2345${port}`);
+    console.log(`running on port ${port}`);
   } catch (err) {
     console.log(err.message);
   }
