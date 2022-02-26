@@ -4,7 +4,7 @@ const GoogleStrategy = require("passport-google-oauth2").Strategy;
 const { v4: uuidv4 } = require("uuid");
 
 const User = require("../models/user.model");
-
+// process.env.GOOGLE_CLIENT_IDprocess.env.GOOGLE_CLIENT_SECRET
 passport.use(
   new GoogleStrategy(
     {
