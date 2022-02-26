@@ -58,7 +58,7 @@ async function switc(){
 function display(data){
     let main = document.querySelector("#fithdiv");
     main.innerHTML = null;
-    let arr = [];
+    let arr = JSON.parse(localStorage.getItem("cart")) ||[];
     data.map((ele)=>{
         let div = document.createElement('div');
         let div1 = document.createElement('div');
