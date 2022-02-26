@@ -104,6 +104,7 @@ function display(data){
         function cart(){
             arr.push(ele);
             localStorage.setItem('cart', JSON.stringify(arr));
+            button.style.backgroundColor = "#ff7a00";
         }
         typedive.append(svg,name)
 

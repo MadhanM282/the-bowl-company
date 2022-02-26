@@ -32,7 +32,7 @@ async function login(e){
 
     data_list = JSON.stringify(data_list);
     console.log('data_list', data_list);
-    
+
     let url = `http://localhost:2345/login`
 
   let responce = await fetch(url, {
@@ -84,5 +84,5 @@ async function getid(value){
   // var p = document.createElement("p");
   // p.innerHTML = loginame.name;
   // div.append(img, p);
-  // loginID.innerHTML = div;
+  loginID.innerHTML = loginame.name;
 }
