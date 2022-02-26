@@ -10,7 +10,7 @@ function load() {
 async function searching() {
     
     try{
-        let url = `http://localhost:2345/foods/?count=${count}`;
+        let url = `https://the-bowl-company-pro.herokuapp.com/foods/?count=${count}`;
         let res = await fetch (url);
         
         let data = await res.json();
@@ -26,7 +26,7 @@ async function category(i){
     let arr = ["Breakfast Bowls","Continental Bowls","Desserts","Family Combos","Fruit Bowls","Indian Bowls","Oriental Bowls","Parotta Bowls","Value Meals"]
     // console.log('cat', cat);
     try{
-        let url = `http://localhost:2345/category/${arr[i]}`;
+        let url = `https://the-bowl-company-pro.herokuapp.com/category/${arr[i]}`;
         console.log(arr[i]);
         let res = await fetch (url);
         
@@ -43,7 +43,7 @@ async function category(i){
 }
 
 async function switc(){
-    let url = `http://localhost:2345/type/veg`
+    let url = `https://the-bowl-company-pro.herokuapp.com/type/veg`
     try {
         let res = await fetch(url);
         let data = await res.json();

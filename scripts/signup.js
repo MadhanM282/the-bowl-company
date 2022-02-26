@@ -21,7 +21,7 @@ async function reg(event){
       console.log('e', e);
     }
 
-    let regApi = `http://localhost:2345/register`;
+    let regApi = `https://the-bowl-company-pro.herokuapp.com/register`;
 
     let res = await fetch(regApi, {
         method: "POST",
