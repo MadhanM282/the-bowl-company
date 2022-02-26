@@ -20,7 +20,7 @@ const category = require("../src/controllers/category.controller");
 
 const search = require("../src/controllers/search.controller");
 
-const { body, validationResult } = require("express-validator");
+const { body } = require("express-validator");
 
 const passport = require("./configs/google-oauth");
 
