@@ -1,256 +1,116 @@
-let quentityArray;
-let user = JSON.parse(localStorage.getItem("userData"));
-//console.log(user);
-/// Whenever user not login redirected to login page;
-if (user == null || user.login == false) {
-  alert("You have to login first");
-  window.location.href = "login.html";
-}
-
-// container of all the cart product
-let cartProduct = document.getElementById("cart-product");
-
-//All the product which have in the bakend side;
-let prodBag = JSON.parse(localStorage.getItem("data"));
-
-/// Cart bag which added by the user
-let cartBag = JSON.parse(localStorage.getItem("cart")) || [];
-//console.log(cartBag)
-
-/// calling the function to all the cart product on the page
-showItem();
-
-////implimenting the function os showin all the product
-
-function showItem() {
-  //// cart bag update
-  cartBag = JSON.parse(localStorage.getItem("cart")) || [];
-  console.log(cartBag)
-
-  //// array to store the quentity to of all the product which user will give in input at cart page
-  let quantityArray;
-
-  /// to count in index of all the item in the product bag (it's usefull when user put the in put and then we have to see which index no wala product is selecting by the user)
-  let indexCount = 0;
-
-  //To collect total cart amount
-  let totalAmount = 0;
-
-  /// first clear the container of all the product to show again when user wants to chang the information.
-  cartProduct.innerHTML = "";
-
-  //console.log(cartBag)
-
-  ////Array of items which have added by the same user which currently useing the site on same machin
-  let userCart = [];
-  //to collect the items which is have in main cart bag
+let cart_arr=JSON.parse(localStorage.getItem("cart"))||[]
   
-  cartBag.forEach((el) => {
-    //console.log(el.email)
-    //if(user.email === el.email) {
-      userCart.push(el);
-      console.log(userCart)
-   //}
-  });
-
-  ///whenever cart is empty
-  if (userCart.length == 0) {
-    cartProduct.innerHTML = `<h2>Nothing found in cart bag</h2>`;
-  } else {
-    /// whever cart is not empty
-    //console.log(user.email)
-
-    /// by default quantity array should be filled with one.
-    quentityArray = [...Array(userCart.length).fill(1)];
-    //console.log(quentityArray)
-
-    // user cart array maping to show in product box.
-    userCart.map((item, index) => {
-      //console.log(item.email)
-      if (user.email === item.email) {
-        // filtering for same product id as original one
-        let prod = prodBag.filter((el) => {
-          if (item.id === el.id) {
-            return true;
+  let cart_display=document.getElementById("cart_display")
+  
+  function append_cart(){
+      let order_total=0
+      cart_arr.forEach(function(item){
+          
+          
+          let item_cover=document.createElement("div");
+          item_cover.id="item_cover"
+          let div1=document.createElement("div")
+          div1.id="div1"
+  
+          let img=document.createElement("img");
+          img.setAttribute("id","imgdish")
+          img.src=item.image
+  
+          div1.append(img)
+  
+          let div2=document.createElement("div")
+          div2.id="div2"
+  
+        
+          let name=document.createElement("p");
+          name.innerText=item.name       
+          let size=document.createElement("p");
+          size.innerText=`Category:${item.category}`
+     
+  
+          div2.append(name,size)
+  
+          let div3=document.createElement("div")
+          div3.id="div3"
+  
+          let price=document.createElement("p");
+          price.innerText=`$${item.price}.00 Rs`
+  
+          order_total+=(+item.price)
+  
+          let remove=document.createElement("p")
+          remove.innerText="REMOVE"
+          remove.className="underline"
+          remove.addEventListener("click",function(){
+              for(let i=0;i<cart_arr.length;i++){
+              console.log(item.idMeal)
+              if(cart_arr[i].name==item.name){
+                  cart_arr.splice(i,1)
+                 localStorage.setItem("cart",JSON.stringify(cart_arr))
+              
+                  location.reload()
+                  break;
+              }
+  
           }
-        });
-        //console.log(prod)
-
-        ///main div
-        let div = document.createElement("div");
-       
-
-        //image div
-        let imgDiv = document.createElement("div");
-
-        //title div
-        let titleBtnDiv = document.createElement("div");
-        titleBtnDiv.setAttribute("id", "title-btn");
-
-        let img = document.createElement("img");
-        img.src = prod[0].images[0];
-        imgDiv.append(img);
-
-        let title = document.createElement("h4");
-        title.setAttribute("class", "tttt");
-        title.textContent = prod[0].title;
-
-        let remBtn = document.createElement("button");
-        remBtn.textContent = "Remove";
-
-        //// to remove the cart item from bag
-        remBtn.addEventListener("click", () => {
-          //console.log(index)
-          cartBag.splice(index, 1);
-          localStorage.setItem("cartItem", JSON.stringify(cartBag));
-          myFunction(`<span class="iconify" data-icon="teenyicons:tick-circle-solid" style="color: #3c763d; font-size: 22px;"></span> &nbsp; Item removed`, true);
-          //recalling the function to show the updated data.
-          showItem();
-        });
-        titleBtnDiv.append(title, remBtn);
-
-        let QuentityDiv = document.createElement("div");
-        QuentityDiv.setAttribute("id", "quentity");
-        let queInput = document.createElement("input");
-        queInput.setAttribute("class", "inputnum");
-        console.log(item.quantity, item);
-
-        /// whenever quantity key is not present in cart bag.
-        if (item.quantity == undefined || item.quantity == null) {
-          queInput.value = 1;
-        } else {
-          // vice versa
-          queInput.value = item.quantity;
-        }
-
-        queInput.type = "Number";
-        QuentityDiv.append(queInput);
-
-        //// span to cheack the index no of item which user have selected at the time of user iditing the imformation of quantity.
-        let span = document.createElement("span");
-        span.textContent = indexCount;
-        //span.style.Display="none";
-        queInput.addEventListener("blur", (e) => {
-          //to target the value of input
-          let num = e.target.value;
-
-          //making no
-          num = +num;
-
-          //to target sapn value (span works for index identifying)
-          let indexingofitem = e.target.parentNode.nextSibling.textContent;
-
-          // indexingofitem=+indexingofitem;
-          console.log(indexingofitem);
-
-          // let num=document.querySelector(".inputnum").value;
-          // console.log(num)
-
-          //updating the quantity array.
-          quentityArray[indexingofitem] = num;
-          //console.log(indexingofitem)
-          //console.log(num)
-
-          /// to create discount value
-          let x = Math.floor((prod[0].discount / 100) * prod[0].price);
-          x = prod[0].price - x;
-          let y = x;
-          x = x * num;
-          /// total amount updating.
-          totalAmount += x - y;
-
-          x = x.toFixed(2);
-          //console.log(x,y)
-          //console.log(x)
-          amountDiv.textContent = `RS. ${x}`;
-          //subtotal(userCart ,index,num);
-          document.getElementById(
-            "subtotal"
-          ).textContent = `Rs. ${totalAmount.toFixed(2)}`;
-          item.quantity = num;
-
-          /// function which used for adding the quantity of eatch item.
-          quantityAdder();
-        });
-
-        let amountDiv = document.createElement("div");
-        amountDiv.setAttribute("id", "amount");
-        let x = Math.floor((prod[0].discount / 100) * prod[0].price);
-        x = prod[0].price - x;
-        if (item.quantity) {
-          x = x * item.quantity;
-        }
-        totalAmount += x;
-        x = x.toFixed(2);
-        //console.log(x)
-        amountDiv.textContent = `RS. ${x}`;
-        imgDiv.addEventListener("click",  () => {
-          window.location.href = `productDetail.html?${prod[0].id}`;
-        })
-        //// appending all the div to the main contaier
-        div.append(imgDiv, titleBtnDiv, QuentityDiv, span, amountDiv);
-        //// appending all the div to the contaier of product
-        cartProduct.append(div);
-      }
-      indexCount += 1;
-    });
-    //quantityAdder();
-    //totalAmount=totalAmount.toFixed(2)
-    document.getElementById(
-      "subtotal"
-    ).textContent = `Rs. ${totalAmount.toFixed(2)}`;
-  }
-
-  /// function which update the quantity of all the items in cart for future prefrence and update to localstorege
-  function quantityAdder() {
-    userCart.map((el, index) => {
-      el.quantity = quentityArray[index];
-    });
-
-    localStorage.setItem("cartItem", JSON.stringify(userCart));
-    console.log(userCart);
-  }
-}
-
-///check out button which redirect userto check out page
-document.getElementById("checkout").addEventListener("click", () => {
-  let x = JSON.parse(localStorage.getItem("cartItem")) || [];
-  if(x.length==0){
-    myFunction(`<span class="iconify" data-icon="bx:bxs-error" style="color: maroon; font-size: 22px;"></span> &nbsp; There is no product in cart to checkout`, false);
-  }else{
-    window.location.href = "address.html";
-  }
-});
-
-////cart update button which update the cart page
-document.getElementById("updatecart").addEventListener("click", () => {
-  window.location.href = "cart.html";
-});
-
-
-
-function myFunction(msg, type) {
-  var popup = document.getElementById("myPopup");
-  popup.innerHTML = msg;
-  if(type)
-  {
-      popup.style.color="#3C763D";
-      popup.style.backgroundColor = "#DFF0D8"; 
-      popup.style.border = "2px solid #3C763D";
-  }
-  else
-  {
-      popup.style.color="maroon";
-      popup.style.backgroundColor = "#F2DEDE"; 
-      popup.style.border = "2px solid maroon";
-  }
-  popup.classList.toggle("show");
-
-  const myTimeout = setTimeout(myGreeting, 3000);
+          })
   
-  function myGreeting() {
- popup.classList.toggle("show");
-}
+          div3.append(price,remove)
   
-}
+          item_cover.append(div1,div2,div3);
+          let hr=document.createElement("hr")
+          cart_display.append(item_cover,hr) 
+      });
   
+  let total_cart=document.createElement("div");
+  total_cart.id="total_cart"
+  
+  let div_a=document.createElement("div")
+  let p1=document.createElement("p")
+  p1.textContent="Total"
+  
+  let p2=document.createElement("p")
+  p2.textContent="Shipping estimate"
+  
+  let p3=document.createElement("p")
+  p3.textContent="Order Total"
+  p3.className="bold_txt"
+  
+  div_a.append(p1,p2,p3)
+  
+  
+  let div_b=document.createElement("div")
+  let p4=document.createElement("p")
+  p4.textContent=`$${order_total}.00 Rs`
+  let p5=document.createElement("p")
+  p5.textContent="Calculated at Checkout"
+  
+  let p6=document.createElement("p")
+  p6.textContent=`$${order_total}.00 Rs`
+  p6.className="bold_txt"
+  
+  div_b.append(p4,p5,p6)
+  
+  total_cart.append(div_a,div_b)
+  
+  cart_display.append(total_cart)
+  
+  
+  let user_name=document.getElementById("user_name");
+  
+  let loged_in=JSON.parse(localStorage.getItem("loged_in"));
+  
+  user_name.innerText=loged_in;
+  
+  
+  
+  
+  }
+  
+  append_cart()
+  
+  let proceed_btn =document.getElementById("proceed_btn");
+  proceed_btn.addEventListener("click",function(){
+      
+      window.location.href="address.html"
+  })
