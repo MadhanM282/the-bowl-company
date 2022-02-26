@@ -5,20 +5,12 @@
 
 #heading {
   /* letter-spacing: 0; */
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   font-size: 40px;
   line-height: 55px;
   text-align: center;
   color: #204e3c;
   margin-bottom: 20px;
-}
-
-#subHeading {
-  font-size: 15px;
-  color: #000;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #myForm {
@@ -34,9 +26,12 @@
 input {
   margin: 10px auto;
   padding: 10px;
-  font-size: 13px;
+  font-size: 15px;
   width: 400px;
-  height: 30px;
+  height: 25px;
+}
+.margin_txt {
+  padding-left: 1%;
 }
 #register input {
   width: 418px;
@@ -62,22 +57,24 @@ input {
 #btn1 {
   border: 1px solid transparent;
   padding: 15px;
-  width: 423px;
+  width: 430px;
   margin: auto;
   /* margin-top: 20px; */
-  /* margin-left: 386px; */
-  background-color: #0f2d26;
+  margin-left: 0px;
+  background-color: #3c3f3f;
   color: white;
   cursor: pointer;
   font-size: 18px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 17px;
+  font-weight: bold;
+  height: 53px;
 }
 #btn1:hover {
   /* margin: 5px; */
   padding: 15px;
   width: 423px;
-  background-color: black;
+  background-color: rgb(36, 33, 33);
   color: white;
   font-size: 20px;
   box-sizing: border-box;
@@ -93,7 +90,7 @@ input {
 #socialIcons > p {
   text-align: center;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 18px;
 }
 #socialIcons > div > a {
   margin-left: 12px;

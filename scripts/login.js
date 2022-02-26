@@ -12,7 +12,7 @@ async function login(e){
     data_list = JSON.stringify(data_list);
     console.log('data_list', data_list);
 
-    let url = `http://localhost:2345/login`
+    let url = `https://the-bowl-company-pro.herokuapp.com/login`
 
   let responce = await fetch(url, {
     method: 'POST',
@@ -37,7 +37,7 @@ async function login(e){
 
 async function getid(value){
 
-    let api = `http://localhost:2345/users/email?email=${value}`
+    let api = `https://the-bowl-company-pro.herokuapp.com/users/email?email=${value}`
 
     let res = await fetch(api,{
 
@@ -55,12 +55,7 @@ async function getid(value){
   let loginID = document.getElementById("log");
   loginID.style.color = "red";
   let loginame = JSON.parse(localStorage.getItem("user_name"));
-  // var div = document.createElement("div");
-  // var img = document.createElement("img");
-  // img.src = "https://img.icons8.com/fluency-systems-filled/48/000000/guest-male.png";
-  // var p = document.createElement("p");
-  // p.innerHTML = loginame.name;
-  // div.append(img, p);
+  
   loginID.innerHTML = loginame.name;
   
 }
