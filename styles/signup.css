@@ -5,20 +5,12 @@
 
 #heading {
   /* letter-spacing: 0; */
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   font-size: 40px;
   line-height: 55px;
   text-align: center;
   color: #204e3c;
   margin-bottom: 20px;
-}
-
-#subHeading {
-  font-size: 15px;
-  color: #000;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #myForm {
@@ -37,6 +29,9 @@ input {
   font-size: 13px;
   width: 400px;
   height: 30px;
+}
+.margin_txt{
+  padding-left: 1%;
 }
 #register input {
   width: 418px;
@@ -66,7 +61,7 @@ input {
   margin: auto;
   /* margin-top: 20px; */
   /* margin-left: 386px; */
-  background-color: #0f2d26;
+  background-color: #3c3f3f;
   color: white;
   cursor: pointer;
   font-size: 18px;
@@ -77,7 +72,7 @@ input {
   /* margin: 5px; */
   padding: 15px;
   width: 423px;
-  background-color: black;
+  background-color: rgb(36, 33, 33);
   color: white;
   font-size: 20px;
   box-sizing: border-box;
