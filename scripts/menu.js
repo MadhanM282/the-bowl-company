@@ -1,7 +1,16 @@
-async function searching(){
+let count = 1;
+if (count < 2) { searching() }
+else if (count > 2) {
+    load();
+}
+function load() {
+    count++;
+    searching();
+}
+async function searching() {
     
     try{
-        let url = "http://localhost:2345/foods/?count=4";
+        let url = `http://localhost:2345/foods/?count=${count}`;
         let res = await fetch (url);
         
         let data = await res.json();
@@ -115,4 +124,3 @@ function display(data){
 }
 
 
-searching();
