@@ -40,13 +40,7 @@ app.post(
   body("mobile_number")
     .isNumeric()
     .isLength({ min: 10, max: 12 })
-    .withMessage("Please enter a valid number").
-    custom((value)=>{
-    if (!validator.isMobilePhone(value)) {
-     throw new Error('Phone is invalid');
-      }
-      return true;
-   }),
+    .withMessage("Please enter a valid number"),
   body("email")
     .isEmail()
     .custom(async (value) => {
