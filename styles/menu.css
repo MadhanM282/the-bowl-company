@@ -337,6 +337,13 @@ input:checked + .slider:before {
   margin-top: 25px;
   font-weight: 100;
   width: 150px;
+  cursor: pointer;
+}
+.hh14:hover{
+  color:rgb(255, 190, 68);
+  font-weight: bold;
+  letter-spacing:1px;
+  
 }
 #fithdiv1 {
   height: 300px;

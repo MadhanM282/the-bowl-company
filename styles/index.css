@@ -5,6 +5,9 @@ body {
   font-family: "Bree Serif", serif !important;
   
 }
+html{
+  scroll-behavior: smooth;
+}
 ::selection {
   background-color: #000000;
   color: #ffffff;

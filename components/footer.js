@@ -75,7 +75,7 @@ return `<div id="footer">
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://bit.ly/3xXzxJ6"
+                href="ourmenu.html"
                 class="menu-link"
                 >Order Now</a
               >
