@@ -73,7 +73,7 @@ async function getid(value){
     let data = await res.json()
 
   console.log('data', data);
-  localStorage.setItem("user_name",JSON.stringify(data));
+  localStorage.setItem("user_name",JSON.stringify(data)); // getting data from local storage
   let loginID = document.getElementById("log");
   let loginame = JSON.parse(localStorage.getItem("user_name"));
   
