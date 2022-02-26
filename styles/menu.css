@@ -337,6 +337,13 @@ input:checked + .slider:before {
   margin-top: 25px;
   font-weight: 100;
   width: 150px;
+  cursor: pointer;
+}
+.hh14:hover{
+  color:rgb(255, 190, 68);
+  font-weight: bold;
+  letter-spacing:1px;
+  
 }
 #fithdiv1 {
   height: 300px;
@@ -363,10 +370,15 @@ input:checked + .slider:before {
   border: 0px;
   border-radius: 25px;
   font-size: 16px;
+ 
 }
 #thirdbtn {
-  margin-left: 650px;
+   margin:auto;
+   margin-top: 30px;
   justify-content: center;
+  /* border:solid greenyellow; */
+  width:fit-content;
+
 }
 #sixdiv {
   width: 100%;

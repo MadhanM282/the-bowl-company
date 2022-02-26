@@ -4,7 +4,7 @@ const connect = require("./configs/db");
 
 const cors = require("cors");
 
-// const mongoose = require('mongoose');
+const port= process.env.PORT || 2345;
 
 const User = require("./models/user.model");
 
@@ -20,7 +20,7 @@ const category = require("../src/controllers/category.controller");
 
 const search = require("../src/controllers/search.controller");
 
-const { body } = require("express-validator");
+const { body, validationResults } = require("express-validator");
 
 const passport = require("./configs/google-oauth");
 
@@ -40,13 +40,7 @@ app.post(
   body("mobile_number")
     .isNumeric()
     .isLength({ min: 10, max: 12 })
-    .withMessage("Please enter a valid number").
-    custom((value)=>{
-    if (!validator.isMobilePhone(value)) {
-     throw new Error('Phone is invalid');
-      }
-      return true;
-   }),
+    .withMessage("Please enter a valid number"),
   body("email")
     .isEmail()
     .custom(async (value) => {
@@ -101,16 +95,16 @@ app.get(
   (req, res) => {
     const { user } = req;
     const token = newToken(user);
-    
+
     return res.send({ user, token });
 
   }
 );
 
-app.listen(2345, async () => {
+app.listen(port, async () => {
   try {
     await connect();
-    console.log("running on port 2345");
+    console.log(`running on port 2345${port}`);
   } catch (err) {
     console.log(err.message);
   }

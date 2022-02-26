@@ -1,7 +1,16 @@
-async function searching(){
+let count = 1;
+if (count < 2) { searching() }
+else if (count > 2) {
+    load();
+}
+function load() {
+    count++;
+    searching();
+}
+async function searching() {
     
     try{
-        let url = "http://localhost:2345/foods/?count=4";
+        let url = `http://localhost:2345/foods/?count=${count}`;
         let res = await fetch (url);
         
         let data = await res.json();
@@ -49,7 +58,7 @@ async function switc(){
 function display(data){
     let main = document.querySelector("#fithdiv");
     main.innerHTML = null;
-    let arr = [];
+    let arr = JSON.parse(localStorage.getItem("cart")) ||[];
     data.map((ele)=>{
         let div = document.createElement('div');
         let div1 = document.createElement('div');
@@ -95,6 +104,7 @@ function display(data){
         function cart(){
             arr.push(ele);
             localStorage.setItem('cart', JSON.stringify(arr));
+            button.style.backgroundColor = "#ff7a00";
         }
         typedive.append(svg,name)
 
@@ -115,4 +125,3 @@ function display(data){
 }
 
 
-searching();
