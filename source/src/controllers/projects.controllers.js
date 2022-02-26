@@ -14,6 +14,7 @@ router.post("", async (req, res) => {
     try {
       const food = await Food.create(req.body);
       res.send(food);
+
     }
     catch (err) {
       res.send(err.message);
