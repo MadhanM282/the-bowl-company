@@ -46,6 +46,19 @@ input {
   border: 1px solid transparent;
   width: 423px;
 }
+#btn2 {
+  border: 1px solid transparent;
+  margin-top: 15px;
+  /* padding: 0px 162px; */
+  height: 50px;
+  background-color: #ced8d6;
+  color: rgb(12, 11, 11);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 39%;
+  margin-left: 328px;
+}
 #btn1 {
   border: 1px solid transparent;
   padding: 15px;
