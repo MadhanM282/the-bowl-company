@@ -95,8 +95,9 @@ app.get(
   (req, res) => {
     const { user } = req;
     const token = newToken(user);
-
+    
     return res.send({ user, token });
+
   }
 );
 
