@@ -20,7 +20,7 @@ const category = require("../src/controllers/category.controller");
 
 const search = require("../src/controllers/search.controller");
 
-const { body, validationResult } = require("express-validator");
+const { body } = require("express-validator");
 
 const passport = require("./configs/google-oauth");
 
@@ -40,7 +40,13 @@ app.post(
   body("mobile_number")
     .isNumeric()
     .isLength({ min: 10, max: 12 })
-    .withMessage("Please enter a valid number"),
+    .withMessage("Please enter a valid number").
+    custom((value)=>{
+    if (!validator.isMobilePhone(value)) {
+     throw new Error('Phone is invalid');
+      }
+      return true;
+   }),
   body("email")
     .isEmail()
     .custom(async (value) => {
