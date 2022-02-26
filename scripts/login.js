@@ -77,11 +77,11 @@ async function getid(value){
   let loginID = document.getElementById("log");
   let loginame = JSON.parse(localStorage.getItem("user_name"));
   
-  var div = document.createElement("div");
-  var img = document.createElement("img");
-  img.src = "https://img.icons8.com/fluency-systems-filled/48/000000/guest-male.png";
-  var p = document.createElement("p");
-  p.innerHTML = loginame.name;
-  div.append(img, p);
-  loginID.innerHTML = div;
+  // var div = document.createElement("div");
+  // var img = document.createElement("img");
+  // img.src = "https://img.icons8.com/fluency-systems-filled/48/000000/guest-male.png";
+  // var p = document.createElement("p");
+  // p.innerHTML = loginame.name;
+  // div.append(img, p);
+  // loginID.innerHTML = div;
 }
