@@ -32,21 +32,32 @@ input {
   padding: 5px 20px 5px 20px;
   font-size: 15px;
   margin-top: 15px;
-
 }
-#email, #password{
+#email,
+#password {
   width: 398px;
 }
 .btn {
   border: 1px solid transparent;
-  
+}
+#btn2 {
+  border: 1px solid transparent;
+  margin-top: 40px;
+  /* padding: 0px 162px; */
+  height: 50px;
+  background-color: #dde7e5;
+  color: rgb(12, 11, 11);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
 }
 #btn1 {
   border: 1px solid transparent;
   margin-top: 20px;
   padding: 0px 173px;
   height: 60px;
-  background-color: #0f2d26;
+  background-color: #03130f;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -68,7 +79,7 @@ input {
   font-size: 18px;
   line-height: 26px;
   text-decoration: none solid;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 #socialIcons > div > a {
   margin-left: 8px;

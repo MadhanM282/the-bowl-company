@@ -1,4 +1,10 @@
  document.getElementById("btn1").addEventListener("click", login);
+ document.getElementById("btn2").addEventListener("click",auth);
+
+ function auth(){
+   window.location.href = "http://localhost:2345/auth/google"
+ }
+
 //   var userD = JSON.parse(localStorage.getItem("userData"));
 
 //   function logIn() {
