@@ -21,7 +21,7 @@
   /* width: 480px; */
 }
 input {
-  height: 30px;
+  height: 25px;
   padding: 5px 20px 5px 20px;
   font-size: 15px;
   margin-top: 15px;
@@ -45,19 +45,19 @@ input {
   color: rgb(12, 11, 11);
   font-size: 18px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 13px;
   width: 100%;
 }
 #btn1 {
   border: 1px solid transparent;
   margin-top: 20px;
-  padding: 0px 173px;
-  height: 60px;
+  padding: 0px 175px;
+  height: 53px;
   background-color: #404242;
   color: white;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 17px;
 }
 #btn1:hover {
   background-color: rgb(41, 36, 36);
