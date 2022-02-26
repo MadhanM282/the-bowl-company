@@ -200,25 +200,23 @@ margin-right: 2%;
      margin-top: 10px;
  }
  #return_to_cart {
-     line-height: 3;
+    height: 90%;
      color:#ff6781;
      border: none;
      cursor: pointer;
-     width: 200px;
-     padding: 0.9285714286em 0.7857142857em;
-     background: transparent;
+     width: 300px;
+     align-items: center;
+     background:transparent;
      font-size: 14px;
  }
  #return_to_shipping {
-     background-color: #616160;
-     color: white;
-     margin-left: 200px;
-     width: 250px;
-     cursor: pointer;
-     border-radius: 5px;
-     /* border-color: #d9d9d9; */
-     border: 1px transparent solid;
-     padding: 0.9285714286em 0.7857142857em;
+    height:90%;
+    width:400px;
+    padding: 1px;
+    background-color:rgb(109, 104, 104);
+    border-radius:5px; 
+    color:white;
+    margin-left: 275px;
  }
 
  .main_footer {
