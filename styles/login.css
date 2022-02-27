@@ -16,7 +16,7 @@
   border: 1px solid transparent;
   display: flex;
   flex-direction: column;
-  /* width: 480px; */
+  
 }
 input {
   height: 25px;
