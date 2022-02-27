@@ -7,6 +7,8 @@ function load() {
     count++;
     searching();
 }
+
+
 async function searching() {
     
     try{
