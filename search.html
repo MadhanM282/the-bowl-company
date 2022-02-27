@@ -73,7 +73,7 @@
       //Schedule a setTimeout after delay seconds
     }, 1000);
   }
-  ///////////////////////////////////////////////////
+  
   var optiondiv = document.querySelector("#searchResults");
 
   let displaySearch = (data) => {
@@ -149,6 +149,7 @@
     function cart() {
       arr.push(data);
       localStorage.setItem("cart", JSON.stringify(arr));
+      button.style.backgroundColor = "#ff7a00";
     }
 
     button.innerHTML = "Add+";
