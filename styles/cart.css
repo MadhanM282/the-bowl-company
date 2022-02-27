@@ -61,21 +61,21 @@ body {
     text-align: right;
 }
 .underline{
-    /* border: solid black 1px; */
-    /* text-decoration: underline; */
     cursor: pointer;
     color: white;
     background-color:black;
     border-radius:20px;
     padding :5px 10px;
     border: 0px;
-    margin-top:30px
+    margin-top:20px
 }
 #cart_head{
     border-bottom: solid black 1px;
     padding-left: 10%;
     display:flex;
     justify-content: space-between;
+    font-size: 16px;
+    margin-bottom:20px;
 }
 #total_cart{
     border-bottom: solid black 1px;  
