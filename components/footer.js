@@ -113,7 +113,7 @@ return `<div id="footer">
               required="required"
             />
             <br />
-            <input type="submit" name="submit" id="sub" value="SUBMIT" />
+            <input type="submit" name="submit" id="subfooterbtn" value="SUBMIT" />
           </div>
         </div>
       </div>

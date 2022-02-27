@@ -94,7 +94,7 @@ input {
   margin-bottom: 20px;
 }
 
-#sub {
+#subfooterbtn {
   background-color: black;
   color: white;
   border: 0%;
@@ -103,7 +103,7 @@ input {
   width: 180px;
   font-size: 20px;
 }
-#sub:hover {
+#subfooterbtn:hover {
   padding: 15px 25px;
   cursor: pointer;
   font-size: 22px;
