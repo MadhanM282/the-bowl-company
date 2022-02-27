@@ -4,7 +4,7 @@ const connect = require("./configs/db");
 
 const cors = require("cors");
 
-const port= process.env.PORT || 2366;
+const port= process.env.PORT || 2345;
 
 const User = require("./models/user.model");
 
@@ -35,12 +35,18 @@ app.post(
   body("first_name")
     .isString()
     .isLength({ min: 3, max: 20 })
-    .withMessage("First name should be 3 to 20 characters long"),
+    .withMessage("Last name should be 3 to 20 characters long"),
   body("last_name").isLength({ min: 3, max: 20 }),
   body("mobile_number")
     .isNumeric()
     .isLength({ min: 10, max: 12 })
     .withMessage("Please enter a valid number"),
+  //   custom((value)=>{
+  //   if (!validator.isMobilePhone(value)) {
+  //    throw new Error('Phone is invalid');
+  //     }
+  //     return true;
+  //  }),
   body("email")
     .isEmail()
     .custom(async (value) => {
@@ -104,7 +110,7 @@ app.get(
 app.listen(port, async () => {
   try {
     await connect();
-    console.log(`running on port ${port}`);
+    console.log(`running on port 2345${port}`);
   } catch (err) {
     console.log(err.message);
   }

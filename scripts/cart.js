@@ -33,12 +33,12 @@ let cart_arr=JSON.parse(localStorage.getItem("cart"))||[]
           let div3=document.createElement("div")
           div3.id="div3"
   
-          let price=document.createElement("p");
+          let price=document.createElement("h2");
           price.innerText=`$${item.price}.00 Rs`
   
           order_total+=(+item.price)
   
-          let remove=document.createElement("p")
+          let remove=document.createElement("button")
           remove.innerText="REMOVE"
           remove.className="underline"
           remove.addEventListener("click",function(){
@@ -72,7 +72,7 @@ let cart_arr=JSON.parse(localStorage.getItem("cart"))||[]
   let p2=document.createElement("p")
   p2.textContent="Shipping estimate"
   
-  let p3=document.createElement("p")
+  let p3=document.createElement("h2")
   p3.textContent="Order Total"
   p3.className="bold_txt"
   
@@ -85,7 +85,7 @@ let cart_arr=JSON.parse(localStorage.getItem("cart"))||[]
   let p5=document.createElement("p")
   p5.textContent="Calculated at Checkout"
   
-  let p6=document.createElement("p")
+  let p6=document.createElement("h2")
   p6.textContent=`$${order_total}.00 Rs`
   p6.className="bold_txt"
   

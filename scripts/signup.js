@@ -34,5 +34,10 @@ async function reg(event){
 
     let data = await res.json();
     console.log('data', data);
-    window.location = "login.html";
+    if(data.errors) {
+        alert("Enter Valid Details")
+    }
+    else{
+        window.location = "login.html";
+    }
 }

@@ -11,27 +11,23 @@
   text-align: center;
   color: #204e3c;
   font-size: 45px;
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   margin-bottom: 20px;
-}
-#sub-head {
-  font-size: 18px;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 #loginform {
-  /* border: 1px solid red; */
+  border: 1px solid transparent;
   display: flex;
   flex-direction: column;
   /* width: 480px; */
 }
 input {
-  height: 40px;
+  height: 25px;
   padding: 5px 20px 5px 20px;
   font-size: 15px;
   margin-top: 15px;
+}
+.margin_txt {
+  padding-left: 2%;
 }
 #email,
 #password {
@@ -49,22 +45,22 @@ input {
   color: rgb(12, 11, 11);
   font-size: 18px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 13px;
   width: 100%;
 }
 #btn1 {
   border: 1px solid transparent;
   margin-top: 20px;
-  padding: 0px 173px;
-  height: 60px;
-  background-color: #03130f;
+  padding: 0px 175px;
+  height: 53px;
+  background-color: #404242;
   color: white;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 17px;
 }
 #btn1:hover {
-  background-color: black;
+  background-color: rgb(41, 36, 36);
   cursor: pointer;
 }
 #socialIcons > div {
@@ -79,7 +75,7 @@ input {
   font-size: 18px;
   line-height: 26px;
   text-decoration: none solid;
-  margin-top: 35px;
+  margin-top: 50px;
 }
 #socialIcons > div > a {
   margin-left: 8px;

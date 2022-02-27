@@ -10,7 +10,6 @@ async function login(e){
     };
 
     data_list = JSON.stringify(data_list);
-    console.log('data_list', data_list);
 
     let url = `https://the-bowl-company-pro.herokuapp.com/login`
 
@@ -31,7 +30,11 @@ async function login(e){
   let email = document.querySelector("#email").value;
   
   getid(email);   
-  // window.location.href = "index.html";
+  if(info.message==='Please try another email or password') {
+    alert('Please try another email or password')
+  }else{
+    window.location.href = "index.html";
+  }
 
 }
 
@@ -50,12 +53,12 @@ async function getid(value){
 
     let data = await res.json()
 
-  console.log('data', data);
-  localStorage.setItem("user_name",JSON.stringify(data)); // getting data from local storage
+  localStorage.setItem("user_name",JSON.stringify(data));
+
   let loginID = document.getElementById("log");
   loginID.style.color = "red";
   let loginame = JSON.parse(localStorage.getItem("user_name"));
-  
+
   loginID.innerHTML = loginame.name;
   
 }
