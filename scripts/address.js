@@ -12,7 +12,7 @@ document.getElementById("return_to_shipping").addEventListener("click",function(
         pincode: form.pin_code.value,
         phonenum: form.phone_num.value,
         saveInfo: form.save_info.value,
-        //email:user_detail.email
+        email:user_detail.email
     };
    
     console.log(addressObj);
@@ -32,7 +32,7 @@ document.getElementById("return_to_cart")
 //access user login details(name and email)
 
 user_detail = JSON.parse(localStorage.getItem("user_name"));
-//console.log(user_name);
-let names=document.getElementById("user_name");
-names.textContent=`${user_name.name}, ${user_name.email}`;
+console.log(user_detail);
+let names=document.getElementById("user_details_name");
+names.textContent=`${user_detail.name}, ${user_detail.email}`;
 

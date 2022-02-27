@@ -100,7 +100,7 @@ let cart_arr=JSON.parse(localStorage.getItem("cart"))||[]
   
   let loged_in=JSON.parse(localStorage.getItem("loged_in"));
   
-  user_name.innerText=loged_in;
+  
   
   
   
