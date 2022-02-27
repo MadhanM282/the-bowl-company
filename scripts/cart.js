@@ -38,7 +38,7 @@ let cart_arr=JSON.parse(localStorage.getItem("cart"))||[]
   
           order_total+=(+item.price)
   
-          let remove=document.createElement("p")
+          let remove=document.createElement("button")
           remove.innerText="REMOVE"
           remove.className="underline"
           remove.addEventListener("click",function(){

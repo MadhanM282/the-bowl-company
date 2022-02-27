@@ -62,8 +62,14 @@ body {
 }
 .underline{
     /* border: solid black 1px; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
+    color: white;
+    background-color:black;
+    border-radius:20px;
+    padding :5px 10px;
+    border: 0px;
+    margin-top:30px
 }
 #cart_head{
     border-bottom: solid black 1px;
