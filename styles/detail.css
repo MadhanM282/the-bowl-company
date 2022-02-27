@@ -1,6 +1,8 @@
-body{
-    background-color:rgb(110, 108, 108)
-}
+body {
+    background-color:rgb(110, 108, 108);
+    font-family: "Bree Serif", serif !important;
+    margin: 0px;
+  }
 #detail{
     height: 520px;
     width: 400px;

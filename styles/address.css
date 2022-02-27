@@ -1,5 +1,5 @@
 body {
-    font-family: Lato, sans-serif;
+    font-family: "Bree Serif", serif !important;
     color: #545454;
     background-color: white;
     margin: 0;
@@ -201,30 +201,37 @@ margin-right: 2%;
  }
  #return_to_cart {
     height: 90%;
-     color:#ff6781;
-     border: none;
-     cursor: pointer;
-     width: 300px;
-     align-items: center;
+    color:#f04c1a;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    align-items: center;
      background:transparent;
      font-size: 14px;
  }
  #return_to_shipping {
-    height:90%;
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.8px;
     width:400px;
-    padding: 1px;
-    background-color:rgb(109, 104, 104);
-    border-radius:5px; 
-    color:white;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
     margin-left: 275px;
+    
  }
-
+ #return_to_shipping a{
+    color:white;
+ }
  .main_footer {
     border-top: 1px solid #e6e6e6;
     margin-left: 75px;
+    margin-top: 10px;
  }
  footer {
      display: block;
+     
  }
  .policy-list__item {
       float: left;
@@ -242,7 +249,7 @@ margin-right: 2%;
   }
   a {
     text-decoration: none;
-    color: #ff6781;
+    color: #f04c1a;
     transition: color 0.2s ease-in-out;
     line-height: 5;
   }

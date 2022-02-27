@@ -90,6 +90,7 @@ body {
 }
 .bold_txt{
     /* font-weight: bold; */
+    margin-top: 10px;
     color:rgb(23, 184, 23);
     font-family: Arial, Helvetica, sans-serif;
 }

@@ -19,7 +19,7 @@ document.getElementById("return_to_shipping").addEventListener("click",function(
     adddelivery.push(addressObj)
     console.log(adddelivery)
     localStorage.setItem("Deliveryadd", JSON.stringify(adddelivery));
-    window.location.href = "shiping2.html";
+    window.location.href = "finalPayment.html";
 })
 
 //returns to the cart page
@@ -27,4 +27,12 @@ document.getElementById("return_to_cart")
 .addEventListener("click", function () {
    window.location.href = "cart.html";
 });
+
+
+//access user login details(name and email)
+
+user_detail = JSON.parse(localStorage.getItem("user_name"));
+//console.log(user_name);
+let names=document.getElementById("user_name");
+names.textContent=`${user_name.name}, ${user_name.email}`;
 
