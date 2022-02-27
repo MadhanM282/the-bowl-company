@@ -3,6 +3,10 @@
     font-size: 12px;
     min-height: 600px;
 }
+body {
+  font-family: "Bree Serif", serif !important;
+  margin: 0px;
+}
 #cart_display{
     /* border: solid black 1px; */
     /* height: 500px; */
