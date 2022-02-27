@@ -1,529 +1,371 @@
 body {
-    font-family: "Bree Serif", serif !important;
-    color: #545454;
-    background-color: white;
-    margin: 0;
-    padding: 0;
+  font-family: "Bree Serif", serif !important;
+  color: #545454;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
-
+.contact_info > h2 {
+    margin-bottom: 15px;
+}
 #container_checkout {
-    margin-top: 5%;
-    height: 800px;
-    margin-bottom: 60px;
+  margin-top: 5%;
+  height: 800px;
+  margin-bottom: 60px;
 }
 
-#container_checkout input, #container_checkout select
-{
-    padding: 0px 20px;
-    box-sizing: border-box;
-    outline: none;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
+#container_checkout input,
+#container_checkout select {
+  padding: 0px 20px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
 }
 
 .checkout_box1 {
-    width: 55%;
-    height: 100%;
-    /* border: 1px solid black; */
-    display: inline-block;
-    vertical-align: top;
+  width: 55%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: inline-block;
+  vertical-align: top;
 }
 
 .logo_checkout {
-    /* border:1px solid green; */
-    height: 15%;
-    text-align: center;
+  /* border:1px solid green; */
+  height: 15%;
+  text-align: center;
 }
 
-
-
 #list li {
-display: inline;
-margin-right: 2%;
- }
+  display: inline;
+  margin-right: 2%;
+}
 
- .contact_address_info {
-     height: 80%;
-     /* border: 1px solid blue; */
-     margin-left: 15%;
- }
+.contact_address_info {
+  height: 80%;
+  /* border: 1px solid blue; */
+  margin-left: 15%;
+}
 
- h2 {
-     color: #333333;
-     font-size: 1.2857142857em;
-     line-height: 1.3em;
-     font-weight: normal;
- }
- .contact_info {
-     height: 20%;
-     /* border: 1px solid yellow; */
- }
+h2 {
+  color: #333333;
+  font-size: 1.2857142857em;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+.contact_info {
+  height: 20%;
+  /* border: 1px solid yellow; */
+}
 
- .contact_info2 {
-     margin-top: -15px;
-     display: flex;
- }
- .contact_info_login {
-     margin-left: 25px;
-     margin-top: 15px;
- }
- .contact_img {
-     border-radius: 8px;
-     background-size: cover;
-     display: table-cell;
-     overflow: hidden;
- }
- 
- .address_info {
-     height: 74%;
-     /* border: 1px solid pink; */
- }
+.contact_info2 {
+  margin-top: -15px;
+  display: flex;
+}
+.contact_info_login {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.contact_img {
+  border-radius: 8px;
+  background-size: cover;
+  display: table-cell;
+  overflow: hidden;
+}
 
- #use_address {
-     height: 50px;
-     width: 90%;
-     text-align: start;
-     font-size: 14px;
-     color: #333333;
-     border-color: #d9d9d9;
-     border-radius: 5px;
-     box-sizing: border-box;
-     margin-top: 10px;
-     display: flex;
-     padding: 0.9285714286em 0.7857142857em;
- }
+.address_info {
+  height: 74%;
+  /* border: 1px solid pink; */
+}
 
- #use_address1 {
-     height: 50px;
-     width: 90%;
-     text-align: start;
-     font-size: 14px;
-     color: #333333;
-     border-color: #d9d9d9;
-     padding: 0.9285714286em 0.7857142857em;
-     border-radius: 5px;
-     box-sizing: border-box;
-     margin-top: 10px;
-     display: flex;
- }
- #address_1 {
-     height: 50px;
-     width: 90%;
-     text-align: start;
-     font-size: 14px;
-     color: #333333;
-     border-color: #d9d9d9;
-     padding: 0.9285714286em 0.7857142857em;
-     border-radius: 5px;
-     box-sizing: border-box;
-     margin-top: 10px;
-     display: flex; 
- }
- #address_2 {
-     height: 50px;
-     width: 90%;
-     text-align: start;
-     font-size: 14px;
-     color: #333333;
-     border-color: #d9d9d9;
-     border-radius: 5px;
-     box-sizing: border-box;
-     margin-top: 10px;
-     display: flex;
-     padding: 0.9285714286em 0.7857142857em;
- }
-  #ip_name{
-     height: 50px;
-     width: 90%;
-     border-color: #d9d9d9;
-     box-sizing: border-box;
-     display: flex;
-     gap: 10px;
-     margin-top: 10px;
-     /* padding: 0.9285714286em 0.7857142857em; */
- }
- #ip_name>input{ 
-     width: 50%;
-     height: 50px;
-     border-radius: 5px;
-     text-align: start;
-     font-size: 14px;
-     color: #333333;
-     border-color: #d9d9d9;
-     /* padding: 0.9285714286em 0.7857142857em; */
- }
- #phone_num {
-     height: 50px;
-     width: 90%;
-     text-align: start;
-     font-size: 14px;
-     color: #333333;
-     border-color: #d9d9d9;
-     border-radius: 5px;
-     box-sizing: border-box;
-     display: flex;
-     gap: 10px;
-     margin-top: 10px;
-     padding: 0.9285714286em 0.7857142857em;
- }
+#use_address {
+  height: 50px;
+  width: 90%;
+  text-align: start;
+  font-size: 14px;
+  color: #333333;
+  border-color: #d9d9d9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+  padding: 0.9285714286em 0.7857142857em;
+}
 
- 
- .ip_city {
-     height: 50px !important;
-     width: 90%;
-     text-align: start;
-     font-size: 14px;
-     border-radius: 5px;
-     box-sizing: border-box;
-     display: flex;
-     gap: 10px;
-     /* margin-top: 0px;
+#use_address1 {
+  height: 50px;
+  width: 90%;
+  text-align: start;
+  font-size: 14px;
+  color: #333333;
+  border-color: #d9d9d9;
+  padding: 0.9285714286em 0.7857142857em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+}
+#address_1 {
+  height: 50px;
+  width: 90%;
+  text-align: start;
+  font-size: 14px;
+  color: #333333;
+  border-color: #d9d9d9;
+  padding: 0.9285714286em 0.7857142857em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+}
+#address_2 {
+  height: 50px;
+  width: 90%;
+  text-align: start;
+  font-size: 14px;
+  color: #333333;
+  border-color: #d9d9d9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+  padding: 0.9285714286em 0.7857142857em;
+}
+#ip_name {
+  height: 50px;
+  width: 90%;
+  border-color: #d9d9d9;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  /* padding: 0.9285714286em 0.7857142857em; */
+}
+#ip_name > input {
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  text-align: start;
+  font-size: 14px;
+  color: #333333;
+  border-color: #d9d9d9;
+  /* padding: 0.9285714286em 0.7857142857em; */
+}
+#phone_num {
+  height: 50px;
+  width: 90%;
+  text-align: start;
+  font-size: 14px;
+  color: #333333;
+  border-color: #d9d9d9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 0.9285714286em 0.7857142857em;
+}
+
+.ip_city {
+  height: 50px !important;
+  width: 90%;
+  text-align: start;
+  font-size: 14px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  /* margin-top: 0px;
      padding: 0.9285714286em 0.7857142857em; */
-     padding-top: 5px;
- }
- .ip_city>input {
-    width: 30%  ;
-     height: 50px;
- }
- #save_info {
-     margin-top: 10px;
- }
- #ip_submit {
-     height: 50px;
-     width: 90%;
-     /* text-align: start; */
-     font-size: 14px;
-     color: #333333;
-     /* box-sizing: border-box; */
-     display: flex;
-     /* gap: 10px; */
-     margin-top: 10px;
-     
- }
- #return_to_cart {
-    height: 90%;
-    color:#f04c1a;
-    border: none;
-    cursor: pointer;
-    width: 300px;
-    align-items: center;
-     background:transparent;
-     font-size: 14px;
- }
- #return_to_shipping {
-     /* border:solid green; */
-    background-color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    width:400px;
-    /* align-items: center; */
-    font-weight: bold;
-    border-radius: 20px;
-    border: none;
-    margin-left: 230px;
-    
- }
- #return_to_shipping a{
-    color:white;
- }
- .main_footer {
-    border-top: 1px solid #e6e6e6;
-    margin-left: 75px;
-    margin-top: 10px;
- }
- footer {
-     display: block;
-     
- }
- .policy-list__item {
-      float: left;
-      /* font-size: 0.8571428571em; */
-      font-size: 12px;
-      margin-right: 1.5em;
-      margin-bottom: 0.5em;
-  }
-  li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-  }
-  ul {
-      list-style-type: none;
-  }
-  a {
-    text-decoration: none;
-    color: #f04c1a;
-    transition: color 0.2s ease-in-out;
-    line-height: 5;
-  }
+  padding-top: 5px;
+}
+.ip_city > input {
+  width: 30%;
+  height: 50px;
+}
+#save_info {
+  margin-top: 10px;
+}
+#ip_submit {
+  height: 50px;
+  width: 90%;
+  /* text-align: start; */
+  font-size: 14px;
+  color: #333333;
+  /* box-sizing: border-box; */
+  display: flex;
+  /* gap: 10px; */
+  margin-top: 10px;
+}
+#return_to_cart {
+  height: 90%;
+  color: #f04c1a;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  align-items: center;
+  background: transparent;
+  font-size: 14px;
+}
+#return_to_shipping {
+  /* border:solid green; */
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  width: 400px;
+  /* align-items: center; */
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  margin-left: 230px;
+}
+#return_to_shipping a {
+  color: white;
+}
+.main_footer {
+  border-top: 1px solid #e6e6e6;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+footer {
+  display: block;
+}
+.policy-list__item {
+  float: left;
+  /* font-size: 0.8571428571em; */
+  font-size: 12px;
+  margin-right: 1.5em;
+  margin-bottom: 0.5em;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #f04c1a;
+  transition: color 0.2s ease-in-out;
+  line-height: 5;
+}
 
-
- /* second part =============================================================================*/
+/* second part =============================================================================*/
 .checkout_box2 {
-    width: 44%;
-    height: 100%;
-    /* border: 1px solid red; */
-    border-left: 1px solid #d9d9d9;
-    display: inline-block;
-    background-color: #fdfbfb;
+  width: 44%;
+  height: 100%;
+  /* border: 1px solid red; */
+  border-left: 1px solid #d9d9d9;
+  display: inline-block;
+  background-color: #fdfbfb;
 }
 
 .checkout2 {
-    margin: 0% 10% 10% 10%;
-    font-weight: 600;
-    line-height: 1.3em;
+  margin: 0% 10% 10% 10%;
+  font-weight: 600;
+  line-height: 1.3em;
 }
 
 span {
-    color: red;
+  color: red;
 }
 
 .cart_items {
-    overflow: auto;
-    height: 100px;
-    width: 450px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  overflow: auto;
+  height: 100px;
+  width: 450px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .cart_iems1 {
-    display: flex;
-    margin-top: 5px;
+  display: flex;
+  margin-top: 5px;
 }
-img>.cart_iems1 {
-    border-radius: 5px;
+img > .cart_iems1 {
+  border-radius: 5px;
 }
 .points1 {
-     color: black;
-     font-size: 18px;
-     line-height: 1.3em;
-     font-weight: normal;
+  color: black;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: normal;
 }
 .points2 {
-     color: #333333;
-     font-weight: normal;
+  color: #333333;
+  font-weight: normal;
 }
 #range {
-    width: 300px;
-    margin-left: 20px;
+  width: 300px;
+  margin-left: 20px;
 }
 #redeem {
-    height: 40px;
-    width: 100px;
-    border-radius: 5px;
-    border-color: #d9d9d9;
-    background-color: #c0bfbf;
-    color: white;
-    margin-left: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  border-color: #d9d9d9;
+  background-color: #c0bfbf;
+  color: white;
+  margin-left: 10px;
 }
 .reward_name {
-    font-size: 14px;
-    font-weight: normal;
-    margin-left: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 30px;
 }
 .gift_card {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-#coupon_code {
-    height: 40px;
-    width: 350px;
-    border-radius: 5px;
-    cursor: text;
-    border-color: #d9d9d9;
-}
-#coupon_btn {
-    height: 45px;
-    width: 100px;
-    border-color: #d9d9d9;
-    border-radius: 5px;
-} 
-hr {
-    color:1px solid #fdf3f3;
-}
-#cartBox{
-    width: 95%;
-    padding-right: 25px;
-    height: 200px;    
-}
-#cartBox>div>div>img{
-    width: 80px;
-    margin: 5px;
-    margin-right: 15px;
-    border-radius: 4px;
-}
-#cartBox>div{
-    display: flex;
-}
-#cartBox>div>h3{
-    width: 400px;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.quantutyno{
-    /* position: absolute; */
-    margin-left: 75px;
-    margin-bottom: -25px;
-    margin-right: 15px;
-    z-index: 1;
-    position: relative;
-    border: 2px solid white;
-    border-radius: 50%;
-    height: 15px;
-    width: 12px;
-    padding: 3px;
-    background-color: gray;
-    color: white;
-    font-size: 12px;
-}
-::selection {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-#footer {
-  height: 555px;
-  width: 100%;
-  border: 1px solid transparent;
-}
-#foot1 {
-  height: 310px;
-  width: 80%;
-  display: flex;
-  margin: auto;
-  /* border: 1px dashed red; */
-  margin-top: 80px;
-}
-#foot2 {
-  width: 100%;
-  height: 75px;
-  /* border: 1px dashed green; */
-}
-#foot3 {
-  height: 135px;
-  width: 100%;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-    ),
-    url(https://www.thebowlcompany.in/wp-content/uploads/2021/11/footer-bg.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: auto;
-  background-attachment: scroll;
-  /* border: 1px dashed maroon; */
-}
-#foot3 > p {
-  padding-left: 76%;
-  padding-top: 60px;
-}
-#foot2 > div {
-  display: flex;
-}
-.footsvg {
-  width: 20px;
-  margin-left: 7px;
-  margin-top: 10px;
-}
-#fdiv2>h3{
-    /* border: 1px solid red; */
-    margin-left: -4px;
-}
-#fdiv3>h3{
-    /* border: 1px solid red; */
-    margin-left: -4px;
-}
-#fdiv4>h3{
-    /* border: 1px solid red; */
-    margin-left: -4px;
-}
-#fdiv2 > ul > li > a {
-  text-decoration: none;
-  color: black;
-}
-
-#fdiv3 > p > a {
-  text-decoration: none;
-  color: black;
-}
-ul > li {
-  display: inline;
-  /* border: solid blue; */
-  /* margin-left:20px; */
-}
-#fdiv1 {
-  /* border: solid blue; */
-  width: 25%;
-  margin-top: 35px;
-}
-#fdiv2 {
-  /* border: solid green; */
-  width: 25%;
-}
-#fdiv3 {
-  /* border: solid purple; */
-  width: 25%;
-}
-#fdiv4 {
-  /* border: solid; */
-  width: 30%;
-  /* line-height: 24px; */
-}
-#fdiv4 > div {
-  /* border: solid green; */
-  height: 200px;
-}
-
-input {
-  font-weight: bold;
-  border: 0;
-  width: 250px;
-  border-radius: 20px;
-  padding: 15px 5px;
-  background-color: hsl(180, 3%, 93%);
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-
-#subfooterbtn {
-  background-color: black;
+#coupon_code {
+  height: 40px;
+  width: 350px;
+  border-radius: 5px;
+  cursor: text;
+  border-color: #d9d9d9;
+}
+#coupon_btn {
+  height: 45px;
+  width: 100px;
+  border-color: #d9d9d9;
+  border-radius: 5px;
+}
+hr {
+  color: 1px solid #fdf3f3;
+}
+#cartBox {
+  width: 95%;
+  padding-right: 25px;
+  height: 200px;
+}
+#cartBox > div > div > img {
+  width: 80px;
+  margin: 5px;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+#cartBox > div {
+  display: flex;
+}
+#cartBox > div > h3 {
+  width: 400px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.quantutyno {
+  /* position: absolute; */
+  margin-left: 75px;
+  margin-bottom: -25px;
+  margin-right: 15px;
+  z-index: 1;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 15px;
+  width: 12px;
+  padding: 3px;
+  background-color: gray;
   color: white;
-  border: 0%;
-  border-radius: 40px;
-  padding: 10px 20px;
-  width: 180px;
-  font-size: 20px;
+  font-size: 12px;
 }
-#subfooterbtn:hover {
-  padding: 15px 25px;
-  cursor: pointer;
-  font-size: 22px;
-}
-#foot2 > div {
-  
-  width: fit-content;
-  margin-top: -45px;
-  margin-left: 29%;
-  font-weight: bolder;
-  width: fit-content;
-}
-#foot2 > div >h3{
-    /* border:solid green; */
-    width: 110px;
-    margin-left: -1px;
-}
-
-footer {
-  margin-bottom: 0%;
-  /* border: 1px solid teal; */
-  font-size: 20px;
-  font-weight: 900;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Bree Serif", serif;
-  letter-spacing: 0.4px;
-  font-style: normal;
-  line-height: 1.85714285714286;
-  margin: 0%;
-}
-.ondiv{
-    background: black;
-    color: white;
-}
-

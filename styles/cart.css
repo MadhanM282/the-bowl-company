@@ -1,112 +1,110 @@
-#cover{
-    display: flex;
-    font-size: 12px;
-    min-height: 600px;
+#cover {
+  display: flex;
+  font-size: 12px;
+  min-height: 600px;
 }
 body {
   font-family: "Bree Serif", serif !important;
   margin: 0px;
 }
-#cart_display{
-    /* border: solid black 1px; */
-    /* height: 500px; */
-    margin-top:100px;
-    flex: 3;
-    padding-left: 10%;
-    padding-right: 10%;
+#cart_display {
+  /* border: solid black 1px; */
+  /* height: 500px; */
+  margin-top: 100px;
+  flex: 3;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-#cart_checkout{
-    margin-top:100px;
+#cart_checkout {
+  margin-top: 100px;
 
-    /* padding-top: 40px; */
-    font-size: 15px;
-    flex: 1;
+  /* padding-top: 40px; */
+  font-size: 15px;
+  flex: 1;
 }
-#cart_checkout>p>a:hover{
-    color: blue
+#cart_checkout > p > a:hover {
+  color: blue;
 }
-#item_cover{
-    /* border: solid rgb(241, 4, 4) 1px; */
-    display: flex;
-    padding-top: 1%;
-    height: fit-content;
-}
-
-#item_cover div:nth-child(1){
-    /* border: solid black 1px; */
-    padding-bottom: 3%;
-    flex: 1;
-    height: 100%;
-    width: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-#item_cover div:nth-child(1) #imgdish{
-    height: 100%;
-    width: 100%;
-}
-#item_cover div:nth-child(1) img{
-    /* border: solid black 1px; */
-    width: 50%;
-}
-#item_cover div:nth-child(2){
-    /* border: solid black 1px; */
-    font-size: 17px;
-    flex: 3;
+#item_cover {
+  /* border: solid rgb(241, 4, 4) 1px; */
+  display: flex;
+  padding-top: 1%;
+  height: fit-content;
 }
 
-#item_cover div:nth-child(3){
-    /* border: solid black 1px; */
-    flex: 2;
-    text-align: right;
+#item_cover div:nth-child(1) {
+  /* border: solid black 1px; */
+  padding-bottom: 3%;
+  flex: 1;
+  height: 100%;
+  width: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-.underline{
-    cursor: pointer;
-    color: white;
-    background-color:black;
-    border-radius:20px;
-    padding :5px 10px;
-    border: 0px;
-    margin-top:20px
+#item_cover div:nth-child(1) #imgdish {
+  height: 100%;
+  width: 100%;
 }
-#cart_head{
-    border-bottom: solid black 1px;
-    padding-left: 10%;
-    display:flex;
-    justify-content: space-between;
-    font-size: 16px;
-    margin-bottom:20px;
+#item_cover div:nth-child(1) img {
+  /* border: solid black 1px; */
+  width: 50%;
 }
-#total_cart{
-    border-bottom: solid black 1px;  
-    
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 9%;
+#item_cover div:nth-child(2) {
+  /* border: solid black 1px; */
+  font-size: 17px;
+  flex: 3;
 }
-#total_cart div:nth-child(2){
-    text-align: right;
+
+#item_cover div:nth-child(3) {
+  /* border: solid black 1px; */
+  flex: 2;
+  text-align: right;
 }
-.bold_txt{
-    /* font-weight: bold; */
-    margin-top: 10px;
-    color:rgb(23, 184, 23);
-    font-family: Arial, Helvetica, sans-serif;
+.underline {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 0px;
+  margin-top: 20px;
 }
-#cart_checkout a{
-    text-decoration: underline;
+#cart_head {
+  border-bottom: solid black 1px;
+  padding-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-#proceed_btn{
-    background-color: black;
-    color: white;
-    width: 50%;
-    padding: 3%;
-    padding-left: 20%;
-    padding-right: 20%;
-    cursor: pointer;
-    border-radius: 30px;
-    /* font-size: 12px; */
-    
-    
+#total_cart {
+  border-bottom: solid black 1px;
+
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9%;
+}
+#total_cart div:nth-child(2) {
+  text-align: right;
+}
+.bold_txt {
+  /* font-weight: bold; */
+  margin-top: 10px;
+  color: rgb(23, 184, 23);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cart_checkout a {
+  text-decoration: underline;
+}
+#proceed_btn {
+  background-color: black;
+  color: white;
+  width: 50%;
+  padding: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  cursor: pointer;
+  border-radius: 30px;
+  /* font-size: 12px; */
 }
