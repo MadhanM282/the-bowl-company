@@ -37,5 +37,12 @@ let res = await fetch(regApi, {
 
 let data = await res.json()
 console.log('data', data);
-window.location = "login.html";
+
+if(data.errors){
+        alert("Enter Valid details")
+    }else{
+            window.location = "login.html";
+    }
+
+
 }
