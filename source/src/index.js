@@ -4,7 +4,7 @@ const connect = require("./configs/db");
 
 const cors = require("cors");
 
-const port= process.env.PORT || 2345;
+const port= process.env.PORT || 2366;
 
 const User = require("./models/user.model");
 

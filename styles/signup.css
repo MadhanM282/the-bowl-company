@@ -9,7 +9,7 @@
   font-size: 40px;
   line-height: 55px;
   text-align: center;
-  color: #204e3c;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -47,7 +47,7 @@ input {
   /* padding: 0px 162px; */
   height: 50px;
   background-color: #ced8d6;
-  color: rgb(12, 11, 11);
+  color: #000000;
   font-size: 18px;
   font-weight: bold;
   border-radius: 10px;
@@ -61,7 +61,7 @@ input {
   margin: auto;
   /* margin-top: 20px; */
   margin-left: 0px;
-  background-color: #3c3f3f;
+  background-color: #000000;
   color: white;
   cursor: pointer;
   font-size: 18px;
@@ -74,7 +74,7 @@ input {
   /* margin: 5px; */
   padding: 15px;
   width: 423px;
-  background-color: rgb(36, 33, 33);
+  background-color: rgb(37,37,37);
   color: white;
   font-size: 20px;
   box-sizing: border-box;

@@ -4,12 +4,10 @@
   height: 600px;
   /* border: 1px solid red; */
 }
-#login {
-  /* border: 1px solid tomato; */
-}
+
 #head {
   text-align: center;
-  color: #204e3c;
+  color: #000000;
   font-size: 45px;
   /* font-family: "Lora", serif; */
   margin-bottom: 20px;
@@ -18,7 +16,7 @@
   border: 1px solid transparent;
   display: flex;
   flex-direction: column;
-  /* width: 480px; */
+  
 }
 input {
   height: 25px;
@@ -37,30 +35,30 @@ input {
   border: 1px solid transparent;
 }
 #btn2 {
-  border: 1px solid transparent;
+  border: 1px solid red;
   margin-top: 40px;
   /* padding: 0px 162px; */
   height: 50px;
   background-color: #dde7e5;
-  color: rgb(12, 11, 11);
+  color: #000000;
   font-size: 18px;
   font-weight: bold;
   border-radius: 13px;
   width: 100%;
+
 }
 #btn1 {
-  border: 1px solid transparent;
   margin-top: 20px;
   padding: 0px 175px;
   height: 53px;
-  background-color: #404242;
+  background-color: #000000;
   color: white;
   font-size: 18px;
   font-weight: bold;
   border-radius: 17px;
 }
 #btn1:hover {
-  background-color: rgb(41, 36, 36);
+  background-color: rgb(37, 37, 37);
   cursor: pointer;
 }
 #socialIcons > div {

@@ -32,7 +32,9 @@ async function login(e){
   getid(email);   
   if(info.message==='Please try another email or password') {
     alert('Please try another email or password')
-  }else{
+    window.location.href = "login.html";
+  } else {
+    alert("Login Successful!");
     window.location.href = "index.html";
   }
 
