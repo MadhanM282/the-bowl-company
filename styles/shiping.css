@@ -22,7 +22,7 @@
     width:100%;
     height:100%;
     display: block;
-    background: rgb(247, 105, 129);
+    background: rgba(248, 54, 28, 0.877);
     border-radius: 50%;
 
     transform: scale(0);
@@ -30,4 +30,10 @@
 }
 .radio__input:checked + .radio__radio::after{
     transform: scale(1);
+}
+
+#payment_img{
+  /* border: 1px solid red; */
+    height: 80px;
+    width: 115px;
 }

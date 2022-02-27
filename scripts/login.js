@@ -11,7 +11,7 @@ async function login(e){
 
     data_list = JSON.stringify(data_list);
 
-    let url = `http://localhost:2345/login`
+    let url = `https://the-bowl-company-pro.herokuapp.com/login`
 
   let responce = await fetch(url, {
     method: 'POST',
@@ -24,7 +24,8 @@ async function login(e){
 
   let info = await responce.json();
 
-  localStorage.setItem("userData",JSON.stringify(info));
+  console.log('info', info);
+ 
   
   let email = document.querySelector("#email").value;
   
@@ -39,7 +40,7 @@ async function login(e){
 
 async function getid(value){
 
-    let api = `http://localhost:2345/users/email?email=${value}`
+    let api = `https://the-bowl-company-pro.herokuapp.com/users/email?email=${value}`
 
     let res = await fetch(api,{
 
@@ -55,9 +56,9 @@ async function getid(value){
   localStorage.setItem("user_name",JSON.stringify(data));
 
   let loginID = document.getElementById("log");
-
+  loginID.style.color = "red";
   let loginame = JSON.parse(localStorage.getItem("user_name"));
-  
-  
+
   loginID.innerHTML = loginame.name;
+  
 }

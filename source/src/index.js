@@ -4,7 +4,7 @@ const connect = require("./configs/db");
 
 const cors = require("cors");
 
-// const mongoose = require('mongoose');
+const port= process.env.PORT || 2345;
 
 const User = require("./models/user.model");
 
@@ -107,10 +107,10 @@ app.get(
   }
 );
 
-app.listen(2345, async () => {
+app.listen(port, async () => {
   try {
     await connect();
-    console.log("running on port 2345");
+    console.log(`running on port 2345${port}`);
   } catch (err) {
     console.log(err.message);
   }
