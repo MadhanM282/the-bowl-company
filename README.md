@@ -18,10 +18,10 @@ which provide a flexible way to connect front-end to back-end
 - If you are new to this page click on create account 
 - in the form you have to fill (first-name,Last-name,Phone-number,email,password)
 - the password must be strong 
- 1.should have one Upper-case
- 2.should have one Lower-case
- 3.should have a Number
- 4.should contain a special character
+1.should have one Upper-case
+2.should have one Lower-case
+3.should have a Number
+4.should contain a special character
 
 - After sucessfull registeration you will redirected to login
 - enter your login details and you are good to go....
